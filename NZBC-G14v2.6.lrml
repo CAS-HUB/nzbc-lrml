@@ -11,7 +11,6 @@
 <lrml:LegalSources key="ls1">
   <lrml:LegalSource key="NZBC.G14AS1" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/g-services-and-facilities/g14-industrial-liquid-waste/asvm/g14-industrial-liquid-waste-2nd-edition-amendment6.pdf"/>
 </lrml:LegalSources>
-
 <lrml:Context>
   <lrml:Association>
     <lrml:appliesSource keyref="1.1.1" />
@@ -231,9 +230,14 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:specruleml:ificDesign" />
           <ruleml:Var iri="buvo:collectionFacility" />
         </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:objective" />
+            <ruleml:Data iri="specificDesign" />
+          </ruleml:Atom>
+        </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
@@ -252,9 +256,14 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:specruleml:ificDesign" />
           <ruleml:Var iri="buvo:storageFacility" />
         </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:objective" />
+            <ruleml:Data iri="specificDesign" />
+          </ruleml:Atom>
+        </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
@@ -273,9 +282,14 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:specruleml:ificDesign" />
           <ruleml:Var iri="buvo:treatmentFacility" />
         </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:objective" />
+            <ruleml:Data iri="specificDesign" />
+          </ruleml:Atom>
+        </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
@@ -294,9 +308,14 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:specruleml:ificDesign" />
           <ruleml:Var iri="buvo:disposalSystem" />
         </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:objective" />
+            <ruleml:Data iri="specificDesign" />
+          </ruleml:Atom>
+        </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
@@ -1408,7 +1427,7 @@
           <ruleml:And>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:durability" />
-              <ruleml:Data iri="lruleml:ifetime" />
+              <ruleml:Data iri="lifetime" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -2439,5 +2458,4 @@
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
 </lrml:Statements>
-
 </lrml:LegalRuleML>
