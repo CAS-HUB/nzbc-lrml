@@ -2,22 +2,23 @@
 
 <lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" >
 
-<lrml:Prefix pre="devo" refID="http://example.com/deontic-vocabulary#"/>
-<lrml:Prefix pre="lovo"  refID="http://example.com/logic-vocabulary#"/>
-<lrml:Prefix pre="buvo" refID="./vocabulary-D1#"/>
+<lrml:Prefix pre="fuvo" refID="http://fuvo.acabim.com"/>
+<lrml:Prefix pre="lovo"  refID="http://lovo.acabim.com"/>
+<lrml:Prefix pre="buvo" refID="http://buvo.acabim.com"/>
 <lrml:Jurisdictions>
   <lrml:Jurisdiction key="jur:nz" sameAs="http://example.org/jurisdiction#newzealand"/>
 </lrml:Jurisdictions>
 <lrml:LegalSources key="ls1">
   <lrml:LegalSource key="NZBC.G14AS1" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/g-services-and-facilities/g14-industrial-liquid-waste/asvm/g14-industrial-liquid-waste-2nd-edition-amendment6.pdf"/>
 </lrml:LegalSources>
+
 <lrml:Context>
   <lrml:Association>
     <lrml:appliesSource keyref="1.1.1" />
-    <lrml:toTarget keyref="1.1.1a" />
-    <lrml:toTarget keyref="1.1.1b" />
-    <lrml:toTarget keyref="1.1.1c" />
-    <lrml:toTarget keyref="1.1.1d" />
+    <lrml:toTarget keyref="1.1.1.1" />
+    <lrml:toTarget keyref="1.1.1.2" />
+    <lrml:toTarget keyref="1.1.1.3" />
+    <lrml:toTarget keyref="1.1.1.4" />
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="1.1.2" />
@@ -25,40 +26,40 @@
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="1.2.1" />
-    <lrml:toTarget keyref="1.2.1.1" />
-    <lrml:toTarget keyref="1.2.1.1.a" />
-    <lrml:toTarget keyref="1.2.1.1.b" />
-    <lrml:toTarget keyref="1.2.1.1.c" />
-    <lrml:toTarget keyref="1.2.1.1.d" />
-    <lrml:toTarget keyref="1.2.1.1.e" />
-    <lrml:toTarget keyref="1.2.1.1.f" />
-    <lrml:toTarget keyref="1.2.1.1.g" />
-    <lrml:toTarget keyref="1.2.1.1.h" />
+    <lrml:toTarget keyref="1.2.1.1.1" />
+    <lrml:toTarget keyref="1.2.1.1.2" />
+    <lrml:toTarget keyref="1.2.1.1.3" />
+    <lrml:toTarget keyref="1.2.1.1.4" />
+    <lrml:toTarget keyref="1.2.1.1.5" />
+    <lrml:toTarget keyref="1.2.1.1.6" />
+    <lrml:toTarget keyref="1.2.1.1.7" />
+    <lrml:toTarget keyref="1.2.1.1.8" />
+    <lrml:toTarget keyref="1.2.1.1.9" />
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="1.3.1" />
-    <lrml:toTarget keyref="1.3.1a" />
-    <lrml:toTarget keyref="1.3.1b" />
-    <lrml:toTarget keyref="1.3.1c" />
-    <lrml:toTarget keyref="1.3.1d" />
-    <lrml:toTarget keyref="1.3.1d" />
-    <lrml:toTarget keyref="1.3.1e" />
-    <lrml:toTarget keyref="1.3.1f" />
+    <lrml:toTarget keyref="1.3.1.1" />
+    <lrml:toTarget keyref="1.3.1.2" />
+    <lrml:toTarget keyref="1.3.1.3" />
+    <lrml:toTarget keyref="1.3.1.4" />
+    <lrml:toTarget keyref="1.3.1.5" />
+    <lrml:toTarget keyref="1.3.1.6" />
+    <lrml:toTarget keyref="1.3.1.7" />
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="1.4.1" />
-    <lrml:toTarget keyref="1.4.1a" />
-    <lrml:toTarget keyref="1.4.1b" />
-    <lrml:toTarget keyref="1.4.1c" />
-    <lrml:toTarget keyref="1.4.1d" />
-    <lrml:toTarget keyref="1.4.1e" />
-    <lrml:toTarget keyref="1.4.1f" />
-    <lrml:toTarget keyref="1.4.1g" />
-    <lrml:toTarget keyref="1.4.1h" />
-    <lrml:toTarget keyref="1.4.1i" />
-    <lrml:toTarget keyref="1.4.1j" />
-    <lrml:toTarget keyref="1.4.1k" />
-    <lrml:toTarget keyref="1.4.1l" />
+    <lrml:toTarget keyref="1.4.1.1" />
+    <lrml:toTarget keyref="1.4.1.2" />
+    <lrml:toTarget keyref="1.4.1.3" />
+    <lrml:toTarget keyref="1.4.1.4" />
+    <lrml:toTarget keyref="1.4.1.5" />
+    <lrml:toTarget keyref="1.4.1.6" />
+    <lrml:toTarget keyref="1.4.1.7" />
+    <lrml:toTarget keyref="1.4.1.8" />
+    <lrml:toTarget keyref="1.4.1.9" />
+    <lrml:toTarget keyref="1.4.1.10" />
+    <lrml:toTarget keyref="1.4.1.11" />
+    <lrml:toTarget keyref="1.4.1.12" />
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="1.4.2" />
@@ -90,17 +91,17 @@
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="1.8.1" />
-    <lrml:toTarget keyref="1.8.1a" />
-    <lrml:toTarget keyref="1.8.1b" />
-    <lrml:toTarget keyref="1.8.1c" />
-    <lrml:toTarget keyref="1.8.1c" />
+    <lrml:toTarget keyref="1.8.1.1" />
+    <lrml:toTarget keyref="1.8.1.2" />
+    <lrml:toTarget keyref="1.8.1.3" />
+    <lrml:toTarget keyref="1.8.1.4" />
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="1.9.1" />
-    <lrml:toTarget keyref="1.9.1a" />
-    <lrml:toTarget keyref="1.9.1b" />
-    <lrml:toTarget keyref="1.9.1c" />
-    <lrml:toTarget keyref="1.9.1d" />
+    <lrml:toTarget keyref="1.9.1.1" />
+    <lrml:toTarget keyref="1.9.1.2" />
+    <lrml:toTarget keyref="1.9.1.3" />
+    <lrml:toTarget keyref="1.9.1.4" />
   </lrml:Association>
   <lrml:Association>
     <lrml:appliesSource keyref="2.0.1" />
@@ -119,46 +120,6 @@
     <lrml:toTarget keyref="2.1.3" />
   </lrml:Association>
   <lrml:Association>
-    <lrml:appliesSource keyref="2.1.4" />
-    <lrml:toTarget keyref="2.1.4" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.1.5" />
-    <lrml:toTarget keyref="2.1.5" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.1.6" />
-    <lrml:toTarget keyref="2.1.6" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.1.7" />
-    <lrml:toTarget keyref="2.1.7" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.2.1" />
-    <lrml:toTarget keyref="2.2.1" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.2.2" />
-    <lrml:toTarget keyref="2.2.2" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.2.3" />
-    <lrml:toTarget keyref="2.2.3" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.2.4" />
-    <lrml:toTarget keyref="2.2.4" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.2.5" />
-    <lrml:toTarget keyref="2.2.5" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.3.1" />
-    <lrml:toTarget keyref="2.3.1" />
-  </lrml:Association>
-  <lrml:Association>
     <lrml:appliesSource keyref="2.3.2" />
     <lrml:toTarget keyref="2.3.2" />
   </lrml:Association>
@@ -167,162 +128,122 @@
     <lrml:toTarget keyref="2.3.3." />
   </lrml:Association>
   <lrml:Association>
-    <lrml:appliesSource keyref="2.3.4" />
-    <lrml:toTarget keyref="2.3.4" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.3.5" />
-    <lrml:toTarget keyref="2.3.5" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.3.6" />
-    <lrml:toTarget keyref="2.3.6" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.4.1" />
-    <lrml:toTarget keyref="2.4.1" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.4.2" />
-    <lrml:toTarget keyref="2.4.2" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.4.3" />
-    <lrml:toTarget keyref="2.4.3" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="2.4.4" />
-    <lrml:toTarget keyref="2.4.4" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="3.1.1" />
-    <lrml:toTarget keyref="3.1.1" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="3.1.2" />
-    <lrml:toTarget keyref="3.1.2" />
-  </lrml:Association>
-  <lrml:Association>
     <lrml:appliesSource keyref="3.2.1" />
     <lrml:toTarget keyref="3.2.1" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="3.2.2" />
-    <lrml:toTarget keyref="3.2.2" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="3.3.1" />
-    <lrml:toTarget keyref="3.3.1" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="3.3.2" />
-    <lrml:toTarget keyref="3.3.2" />
-  </lrml:Association>
-  <lrml:Association>
-    <lrml:appliesSource keyref="3.3.3" />
-    <lrml:toTarget keyref="3.3.3" />
   </lrml:Association>
 </lrml:Context>
 
 <lrml:Statements>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1a">
-    <ruleml:Rule key="NZBC-G14VM1:1.1.1a">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1.1">
+    <ruleml:Rule key="NZBC-G14VM1:1.1.1.1">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:collectionFacility" />
+          <ruleml:Rel iri="fuvo:collectionFacility" />
+          <ruleml:Data iri="This document describes the requirements to be satisfied by specific design for systems used for the collection of industrial liquid waste" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:objective" />
-            <ruleml:Data iri="specificDesign" />
+            <ruleml:Rel iri="fuvo:objective" />
+            <ruleml:Operator iri="lovo:specificDesign" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:collectionFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:collectionFacility" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1b">
-    <ruleml:Rule key="NZBC-G14VM1:1.1.1b">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1.2">
+    <ruleml:Rule key="NZBC-G14VM1:1.1.1.2">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:storageFacility" />
+          <ruleml:Rel iri="fuvo:storageFacility" />
+          <ruleml:Data iri="This document describes the requirements to be satisfied by specific design for systems used for the storage of industrial liquid waste" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:objective" />
-            <ruleml:Data iri="specificDesign" />
+            <ruleml:Rel iri="fuvo:objective" />
+            <ruleml:Operator iri="lovo:specificDesign" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1c">
-    <ruleml:Rule key="NZBC-G14VM1:1.1.1c">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1.3">
+    <ruleml:Rule key="NZBC-G14VM1:1.1.1.3">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:treatmentFacility" />
+          <ruleml:Rel iri="fuvo:treatmentFacility" />
+          <ruleml:Data iri="This document describes the requirements to be satisfied by specific design for systems used for the treatment of industrial liquid waste" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:objective" />
-            <ruleml:Data iri="specificDesign" />
+            <ruleml:Rel iri="fuvo:objective" />
+            <ruleml:Operator iri="lovo:specificDesign" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:treatmentFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:treatmentFacility" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1d">
-    <ruleml:Rule key="NZBC-G14VM1:1.1.1d">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.1.1.4">
+    <ruleml:Rule key="NZBC-G14VM1:1.1.1.4">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:disposalSystem" />
+          <ruleml:Rel iri="fuvo:disposalSystem" />
+          <ruleml:Data iri="This document describes the requirements to be satisfied by specific design for systems used for the disposal of industrial liquid waste" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:objective" />
-            <ruleml:Data iri="specificDesign" />
+            <ruleml:Rel iri="fuvo:objective" />
+            <ruleml:Operator iri="lovo:specificDesign" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:disposalSystem" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:disposalSystem" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
@@ -334,134 +255,122 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="if industrial Liquid Waste is hazardous" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Data iri="the storage facilities shall comply with this document" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="nzbc-f3" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Data iri="the storage facilities shall also comply with NZBC F3 Hazardous Substances and Processes" />
+            <ruleml:Operator iri="lovo:nzbc-f3" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.1">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.1">
       <!-- comment -->
       <ruleml:if>
+        <ruleml:Expr>
+          <ruleml:Fun />
+        </ruleml:Expr>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:hazardous" />
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="if industrial Liquid Waste is hazardous" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:collectionFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:collectionFacility" />
+            <ruleml:Data iri="collection, storage (if any), and treatment facility to complyWith G14" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:storageFacility" />
-              <ruleml:Data iri="nzbc-g14" />
+              <ruleml:Rel iri="fuvo:storageFacility" />
+              <ruleml:Operator iri="lovo:nzbc-g14" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:treatmentFaciity" />
-              <ruleml:Data iri="nzbc-g14" />
+              <ruleml:Rel iri="fuvo:treatmentFaciity" />
+              <ruleml:Operator iri="lovo:nzbc-g14" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:collectionFacility" />
-              <ruleml:Data iri="nzbc-f3" />
+              <ruleml:Rel iri="fuvo:collectionFacility" />
+              <ruleml:Operator iri="lovo:nzbc-f3" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:storageFacility" />
-              <ruleml:Data iri="nzbc-f3" />
+              <ruleml:Rel iri="fuvo:storageFacility" />
+              <ruleml:Operator iri="lovo:nzbc-f3" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:treatmentFaciity" />
-              <ruleml:Data iri="nzbc-f3" />
-            </ruleml:Atom>
-          </ruleml:And>
-        </lrml:devo:Obligation>
-        <ruleml:Atom />
-      </ruleml:then>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.a">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.a">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
-        </ruleml:Atom>
-        <ruleml:And>
-          <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="hazardous" />
-          </ruleml:Atom>
-        </ruleml:And>
-      </ruleml:if>
-      <ruleml:then>
-        <lrml:devo:Obligation>
-          <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-g14" />
-          </ruleml:Atom>
-        </lrml:devo:Obligation>
-        <lrml:devo:Obligation>
-          <ruleml:And>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="nzbc-f3" />
+              <ruleml:Rel iri="fuvo:treatmentFaciity" />
+              <ruleml:Operator iri="lovo:nzbc-f3" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -469,45 +378,92 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.b">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.b">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.2">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.2">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
+        </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Atom>
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:hazardous" />
+          </ruleml:Atom>
+        </ruleml:And>
+      </ruleml:if>
+      <ruleml:then>
+        <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
+          <ruleml:Atom>
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
+          </ruleml:Atom>
+        </lrml:devo:Obligation>
+        <lrml:devo:Obligation>
+          <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
+            <ruleml:Atom>
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:nzbc-f3" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </lrml:devo:Obligation>
+        <ruleml:Atom />
+      </ruleml:then>
+    </ruleml:Rule>
+  </lrml:PrescriptiveStatement>
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.3">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.3">
+      <!-- comment -->
+      <ruleml:if>
+        <ruleml:Atom>
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:type" />
-              <ruleml:Data iri="hazardous" />
+              <ruleml:Rel iri="fuvo:type" />
+              <ruleml:Operator iri="lovo:hazardous" />
             </ruleml:Atom>
           </ruleml:Not>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:discharge" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="sewer" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:sewer" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:disposalSystem" />
-            <ruleml:Data iri="nzbc-g13" />
+            <ruleml:Rel iri="fuvo:disposalSystem" />
+            <ruleml:Operator iri="lovo:nzbc-g13" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:discharge" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="sewer" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:sewer" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
@@ -515,117 +471,137 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.c">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.c">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.4">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.4">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:type" />
-              <ruleml:Data iri="hazardous" />
-            </ruleml:Atom>
-          </ruleml:Not>
-        </ruleml:And>
-        <lrml:devo:Permission>
-          <ruleml:And>
-            <ruleml:Not>
-              <ruleml:Atom>
-                <ruleml:Rel iri="fuvo:discharge" />
-                <ruleml:Var iri="buvo:ind.LiquidWaste" />
-                <ruleml:Data iri="sewer" />
-              </ruleml:Atom>
-            </ruleml:Not>
-          </ruleml:And>
-        </lrml:devo:Permission>
-      </ruleml:if>
-      <ruleml:then>
-        <lrml:devo:Obligation>
-          <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:collectionFacility" />
-            <ruleml:Data iri="nzbc-g14" />
-          </ruleml:Atom>
-        </lrml:devo:Obligation>
-        <lrml:devo:Obligation>
-          <ruleml:And>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:storageFacility" />
-              <ruleml:Data iri="nzbc-g14" />
-            </ruleml:Atom>
-          </ruleml:And>
-        </lrml:devo:Obligation>
-        <lrml:devo:Obligation>
-          <ruleml:And>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:treatmentFacility" />
-              <ruleml:Data iri="nzbc-g14" />
-            </ruleml:Atom>
-          </ruleml:And>
-        </lrml:devo:Obligation>
-        <ruleml:Atom />
-      </ruleml:then>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.d">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.d">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
-        </ruleml:Atom>
-        <ruleml:And>
-          <ruleml:Not>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:type" />
-              <ruleml:Data iri="hazardous" />
+              <ruleml:Rel iri="fuvo:type" />
+              <ruleml:Operator iri="lovo:hazardous" />
             </ruleml:Atom>
           </ruleml:Not>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
             <ruleml:Not>
+              <ruleml:Expr>
+                <ruleml:Fun />
+              </ruleml:Expr>
               <ruleml:Atom>
-                <ruleml:Rel iri="fuvo:discharge" />
-                <ruleml:Var iri="buvo:ind.LiquidWaste" />
-                <ruleml:Data iri="sewer" />
+                <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+                <ruleml:Operator iri="lovo:sewer" />
+              </ruleml:Atom>
+            </ruleml:Not>
+          </ruleml:And>
+        </lrml:devo:Permission>
+      </ruleml:if>
+      <ruleml:then>
+        <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
+          <ruleml:Atom>
+            <ruleml:Rel iri="fuvo:collectionFacility" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
+          </ruleml:Atom>
+        </lrml:devo:Obligation>
+        <lrml:devo:Obligation>
+          <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
+            <ruleml:Atom>
+              <ruleml:Rel iri="fuvo:storageFacility" />
+              <ruleml:Operator iri="lovo:nzbc-g14" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </lrml:devo:Obligation>
+        <lrml:devo:Obligation>
+          <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
+            <ruleml:Atom>
+              <ruleml:Rel iri="fuvo:treatmentFacility" />
+              <ruleml:Operator iri="lovo:nzbc-g14" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </lrml:devo:Obligation>
+        <ruleml:Atom />
+      </ruleml:then>
+    </ruleml:Rule>
+  </lrml:PrescriptiveStatement>
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.5">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.5">
+      <!-- comment -->
+      <ruleml:if>
+        <ruleml:Atom>
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
+        </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Not>
+            <ruleml:Atom>
+              <ruleml:Rel iri="fuvo:type" />
+              <ruleml:Operator iri="lovo:hazardous" />
+            </ruleml:Atom>
+          </ruleml:Not>
+        </ruleml:And>
+        <lrml:devo:Permission>
+          <ruleml:And>
+            <ruleml:Not>
+              <ruleml:Expr>
+                <ruleml:Fun />
+              </ruleml:Expr>
+              <ruleml:Atom>
+                <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+                <ruleml:Operator iri="lovo:sewer" />
               </ruleml:Atom>
             </ruleml:Not>
           </ruleml:And>
         </lrml:devo:Permission>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:collectionFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:collectionFacility" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:treatmentFacility" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:treatmentFacility" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
             <ruleml:Not>
+              <ruleml:Expr>
+                <ruleml:Fun />
+              </ruleml:Expr>
               <ruleml:Atom>
-                <ruleml:Rel iri="fuvo:treatment" />
-                <ruleml:Var iri="buvo:ind.LiquidWaste" />
-                <ruleml:Data iri="sewer" />
+                <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+                <ruleml:Operator iri="lovo:sewer" />
               </ruleml:Atom>
             </ruleml:Not>
           </ruleml:And>
@@ -633,18 +609,22 @@
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Permission>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="inhouseStorage" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:inhouseStorage" />
           </ruleml:Atom>
         </lrml:devo:Permission>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:disposeOf" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="elsewhere" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:elsewhere" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
@@ -652,40 +632,47 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.e">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.e">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.6">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.6">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-f3" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-f3" />
           </ruleml:Atom>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
             <ruleml:Not>
+              <ruleml:Expr>
+                <ruleml:Fun />
+              </ruleml:Expr>
               <ruleml:Atom>
-                <ruleml:Rel iri="fuvo:treatment" />
-                <ruleml:Var iri="buvo:ind.LiquidWaste" />
-                <ruleml:Data iri="sewer" />
+                <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+                <ruleml:Operator iri="lovo:sewer" />
               </ruleml:Atom>
             </ruleml:Not>
           </ruleml:And>
@@ -693,18 +680,22 @@
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Permission>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="inhouseStorage" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:inhouseStorage" />
           </ruleml:Atom>
         </lrml:devo:Permission>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:disposeOf" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="elsewhere" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:elsewhere" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
@@ -712,122 +703,146 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.f">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.f">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.7">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.7">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-f3" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-f3" />
           </ruleml:Atom>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:treatment" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="sewer" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:sewer" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:disposalSystem" />
-            <ruleml:Data iri="nzbc-g13" />
+            <ruleml:Rel iri="fuvo:disposalSystem" />
+            <ruleml:Operator iri="lovo:nzbc-g13" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.g">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.g">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.8">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.8">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-f3" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-f3" />
           </ruleml:Atom>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:treatment" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="sewer" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:sewer" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:disposalSystem" />
-            <ruleml:Data iri="nzbc-g13" />
+            <ruleml:Rel iri="fuvo:disposalSystem" />
+            <ruleml:Operator iri="lovo:nzbc-g13" />
           </ruleml:Atom>
         </ruleml:And>
         <lrml:devo:Prohibition>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:discharge" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="naturalWaterway" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:naturalWaterway" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Prohibition>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Permission>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:discharge" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="sewer" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:sewer" />
           </ruleml:Atom>
         </lrml:devo:Permission>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Var iri="buvo:disposalSystem" />
-              <ruleml:Data iri="NUO" />
+              <ruleml:Rel iri="fuvo:disposalSystem" />
+              <ruleml:Operator iri="lovo:NUO" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -835,90 +850,112 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.h">
-    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.h">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.2.1.1.9">
+    <ruleml:Rule key="NZBC-G14VM1:1.2.1.1.9">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Data iri="Figure 1" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-g14" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-g14" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="nzbc-f3" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:nzbc-f3" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:treatment" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="sewer" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Operator iri="lovo:sewer" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:disposalSystem" />
-            <ruleml:Data iri="nzbc-g13" />
+            <ruleml:Rel iri="fuvo:disposalSystem" />
+            <ruleml:Operator iri="lovo:nzbc-g13" />
           </ruleml:Atom>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:discharge" />
-              <ruleml:Var iri="buvo:ind.LiquidWaste" />
-              <ruleml:Data iri="naturalWaterway" />
+              <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+              <ruleml:Operator iri="lovo:naturalWaterway" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:disposalSystem" />
-            <ruleml:Data iri="RMA" />
+            <ruleml:Rel iri="fuvo:disposalSystem" />
+            <ruleml:Operator iri="lovo:RMA" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1a">
-    <ruleml:Rule key="NZBC-G14VM1:1.3.1a">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1.1">
+    <ruleml:Rule key="NZBC-G14VM1:1.3.1.1">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:seismicRestraint" />
-          <ruleml:Var iri="buvo:tank" />
+          <ruleml:Rel iri="fuvo:tank" />
         </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Atom>
+            <ruleml:Rel iri="fuvo:protection" />
+            <ruleml:Operator iri="lovo:seismicRestraint" />
+          </ruleml:Atom>
+        </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Data iri="nzbc-b1" />
+            <ruleml:Operator iri="lovo:nzbc-b1" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:complyWith" />
-              <ruleml:Data iri="nzbc-b1vm1" />
+              <ruleml:Operator iri="lovo:nzbc-b1vm1" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -926,383 +963,407 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1b">
-    <ruleml:Rule key="NZBC-G14VM1:1.3.1b">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1.2">
+    <ruleml:Rule key="NZBC-G14VM1:1.3.1.2">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:access" />
+          <ruleml:Rel iri="fuvo:access" />
         </ruleml:Atom>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:type" />
-          <ruleml:Data iri="vehicle" />
+          <ruleml:Rel iri="fuvo:type" />
+          <ruleml:Operator iri="lovo:vehicle" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Data iri="nzbc-d1" />
+            <ruleml:Operator iri="lovo:nzbc-d1" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1c">
-    <ruleml:Rule key="NZBC-G14VM1:1.3.1c">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1.3">
+    <ruleml:Rule key="NZBC-G14VM1:1.3.1.3">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:facility" />
+          <ruleml:Rel iri="fuvo:facility" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="collection" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:collection" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:Or>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="storage" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:storage" />
           </ruleml:Atom>
         </ruleml:Or>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:facility" />
-            <ruleml:Data iri="nzbc-f3" />
+            <ruleml:Rel iri="fuvo:facility" />
+            <ruleml:Operator iri="lovo:nzbc-f3" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1d">
-    <ruleml:Rule key="NZBC-G14VM1:1.3.1d">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1.4">
+    <ruleml:Rule key="NZBC-G14VM1:1.3.1.4">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:waterSupply" />
+          <ruleml:Rel iri="fuvo:waterSupply" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:subject" />
-            <ruleml:Data iri="contamination" />
+            <ruleml:Rel iri="fuvo:subject" />
+            <ruleml:Operator iri="lovo:contamination" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:waterSupply" />
-            <ruleml:Data iri="nzbc-g12" />
+            <ruleml:Rel iri="fuvo:waterSupply" />
+            <ruleml:Operator iri="lovo:nzbc-g12" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1d">
-    <ruleml:Rule key="NZBC-G14VM1:1.3.1d">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1.5">
+    <ruleml:Rule key="NZBC-G14VM1:1.3.1.5">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:waterHose" />
+          <ruleml:Rel iri="fuvo:waterHose" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Data iri="nzbc-g12" />
+            <ruleml:Operator iri="lovo:nzbc-g12" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1e">
-    <ruleml:Rule key="NZBC-G14VM1:1.3.1e">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1.6">
+    <ruleml:Rule key="NZBC-G14VM1:1.3.1.6">
       <!-- comment -->
       <ruleml:if>
+        <ruleml:Expr>
+          <ruleml:Fun />
+        </ruleml:Expr>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:treatment" />
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
-          <ruleml:Data iri="sewer" />
-          <ruleml:Operator iri="lovo:for" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Var iri="buvo:for" />
+          <ruleml:Operator iri="lovo:sewer" />
         </ruleml:Atom>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:discharge" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="sewer" />
-            <ruleml:Operator iri="lovo:into" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Var iri="buvo:into" />
+            <ruleml:Operator iri="lovo:sewer" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:disposalSystem" />
-            <ruleml:Data iri="nzbc-g13" />
+            <ruleml:Rel iri="fuvo:disposalSystem" />
+            <ruleml:Operator iri="lovo:nzbc-g13" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1f">
-    <ruleml:Rule key="NZBC-G14VM1:1.3.1f">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.3.1.7">
+    <ruleml:Rule key="NZBC-G14VM1:1.3.1.7">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:drain" />
+          <ruleml:Rel iri="fuvo:drain" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Data iri="nzbc-g13" />
+            <ruleml:Operator iri="lovo:nzbc-g13" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1a">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1a">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.1">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.1">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:collectionFacility" />
+          <ruleml:Rel iri="fuvo:collectionFacility" />
+          <ruleml:Data iri="Collection facility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="safeArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Data iri="shall be located in areas that will not create health or safety hazards" />
+            <ruleml:Operator iri="lovo:safeArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1b">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1b">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.2">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.2">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:storageFacility" />
+          <ruleml:Rel iri="fuvo:storageFacility" />
+          <ruleml:Data iri="storageFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="safeArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Data iri="shall be located in areas that will not create health or safety hazards" />
+            <ruleml:Operator iri="lovo:safeArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1c">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1c">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.3">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.3">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:treatmentFacility" />
+          <ruleml:Rel iri="fuvo:treatmentFacility" />
+          <ruleml:Data iri="treatmentFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="safeArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Data iri="shall be located in areas that will not create health or safety hazards" />
+            <ruleml:Operator iri="lovo:safeArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1d">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1d">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.4">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.4">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:disposalSystem" />
+          <ruleml:Rel iri="fuvo:disposalSystem" />
+          <ruleml:Data iri="disposalSystem" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="safeArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Data iri="shall be located in areas that will not create health or safety hazards" />
+            <ruleml:Operator iri="lovo:safeArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1e">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1e">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.5">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.5">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:collectionFacility" />
+          <ruleml:Rel iri="fuvo:collectionFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="bundedArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:bundedArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1f">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1f">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.6">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.6">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:storageFacility" />
+          <ruleml:Rel iri="fuvo:storageFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="bundedArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:bundedArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1g">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1g">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.7">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.7">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:treatmentFacility" />
+          <ruleml:Rel iri="fuvo:treatmentFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="bundedArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:bundedArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1h">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1h">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.8">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.8">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:disposalSystem" />
+          <ruleml:Rel iri="fuvo:disposalSystem" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="bundedArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:bundedArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1i">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1i">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.9">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.9">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:collectionFacility" />
+          <ruleml:Rel iri="fuvo:collectionFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="accessArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:accessArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1j">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1j">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.10">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.10">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:storageFacility" />
+          <ruleml:Rel iri="fuvo:storageFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="accessArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:accessArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1k">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1k">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.11">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.11">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:treatmentFacility" />
+          <ruleml:Rel iri="fuvo:treatmentFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="accessArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:accessArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1l">
-    <ruleml:Rule key="NZBC-G14VM1:1.4.1l">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.4.1.12">
+    <ruleml:Rule key="NZBC-G14VM1:1.4.1.12">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:disposalSystem" />
+          <ruleml:Rel iri="fuvo:disposalSystem" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Data iri="accessArea" />
+            <ruleml:Rel iri="fuvo:location" />
+            <ruleml:Operator iri="lovo:accessArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
@@ -1314,34 +1375,44 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:strength" />
-          <ruleml:Var iri="buvo:storageTank" />
-          <ruleml:Data iri="structLoad" />
-          <ruleml:Operator iri="lovo:greaterThan" />
+          <ruleml:Rel iri="fuvo:storageTank" />
         </ruleml:Atom>
+        <ruleml:And>
+          <ruleml:Atom>
+            <ruleml:Rel iri="fuvo:strength" />
+            <ruleml:Var iri="buvo:greaterThan" />
+            <ruleml:Data iri="Tanks are designed to withstand the effects of associated loads." />
+            <ruleml:Operator iri="lovo:structLoad" />
+          </ruleml:Atom>
+        </ruleml:And>
         <ruleml:And>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:environment" />
-              <ruleml:Data iri="hazardous" />
+              <ruleml:Rel iri="fuvo:environment" />
+              <ruleml:Data iri="Precautions are taken to avoid health and safety hazards" />
+              <ruleml:Operator iri="lovo:hazardous" />
             </ruleml:Atom>
           </ruleml:Not>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:environment" />
-              <ruleml:Data iri="corrosive" />
+              <ruleml:Rel iri="fuvo:environment" />
+              <ruleml:Data iri="Precautions are taken to avoid corrosion that threatens the integrity of the tank or associated plant" />
+              <ruleml:Operator iri="lovo:corrosive" />
             </ruleml:Atom>
           </ruleml:Not>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Permission>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:located" />
-            <ruleml:Var iri="buvo:storageTank" />
-            <ruleml:Data iri="belowGround" />
+            <ruleml:Rel iri="fuvo:storageTank" />
+            <ruleml:Data iri="Storage tanks may be placed below ground" />
+            <ruleml:Operator iri="lovo:belowGround" />
           </ruleml:Atom>
         </lrml:devo:Permission>
         <ruleml:Atom />
@@ -1353,51 +1424,60 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:constructionMaterial" />
+          <ruleml:Rel iri="fuvo:constructionMaterial" />
         </ruleml:Atom>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:inContact" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:resistantTo" />
-            <ruleml:Var iri="buvo:constructionMaterial" />
-            <ruleml:Data iri="corrosion" />
+            <ruleml:Rel iri="fuvo:constructionMaterial" />
+            <ruleml:Operator iri="lovo:corrosion" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:resistantTo" />
-              <ruleml:Var iri="buvo:constructionMaterial" />
-              <ruleml:Data iri="chemicalAttack" />
+              <ruleml:Rel iri="fuvo:constructionMaterial" />
+              <ruleml:Operator iri="lovo:chemicalAttack" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:resistantTo" />
-              <ruleml:Var iri="buvo:constructionMaterial" />
-              <ruleml:Data iri="abrasion" />
+              <ruleml:Rel iri="fuvo:constructionMaterial" />
+              <ruleml:Operator iri="lovo:abrasion" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:resistantTo" />
-              <ruleml:Var iri="buvo:constructionMaterial" />
-              <ruleml:Data iri="physicalAbuse" />
+              <ruleml:Rel iri="fuvo:constructionMaterial" />
+              <ruleml:Operator iri="lovo:physicalAbuse" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
-        <ruleml:Atom />
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
@@ -1407,27 +1487,27 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:handlingEquipment" />
+          <ruleml:Rel iri="fuvo:handlingEquipment" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:designedToResist" />
-            <ruleml:Data iri="corrosion" />
+            <ruleml:Rel iri="fuvo:designedToResist" />
+            <ruleml:Operator iri="lovo:corrosion" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:resistantTo" />
-            <ruleml:Data iri="corrosion" />
+            <ruleml:Rel iri="fuvo:resistantTo" />
+            <ruleml:Operator iri="lovo:corrosion" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:durability" />
-              <ruleml:Data iri="lifetime" />
+              <ruleml:Rel iri="fuvo:durability" />
+              <ruleml:Operator iri="lovo:lifetime" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -1441,35 +1521,37 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:ind.LiquidWasteSystem" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWasteSystem" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageTank" />
+            <ruleml:Rel iri="fuvo:storageTank" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:treatmentTank" />
+            <ruleml:Rel iri="fuvo:treatmentTank" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:piping" />
+            <ruleml:Rel iri="fuvo:piping" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:status" />
-            <ruleml:Var iri="buvo:design" />
-            <ruleml:Data iri="complete" />
+            <ruleml:Rel iri="fuvo:design" />
+            <ruleml:Operator iri="lovo:complete" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:testForContamination" />
+            <ruleml:Rel iri="fuvo:testForContamination" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
       </ruleml:then>
@@ -1480,20 +1562,20 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:storageFacility" />
+          <ruleml:Rel iri="fuvo:storageFacility" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:area" />
-            <ruleml:Data iri="impervious" />
+            <ruleml:Rel iri="fuvo:area" />
+            <ruleml:Operator iri="lovo:impervious" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:area" />
-            <ruleml:Data iri="bunded" />
+            <ruleml:Rel iri="fuvo:area" />
+            <ruleml:Operator iri="lovo:bunded" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:Atom />
@@ -1505,31 +1587,33 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:collectionFacility" />
+          <ruleml:Rel iri="fuvo:collectionFacility" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:treatmentFacility" />
+            <ruleml:Rel iri="fuvo:treatmentFacility" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Prohibition>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:contamination" />
-            <ruleml:Data iri="waterSupply" />
+            <ruleml:Rel iri="fuvo:contamination" />
+            <ruleml:Operator iri="lovo:waterSupply" />
           </ruleml:Atom>
         </lrml:devo:Prohibition>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:installation" />
-            <ruleml:Data iri="nzbc-g12" />
+            <ruleml:Rel iri="fuvo:installation" />
+            <ruleml:Operator iri="lovo:nzbc-g12" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
@@ -1542,39 +1626,33 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:Ind.LiquidWaste" />
+          <ruleml:Rel iri="fuvo:Ind.LiquidWaste" />
         </ruleml:Atom>
         <ruleml:And>
-          <ruleml:Expr>
-            <ruleml:Fun />
-          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:disposalMethod" />
-            <ruleml:Data iri="1" />
-            <ruleml:Operator iri="lovo:greaterThan" />
+            <ruleml:Rel iri="fuvo:disposalMethod" />
+            <ruleml:Var iri="buvo:greaterThan" />
+            <ruleml:Operator iri="lovo:1" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
-          <ruleml:Expr>
-            <ruleml:Fun />
-          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:treatmentMethod" />
-            <ruleml:Data iri="1" />
-            <ruleml:Operator iri="lovo:greaterThan" />
+            <ruleml:Rel iri="fuvo:treatmentMethod" />
+            <ruleml:Var iri="buvo:greaterThan" />
+            <ruleml:Operator iri="lovo:1" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:conveyingMethod" />
+            <ruleml:Rel iri="fuvo:conveyingMethod" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:storageMethod" />
+              <ruleml:Rel iri="fuvo:storageMethod" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -1582,129 +1660,137 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1a">
-    <ruleml:Rule key="NZBC-G14VM1:1.8.1a">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1.1">
+    <ruleml:Rule key="NZBC-G14VM1:1.8.1.1">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:access" />
+          <ruleml:Rel iri="fuvo:access" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="vehicle" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:vehicle" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:purpose" />
-            <ruleml:Data iri="collection" />
+            <ruleml:Rel iri="fuvo:purpose" />
+            <ruleml:Operator iri="lovo:collection" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:complyWith" />
-            <ruleml:Var iri="buvo:access" />
-            <ruleml:Data iri="nzbc-d1" />
+            <ruleml:Rel iri="fuvo:access" />
+            <ruleml:Operator iri="lovo:nzbc-d1" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1b">
-    <ruleml:Rule key="NZBC-G14VM1:1.8.1b">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1.2">
+    <ruleml:Rule key="NZBC-G14VM1:1.8.1.2">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:access" />
+          <ruleml:Rel iri="fuvo:access" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="vehicle" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:vehicle" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:purpose" />
-            <ruleml:Data iri="collection" />
+            <ruleml:Rel iri="fuvo:purpose" />
+            <ruleml:Operator iri="lovo:collection" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:adequate" />
-            <ruleml:Var iri="buvo:turningArea" />
+            <ruleml:Rel iri="fuvo:turningArea" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1c">
-    <ruleml:Rule key="NZBC-G14VM1:1.8.1c">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1.3">
+    <ruleml:Rule key="NZBC-G14VM1:1.8.1.3">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:access" />
+          <ruleml:Rel iri="fuvo:access" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="vehicle" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:vehicle" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:purpose" />
-            <ruleml:Data iri="collection" />
+            <ruleml:Rel iri="fuvo:purpose" />
+            <ruleml:Operator iri="lovo:collection" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:flow" />
-            <ruleml:Var iri="buvo:spillage" />
-            <ruleml:Data iri="vehicle" />
-            <ruleml:Operator iri="lovo:awayFrom" />
+            <ruleml:Rel iri="fuvo:spillage" />
+            <ruleml:Var iri="buvo:awayFrom" />
+            <ruleml:Operator iri="lovo:vehicle" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1c">
-    <ruleml:Rule key="NZBC-G14VM1:1.8.1c">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.8.1.4">
+    <ruleml:Rule key="NZBC-G14VM1:1.8.1.4">
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:access" />
+          <ruleml:Rel iri="fuvo:access" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="vehicle" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:vehicle" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:purpose" />
-            <ruleml:Data iri="collection" />
+            <ruleml:Rel iri="fuvo:purpose" />
+            <ruleml:Operator iri="lovo:collection" />
           </ruleml:Atom>
         </ruleml:And>
         <lrml:devo:Permission>
           <ruleml:And>
             <ruleml:Not>
+              <ruleml:Expr>
+                <ruleml:Fun />
+              </ruleml:Expr>
               <ruleml:Atom>
-                <ruleml:Rel iri="fuvo:discharge" />
-                <ruleml:Var iri="buvo:spillage" />
-                <ruleml:Data iri="sewer" />
-                <ruleml:Operator iri="lovo:into" />
+                <ruleml:Rel iri="fuvo:spillage" />
+                <ruleml:Var iri="buvo:into" />
+                <ruleml:Operator iri="lovo:sewer" />
               </ruleml:Atom>
             </ruleml:Not>
           </ruleml:And>
@@ -1713,115 +1799,119 @@
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:spillage" />
-            <ruleml:Data iri="on-site" />
-            <ruleml:Operator iri="lovo:contained" />
+            <ruleml:Rel iri="fuvo:spillage" />
+            <ruleml:Var iri="buvo:contained" />
+            <ruleml:Operator iri="lovo:on-site" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Prohibition>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:flow" />
-              <ruleml:Var iri="buvo:spillage" />
-              <ruleml:Data iri="surfaceWaterSystem" />
-              <ruleml:Operator iri="lovo:into" />
+              <ruleml:Rel iri="fuvo:spillage" />
+              <ruleml:Var iri="buvo:into" />
+              <ruleml:Operator iri="lovo:surfaceWaterSystem" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Prohibition>
         <lrml:devo:Prohibition>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:discharge" />
-            <ruleml:Var iri="buvo:spillage" />
-            <ruleml:Data iri="sewer" />
-            <ruleml:Operator iri="lovo:into" />
+            <ruleml:Rel iri="fuvo:spillage" />
+            <ruleml:Var iri="buvo:into" />
+            <ruleml:Operator iri="lovo:sewer" />
           </ruleml:Atom>
         </lrml:devo:Prohibition>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1a">
-    <ruleml:Rule key="NZBC-G14VM1:1.9.1a">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1.1">
+    <ruleml:Rule key="NZBC-G14VM1:1.9.1.1">
       <!-- comment -->
       <ruleml:if>
         <lrml:devo:Permission>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:access" />
-              <ruleml:Data iri="storageFacility" />
+              <ruleml:Rel iri="fuvo:access" />
+              <ruleml:Operator iri="lovo:storageFacility" />
             </ruleml:Atom>
           </ruleml:Not>
         </lrml:devo:Permission>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:condition" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:condition" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="building" />
-            <ruleml:Operator iri="lovo:within" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Var iri="buvo:within" />
+            <ruleml:Operator iri="lovo:building" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="lockable" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Operator iri="lovo:lockable" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1b">
-    <ruleml:Rule key="NZBC-G14VM1:1.9.1b">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1.2">
+    <ruleml:Rule key="NZBC-G14VM1:1.9.1.2">
       <!-- comment -->
       <ruleml:if>
         <lrml:devo:Permission>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:access" />
-              <ruleml:Data iri="storageFacility" />
+              <ruleml:Rel iri="fuvo:access" />
+              <ruleml:Operator iri="lovo:storageFacility" />
             </ruleml:Atom>
           </ruleml:Not>
         </lrml:devo:Permission>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:condition" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:condition" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="building" />
-            <ruleml:Operator iri="lovo:outside" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Var iri="buvo:outside" />
+            <ruleml:Operator iri="lovo:building" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="lockable" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Operator iri="lovo:lockable" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:securityFence" />
+              <ruleml:Rel iri="fuvo:securityFence" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:securityGate" />
-              <ruleml:Data iri="lockable" />
+              <ruleml:Rel iri="fuvo:securityGate" />
+              <ruleml:Operator iri="lovo:lockable" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -1829,104 +1919,103 @@
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1c">
-    <ruleml:Rule key="NZBC-G14VM1:1.9.1c">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1.3">
+    <ruleml:Rule key="NZBC-G14VM1:1.9.1.3">
       <!-- comment -->
       <ruleml:if>
         <lrml:devo:Permission>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:access" />
-              <ruleml:Data iri="treatmentFacility" />
+              <ruleml:Rel iri="fuvo:access" />
+              <ruleml:Operator iri="lovo:treatmentFacility" />
             </ruleml:Atom>
           </ruleml:Not>
         </lrml:devo:Permission>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:condition" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:condition" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="building" />
-            <ruleml:Operator iri="lovo:outside" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Var iri="buvo:outside" />
+            <ruleml:Operator iri="lovo:building" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="lockable" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Operator iri="lovo:lockable" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:securityFence" />
+              <ruleml:Rel iri="fuvo:securityFence" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:securityGate" />
-              <ruleml:Data iri="lockable" />
+              <ruleml:Rel iri="fuvo:securityGate" />
+              <ruleml:Operator iri="lovo:lockable" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
-        <ruleml:Atom />
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1d">
-    <ruleml:Rule key="NZBC-G14VM1:1.9.1d">
+  <lrml:PrescriptiveStatement key="NZBC-G14VM1:1.9.1.4">
+    <ruleml:Rule key="NZBC-G14VM1:1.9.1.4">
       <!-- comment -->
       <ruleml:if>
         <lrml:devo:Permission>
           <ruleml:Not>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:access" />
-              <ruleml:Data iri="treatmentFacility" />
+              <ruleml:Rel iri="fuvo:access" />
+              <ruleml:Operator iri="lovo:treatmentFacility" />
             </ruleml:Atom>
           </ruleml:Not>
         </lrml:devo:Permission>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:condition" />
-            <ruleml:Data iri="hazardous" />
+            <ruleml:Rel iri="fuvo:condition" />
+            <ruleml:Operator iri="lovo:hazardous" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="building" />
-            <ruleml:Operator iri="lovo:outside" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Var iri="buvo:outside" />
+            <ruleml:Operator iri="lovo:building" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:storageFacility" />
-            <ruleml:Data iri="lockable" />
+            <ruleml:Rel iri="fuvo:storageFacility" />
+            <ruleml:Operator iri="lovo:lockable" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:securityFence" />
+              <ruleml:Rel iri="fuvo:securityFence" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Var iri="buvo:securityGate" />
-              <ruleml:Data iri="lockable" />
+              <ruleml:Rel iri="fuvo:securityGate" />
+              <ruleml:Operator iri="lovo:lockable" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
@@ -1939,36 +2028,38 @@
       <!-- comment -->
       <ruleml:if>
         <lrml:devo:Permission>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:discharge" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="sewer" />
-            <ruleml:Operator iri="lovo:into" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Var iri="buvo:into" />
+            <ruleml:Operator iri="lovo:sewer" />
           </ruleml:Atom>
         </lrml:devo:Permission>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:convey" />
-            <ruleml:Var iri="buvo:ind.LiquidWaste" />
-            <ruleml:Data iri="disposalSystem" />
-            <ruleml:Operator iri="lovo:in" />
+            <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+            <ruleml:Var iri="buvo:in" />
+            <ruleml:Operator iri="lovo:disposalSystem" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:comply" />
-              <ruleml:Var iri="buvo:disposalSystem" />
-              <ruleml:Data iri="nzbc-g13" />
+              <ruleml:Rel iri="fuvo:disposalSystem" />
+              <ruleml:Operator iri="lovo:nzbc-g13" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
@@ -1978,48 +2069,50 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:suspendedSolid" />
+          <ruleml:Rel iri="fuvo:suspendedSolid" />
         </ruleml:Atom>
         <ruleml:And>
-          <ruleml:Expr>
-            <ruleml:Fun />
-          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:blockage" />
-            <ruleml:Data iri="pipingSystem" />
+            <ruleml:Rel iri="fuvo:blockage" />
+            <ruleml:Operator iri="lovo:pipingSystem" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:install" />
-            <ruleml:Var iri="buvo:screens" />
-            <ruleml:Data iri="pipingSystem" />
-            <ruleml:Operator iri="lovo:atTheHeadOf" />
+            <ruleml:Rel iri="fuvo:screens" />
+            <ruleml:Var iri="buvo:atTheHeadOf" />
+            <ruleml:Operator iri="lovo:pipingSystem" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:install" />
-              <ruleml:Var iri="buvo:gritChamber" />
-              <ruleml:Data iri="pipingSystem" />
-              <ruleml:Operator iri="lovo:atTheHeadOf" />
+              <ruleml:Rel iri="fuvo:gritChamber" />
+              <ruleml:Var iri="buvo:atTheHeadOf" />
+              <ruleml:Operator iri="lovo:pipingSystem" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
         <lrml:devo:Obligation>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:install" />
-              <ruleml:Var iri="buvo:greaseTrap" />
-              <ruleml:Data iri="pipingSystem" />
-              <ruleml:Operator iri="lovo:atTheHeadOf" />
+              <ruleml:Rel iri="fuvo:greaseTrap" />
+              <ruleml:Var iri="buvo:atTheHeadOf" />
+              <ruleml:Operator iri="lovo:pipingSystem" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Obligation>
-        <ruleml:Atom />
         <ruleml:Atom />
         <ruleml:Atom />
       </ruleml:then>
@@ -2029,27 +2122,22 @@
     <ruleml:Rule key="NZBC-G14VM1:2.1.2">
       <!-- comment -->
       <ruleml:if>
+        <ruleml:Expr>
+          <ruleml:Fun />
+        </ruleml:Expr>
         <ruleml:Atom>
-          <ruleml:Rel iri="fuvo:convey" />
-          <ruleml:Var iri="buvo:ind.LiquidWaste" />
-          <ruleml:Data iri="pipingSystem" />
-          <ruleml:Operator iri="lovo:in" />
+          <ruleml:Rel iri="fuvo:ind.LiquidWaste" />
+          <ruleml:Var iri="buvo:in" />
+          <ruleml:Operator iri="lovo:pipingSystem" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:flow" />
-            <ruleml:Data iri="gravityFlow" />
+            <ruleml:Rel iri="fuvo:flow" />
+            <ruleml:Operator iri="lovo:gravityFlow" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
@@ -2059,144 +2147,28 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:pipingSystem" />
-          <ruleml:Data iri="gravityFlow" />
+          <ruleml:Rel iri="fuvo:pipingSystem" />
+          <ruleml:Operator iri="lovo:gravityFlow" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:adequate" />
-            <ruleml:Var iri="buvo:slope" />
+            <ruleml:Rel iri="fuvo:slope" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:flowVelocity" />
-            <ruleml:Data iri="velocityCausingSediment" />
-            <ruleml:Operator iri="lovo:greaterThan" />
+            <ruleml:Rel iri="fuvo:flowVelocity" />
+            <ruleml:Var iri="buvo:greaterThan" />
+            <ruleml:Operator iri="lovo:velocityCausingSediment" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
       </ruleml:then>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.1.4">
-    <ruleml:Rule key="NZBC-G14VM1:2.1.4">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.1.5">
-    <ruleml:Rule key="NZBC-G14VM1:2.1.5">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.1.6">
-    <ruleml:Rule key="NZBC-G14VM1:2.1.6">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.1.7">
-    <ruleml:Rule key="NZBC-G14VM1:2.1.7">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.2.1">
-    <ruleml:Rule key="NZBC-G14VM1:2.2.1">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.2.2">
-    <ruleml:Rule key="NZBC-G14VM1:2.2.2">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.2.3">
-    <ruleml:Rule key="NZBC-G14VM1:2.2.3">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.2.4">
-    <ruleml:Rule key="NZBC-G14VM1:2.2.4">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.2.5">
-    <ruleml:Rule key="NZBC-G14VM1:2.2.5">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.3.1">
-    <ruleml:Rule key="NZBC-G14VM1:2.3.1">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
   <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.3.2">
@@ -2204,7 +2176,7 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:pipingSystem" />
+          <ruleml:Rel iri="fuvo:pipingSystem" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
@@ -2213,10 +2185,9 @@
             <ruleml:Fun />
           </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:practical" />
-            <ruleml:Var iri="buvo:joint" />
-            <ruleml:Data iri="number" />
-            <ruleml:Operator iri="lovo:lessThanEqual" />
+            <ruleml:Rel iri="fuvo:joint" />
+            <ruleml:Var iri="buvo:lessThanEqual" />
+            <ruleml:Operator iri="lovo:number" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:And>
@@ -2224,10 +2195,9 @@
             <ruleml:Fun />
           </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:practical" />
-            <ruleml:Var iri="buvo:fitting" />
-            <ruleml:Data iri="number" />
-            <ruleml:Operator iri="lovo:lessThanEqual" />
+            <ruleml:Rel iri="fuvo:fitting" />
+            <ruleml:Var iri="buvo:lessThanEqual" />
+            <ruleml:Operator iri="lovo:number" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:And>
@@ -2235,14 +2205,11 @@
             <ruleml:Fun />
           </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:practical" />
-            <ruleml:Var iri="buvo:valve" />
-            <ruleml:Data iri="number" />
-            <ruleml:Operator iri="lovo:lessThanEqual" />
+            <ruleml:Rel iri="fuvo:valve" />
+            <ruleml:Var iri="buvo:lessThanEqual" />
+            <ruleml:Operator iri="lovo:number" />
           </ruleml:Atom>
         </ruleml:And>
-        <ruleml:Atom />
-        <ruleml:Atom />
         <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
@@ -2252,19 +2219,21 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:bend" />
+          <ruleml:Rel iri="fuvo:bend" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:pipingSystem" />
+            <ruleml:Rel iri="fuvo:pipingSystem" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:centreline" />
-            <ruleml:Var iri="buvo:radius" />
+            <ruleml:Rel iri="fuvo:radius" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <ruleml:And>
@@ -2272,113 +2241,13 @@
             <ruleml:Fun />
           </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:nominal" />
-            <ruleml:Var iri="buvo:pipe" />
-            <ruleml:Data iri="diameter" />
-            <ruleml:Operator iri="lovo:greaterThanEqual" />
+            <ruleml:Rel iri="fuvo:pipe" />
+            <ruleml:Var iri="buvo:greaterThanEqual" />
+            <ruleml:Operator iri="lovo:diameter" />
           </ruleml:Atom>
         </ruleml:And>
         <ruleml:Atom />
       </ruleml:then>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.3.4">
-    <ruleml:Rule key="NZBC-G14VM1:2.3.4">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.3.5">
-    <ruleml:Rule key="NZBC-G14VM1:2.3.5">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.3.6">
-    <ruleml:Rule key="NZBC-G14VM1:2.3.6">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.4.1">
-    <ruleml:Rule key="NZBC-G14VM1:2.4.1">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.4.2">
-    <ruleml:Rule key="NZBC-G14VM1:2.4.2">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.4.3">
-    <ruleml:Rule key="NZBC-G14VM1:2.4.3">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:2.4.4">
-    <ruleml:Rule key="NZBC-G14VM1:2.4.4">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:3.1.1">
-    <ruleml:Rule key="NZBC-G14VM1:3.1.1">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:3.1.2">
-    <ruleml:Rule key="NZBC-G14VM1:3.1.2">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
   <lrml:PrescriptiveStatement key="NZBC-G14VM1:3.2.1">
@@ -2386,76 +2255,37 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:tank" />
+          <ruleml:Rel iri="fuvo:tank" />
         </ruleml:Atom>
         <ruleml:And>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:type" />
-            <ruleml:Data iri="freeStanding" />
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Operator iri="lovo:freeStanding" />
           </ruleml:Atom>
         </ruleml:And>
       </ruleml:if>
       <ruleml:then>
         <lrml:devo:Obligation>
+          <ruleml:Expr>
+            <ruleml:Fun />
+          </ruleml:Expr>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:secured" />
-            <ruleml:Data iri="seismic" />
-            <ruleml:Operator iri="lovo:for" />
+            <ruleml:Var iri="buvo:for" />
+            <ruleml:Operator iri="lovo:seismic" />
           </ruleml:Atom>
         </lrml:devo:Obligation>
         <lrml:devo:Permission>
           <ruleml:And>
+            <ruleml:Expr>
+              <ruleml:Fun />
+            </ruleml:Expr>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:comply" />
-              <ruleml:Var iri="buvo:seismicRestraint" />
-              <ruleml:Data iri="nzs4219" />
+              <ruleml:Rel iri="fuvo:seismicRestraint" />
+              <ruleml:Operator iri="lovo:nzs4219" />
             </ruleml:Atom>
           </ruleml:And>
         </lrml:devo:Permission>
-        <ruleml:Atom />
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:3.2.2">
-    <ruleml:Rule key="NZBC-G14VM1:3.2.2">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:3.3.1">
-    <ruleml:Rule key="NZBC-G14VM1:3.3.1">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:3.3.2">
-    <ruleml:Rule key="NZBC-G14VM1:3.3.2">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
-  <lrml:PrescriptiveStatement key="NZBC-G14VM1:3.3.3">
-    <ruleml:Rule key="NZBC-G14VM1:3.3.3">
-      <!-- comment -->
-      <ruleml:if>
-        <ruleml:Atom />
-      </ruleml:if>
-    </ruleml:Rule>
-  </lrml:PrescriptiveStatement>
 </lrml:Statements>
-</lrml:LegalRuleML>
