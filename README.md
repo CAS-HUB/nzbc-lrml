@@ -1,2 +1,2 @@
 # nzbc-lrml
-A repository of NZBC in LRML
+A repository of selected NZBC Acceptable Solutions in LRML
