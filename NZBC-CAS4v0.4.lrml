@@ -5771,7 +5771,7 @@
         <obligation>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:fireSafetySystem" />
-            <ruleml:Data iri="as/nzs 1668.1" />
+            <ruleml:Data iri="asnzs 1668.1" />
             <Operator iri="lovo:complyWith" />
           </ruleml:Atom>
         </obligation>
@@ -12562,7 +12562,7 @@
           <not>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:pressurizationSystem" />
-              <ruleml:Data iri="as/nzs 1668.1" />
+              <ruleml:Data iri="asnzs 1668.1" />
               <Operator iri="lovo:designedTo" />
             </ruleml:Atom>
           </not>
@@ -12652,7 +12652,7 @@
             <obligation>
               <ruleml:Atom>
                 <ruleml:Var iri="buvo:pressurizationSystem" />
-                <ruleml:Data iri="as/nzs 1668.1" />
+                <ruleml:Data iri="asnzs 1668.1" />
                 <Operator iri="lovo:designedTo" />
               </ruleml:Atom>
             </obligation>
@@ -29719,7 +29719,7 @@
           <obligation>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:installation" />
-              <ruleml:Data iri="as/nzs2918" />
+              <ruleml:Data iri="asnzs2918" />
               <Operator iri="lovo:complyWith" />
             </ruleml:Atom>
           </obligation>
@@ -29738,7 +29738,7 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:as/nzs2918" />
+          <ruleml:Var iri="buvo:asnzs2918" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
@@ -29767,7 +29767,7 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:as/nzs2918" />
+          <ruleml:Var iri="buvo:asnzs2918" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
@@ -29803,7 +29803,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:section" />
-            <ruleml:Var iri="buvo:as/nzs5601.1" />
+            <ruleml:Var iri="buvo:asnzs5601.1" />
             <and>
               <ruleml:Data iri="6.7" />
               <ruleml:Data iri="6.8" />
@@ -29840,7 +29840,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:section" />
-            <ruleml:Var iri="buvo:as/nzs5601.1" />
+            <ruleml:Var iri="buvo:asnzs5601.1" />
             <and>
               <ruleml:Data iri="5.11" />
               <ruleml:Data iri="6.2" />
@@ -29871,7 +29871,7 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:as/nzs5601.1" />
+          <ruleml:Var iri="buvo:asnzs5601.1" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
@@ -30665,7 +30665,7 @@
           </obligation>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:f4.9" />
-            <ruleml:Data iri="as/nzs2918" />
+            <ruleml:Data iri="asnzs2918" />
             <Operator iri="lovo:of" />
           </ruleml:Atom>
         </and>
@@ -30867,7 +30867,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:section" />
-            <ruleml:Var iri="buvo:as/nzs2918" />
+            <ruleml:Var iri="buvo:asnzs2918" />
             <and>
               <ruleml:Data iri="2" />
               <ruleml:Data iri="4" />
