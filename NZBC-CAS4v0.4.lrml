@@ -1823,22 +1823,28 @@
     <ruleml:Rule key="NZBC-NZBC.CAS4:1.1.0.1">
       <!-- comment -->
       <ruleml:if>
-        <permission>
-          <ruleml:Atom>
-            <ruleml:Var iri="buvo:building" />
-            <ruleml:Data iri="nzbc-cas4" />
-            <Operator iri="lovo:complyWith" />
-          </ruleml:Atom>
-        </permission>
-      </ruleml:if>
-      <ruleml:then>
         <obligation>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:building" />
-            <ruleml:Data iri="nzbc-c1-6" />
+            <or>
+              <ruleml:Data iri="nzbc.c1" />
+              <ruleml:Data iri="nzbc.c2" />
+              <ruleml:Data iri="nzbc.c3" />
+              <ruleml:Data iri="nzbc.c5" />
+              <ruleml:Data iri="nzbc.c6" />
+            </or>
             <Operator iri="lovo:complyWith" />
           </ruleml:Atom>
         </obligation>
+      </ruleml:if>
+      <ruleml:then>
+        <permission>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:building" />
+            <ruleml:Data iri="nzbc-cas3" />
+            <Operator iri="lovo:complyWith" />
+          </ruleml:Atom>
+        </permission>
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
@@ -2338,46 +2344,25 @@
     <ruleml:Rule key="NZBC-NZBC.CAS4:1.1.2.0.1">
       <!-- comment -->
       <ruleml:if>
-        <or>
-          <not>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:riskGroup" />
-              <ruleml:Var iri="buvo:building" />
-              <ruleml:Data iri="CA" />
-              <Operator iri="lovo:equal" />
-            </ruleml:Atom>
-          </not>
-          <not>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:riskGroup" />
-              <ruleml:Var iri="buvo:space" />
-              <ruleml:Data iri="CA" />
-              <Operator iri="lovo:equal" />
-            </ruleml:Atom>
-          </not>
-        </or>
+        <not>
+          <ruleml:Atom>
+            <ruleml:Rel iri="fuvo:riskGroup" />
+            <ruleml:Var iri="buvo:building" />
+            <ruleml:Data iri="CA" />
+            <Operator iri="lovo:equal" />
+          </ruleml:Atom>
+        </not>
       </ruleml:if>
       <ruleml:then>
-        <and>
-          <obligation>
-            <not>
-              <ruleml:Atom>
-                <ruleml:Var iri="buvo:building" />
-                <ruleml:Data iri="nzbc-cas4" />
-                <Operator iri="lovo:complyWith" />
-              </ruleml:Atom>
-            </not>
-          </obligation>
-          <obligation>
-            <not>
-              <ruleml:Atom>
-                <ruleml:Var iri="buvo:space" />
-                <ruleml:Data iri="nzbc-cas4" />
-                <Operator iri="lovo:complyWith" />
-              </ruleml:Atom>
-            </not>
-          </obligation>
-        </and>
+        <obligation>
+          <not>
+            <ruleml:Atom>
+              <ruleml:Var iri="buvo:nzbc-cas4" />
+              <ruleml:Data iri="applicable" />
+              <Operator iri="lovo:is" />
+            </ruleml:Atom>
+          </not>
+        </obligation>
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
@@ -2428,22 +2413,30 @@
       <ruleml:if>
         <or>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:activity" />
             <ruleml:Var iri="buvo:building" />
             <ruleml:Data iri="atrium" />
-            <Operator iri="lovo:equal" />
+            <Operator iri="lovo:has" />
           </ruleml:Atom>
+          <Exp>
+            <fun value="count" />
+            <ruleml:Atom>
+              <ruleml:Var iri="buvo:buildingStorey" />
+              <ruleml:Data iri="20" />
+              <Operator iri="lovo:greaterThan" />
+            </ruleml:Atom>
+          </Exp>
           <and>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:building" />
               <ruleml:Data iri="intermediateFloor" />
-              <Operator iri="lovo:contain" />
+              <Operator iri="lovo:has" />
             </ruleml:Atom>
             <not>
               <ruleml:Atom>
-                <ruleml:Var iri="buvo:building" />
+                <ruleml:Rel iri="fuvo:type" />
+                <ruleml:Var iri="buvo:intermediateFloor" />
                 <ruleml:Data iri="limitedAreaIntermediateFloor" />
-                <Operator iri="lovo:contain" />
+                <Operator iri="lovo:equal" />
               </ruleml:Atom>
             </not>
           </and>
@@ -2481,12 +2474,6 @@
               <Operator iri="lovo:greaterThan" />
             </ruleml:Atom>
           </and>
-          <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:height" />
-            <ruleml:Var iri="buvo:building" />
-            <ruleml:Data iri="20 storeys" />
-            <Operator iri="lovo:greaterThan" />
-          </ruleml:Atom>
         </or>
       </ruleml:if>
       <ruleml:then>
@@ -4044,20 +4031,19 @@
       <ruleml:if>
         <and>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:space" />
             <ruleml:Data iri="firecell" />
-            <Operator iri="lovo:equal" />
+            <Operator iri="lovo:is" />
           </ruleml:Atom>
           <not>
             <ruleml:Atom>
               <ruleml:Rel iri="fuvo:type" />
               <ruleml:Var iri="buvo:fireSafetySystem" />
               <or>
-                <ruleml:Data iri="6" />
-                <ruleml:Data iri="7" />
+                <ruleml:Data iri="type6" />
+                <ruleml:Data iri="type7" />
               </or>
-              <Operator iri="lovo:include" />
+              <Operator iri="lovo:equal" />
             </ruleml:Atom>
           </not>
         </and>
@@ -4080,19 +4066,18 @@
       <ruleml:if>
         <and>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:space" />
             <ruleml:Data iri="firecell" />
-            <Operator iri="lovo:equal" />
+            <Operator iri="lovo:is" />
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
             <or>
-              <ruleml:Data iri="6" />
-              <ruleml:Data iri="7" />
+              <ruleml:Data iri="type6" />
+              <ruleml:Data iri="type7" />
             </or>
-            <Operator iri="lovo:include" />
+            <Operator iri="lovo:equal" />
           </ruleml:Atom>
           <not>
             <ruleml:Atom>
@@ -4103,8 +4088,9 @@
           </not>
           <not>
             <ruleml:Atom>
+              <ruleml:Rel iri="fuvo:floorArea" />
               <ruleml:Var iri="buvo:space" />
-              <ruleml:Data iri="areaLimitation" />
+              <ruleml:Data iri="limitation" />
               <Operator iri="lovo:has" />
             </ruleml:Atom>
           </not>
@@ -4143,8 +4129,8 @@
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
             <or>
-              <ruleml:Data iri="3" />
-              <ruleml:Data iri="4" />
+              <ruleml:Data iri="type3" />
+              <ruleml:Data iri="type4" />
             </or>
             <Operator iri="lovo:equal" />
           </ruleml:Atom>
@@ -4152,13 +4138,11 @@
       </ruleml:if>
       <ruleml:then>
         <permission>
-          <not>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:directFSConnection" />
-              <ruleml:Data iri="TRUE" />
-              <Operator iri="lovo:required" />
-            </ruleml:Atom>
-          </not>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:directFSConnection" />
+            <ruleml:Data iri="FALSE" />
+            <Operator iri="lovo:is" />
+          </ruleml:Atom>
         </permission>
       </ruleml:then>
     </ruleml:Rule>
@@ -4193,20 +4177,18 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:phoneForEmergency" />
-            <ruleml:Data iri="allTime" />
-            <Operator iri="lovo:isAvailable" />
+            <ruleml:Data iri="available" />
+            <Operator iri="lovo:always" />
           </ruleml:Atom>
         </and>
       </ruleml:if>
       <ruleml:then>
         <permission>
-          <not>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:directFSConnection" />
-              <ruleml:Data iri="TRUE" />
-              <Operator iri="lovo:required" />
-            </ruleml:Atom>
-          </not>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:directFSConnection" />
+            <ruleml:Data iri="FALSE" />
+            <Operator iri="lovo:is" />
+          </ruleml:Atom>
         </permission>
       </ruleml:then>
     </ruleml:Rule>
@@ -4217,9 +4199,8 @@
       <ruleml:if>
         <and>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:height" />
-            <ruleml:Var iri="buvo:building" />
-            <ruleml:Data iri="1 storey" />
+            <ruleml:Var iri="buvo:buildingStorey" />
+            <ruleml:Data iri="1" />
             <Operator iri="lovo:equal" />
           </ruleml:Atom>
           <ruleml:Atom>
@@ -4282,24 +4263,22 @@
             <Operator iri="lovo:lessThan" />
           </ruleml:Atom>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:FShoseRunDistance" />
-            <ruleml:Var iri="buvo:building" />
+            <ruleml:Rel iri="fuvo:length" />
+            <ruleml:Var iri="buvo:fireHoseRun" />
             <ruleml:Data iri="75 m" />
             <Operator iri="lovo:greaterThanEqual" />
           </ruleml:Atom>
         </and>
       </ruleml:if>
       <ruleml:then>
-        <and>
-          <obligation>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:type" />
-              <ruleml:Var iri="buvo:fireSafetySystem" />
-              <ruleml:Data iri="18" />
-              <Operator iri="lovo:include" />
-            </ruleml:Atom>
-          </obligation>
-        </and>
+        <obligation>
+          <ruleml:Atom>
+            <ruleml:Rel iri="fuvo:type" />
+            <ruleml:Var iri="buvo:fireSafetySystem" />
+            <ruleml:Data iri="type18" />
+            <Operator iri="lovo:equal" />
+          </ruleml:Atom>
+        </obligation>
       </ruleml:then>
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
@@ -4347,13 +4326,11 @@
       </ruleml:if>
       <ruleml:then>
         <permission>
-          <not>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:directFSConnection" />
-              <ruleml:Data iri="TRUE" />
-              <Operator iri="lovo:required" />
-            </ruleml:Atom>
-          </not>
+          <ruleml:Atom>
+            <ruleml:Var iri="buvo:directFSConnection" />
+            <ruleml:Data iri="FALSE" />
+            <Operator iri="lovo:is" />
+          </ruleml:Atom>
         </permission>
       </ruleml:then>
     </ruleml:Rule>
@@ -4382,9 +4359,9 @@
             <Operator iri="lovo:lessThanEqual" />
           </ruleml:Atom>
           <ruleml:Atom>
-            <ruleml:Var iri="buvo:building" />
-            <ruleml:Data iri="challengingEnvSmoke" />
-            <Operator iri="lovo:has" />
+            <ruleml:Var iri="buvo:smokeDetection" />
+            <ruleml:Data iri="challenging" />
+            <Operator iri="lovo:is" />
           </ruleml:Atom>
         </and>
       </ruleml:if>
@@ -4395,7 +4372,7 @@
               <ruleml:Atom>
                 <ruleml:Rel iri="fuvo:type" />
                 <ruleml:Var iri="buvo:fireSafetySystem" />
-                <ruleml:Data iri="4" />
+                <ruleml:Data iri="type4" />
                 <Operator iri="lovo:include" />
               </ruleml:Atom>
             </not>
@@ -4404,7 +4381,7 @@
             <ruleml:Atom>
               <ruleml:Rel iri="fuvo:type" />
               <ruleml:Var iri="buvo:fireSafetySystem" />
-              <ruleml:Data iri="3" />
+              <ruleml:Data iri="type3" />
               <Operator iri="lovo:include" />
             </ruleml:Atom>
           </permission>
@@ -4456,7 +4433,7 @@
               <ruleml:Atom>
                 <ruleml:Rel iri="fuvo:type" />
                 <ruleml:Var iri="buvo:fireSafetySystem" />
-                <ruleml:Data iri="4" />
+                <ruleml:Data iri="type4" />
                 <Operator iri="lovo:include" />
               </ruleml:Atom>
             </not>
@@ -4465,7 +4442,7 @@
             <ruleml:Atom>
               <ruleml:Rel iri="fuvo:type" />
               <ruleml:Var iri="buvo:fireSafetySystem" />
-              <ruleml:Data iri="3" />
+              <ruleml:Data iri="type3" />
               <Operator iri="lovo:include" />
             </ruleml:Atom>
           </permission>
@@ -4544,7 +4521,7 @@
               <ruleml:Atom>
                 <ruleml:Rel iri="fuvo:type" />
                 <ruleml:Var iri="buvo:fireSafetySystem" />
-                <ruleml:Data iri="4" />
+                <ruleml:Data iri="type4" />
                 <Operator iri="lovo:include" />
               </ruleml:Atom>
             </not>
@@ -4553,7 +4530,7 @@
             <ruleml:Atom>
               <ruleml:Rel iri="fuvo:type" />
               <ruleml:Var iri="buvo:fireSafetySystem" />
-              <ruleml:Data iri="6" />
+              <ruleml:Data iri="type6" />
               <Operator iri="lovo:include" />
             </ruleml:Atom>
           </permission>
@@ -4625,7 +4602,7 @@
               <ruleml:Atom>
                 <ruleml:Rel iri="fuvo:type" />
                 <ruleml:Var iri="buvo:fireSafetySystem" />
-                <ruleml:Data iri="4" />
+                <ruleml:Data iri="type4" />
                 <Operator iri="lovo:include" />
               </ruleml:Atom>
             </not>
@@ -4634,7 +4611,7 @@
             <ruleml:Atom>
               <ruleml:Rel iri="fuvo:type" />
               <ruleml:Var iri="buvo:fireSafetySystem" />
-              <ruleml:Data iri="6" />
+              <ruleml:Data iri="type6" />
               <Operator iri="lovo:include" />
             </ruleml:Atom>
           </permission>
@@ -4673,7 +4650,7 @@
             <ruleml:Atom>
               <ruleml:Rel iri="fuvo:type" />
               <ruleml:Var iri="buvo:firesafetySystem" />
-              <ruleml:Data iri="9" />
+              <ruleml:Data iri="type9" />
               <Operator iri="lovo:include" />
             </ruleml:Atom>
           </obligation>
@@ -4707,8 +4684,8 @@
             <ruleml:Atom>
               <ruleml:Rel iri="fuvo:type" />
               <ruleml:Var iri="buvo:firesafetySystem" />
-              <ruleml:Data iri="9" />
-              <Operator iri="lovo:include" />
+              <ruleml:Data iri="type9" />
+              <Operator iri="lovo:equal" />
             </ruleml:Atom>
           </obligation>
         </and>
@@ -4913,7 +4890,7 @@
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
-            <ruleml:Data iri="18" />
+            <ruleml:Data iri="type18" />
             <Operator iri="lovo:include" />
           </ruleml:Atom>
         </obligation>
@@ -4945,8 +4922,8 @@
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
             <and>
-              <ruleml:Data iri="7" />
-              <ruleml:Data iri="9" />
+              <ruleml:Data iri="type7" />
+              <ruleml:Data iri="type9" />
             </and>
             <Operator iri="lovo:include" />
           </ruleml:Atom>
@@ -4995,7 +4972,7 @@
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
-            <ruleml:Data iri="18" />
+            <ruleml:Data iri="type18" />
             <Operator iri="lovo:include" />
           </ruleml:Atom>
         </obligation>
@@ -5027,8 +5004,8 @@
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
             <and>
-              <ruleml:Data iri="2" />
-              <ruleml:Data iri="18" />
+              <ruleml:Data iri="type2" />
+              <ruleml:Data iri="type18" />
             </and>
             <Operator iri="lovo:include" />
           </ruleml:Atom>
@@ -5089,9 +5066,9 @@
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
             <and>
-              <ruleml:Data iri="4" />
-              <ruleml:Data iri="9" />
-              <ruleml:Data iri="18" />
+              <ruleml:Data iri="type4" />
+              <ruleml:Data iri="type9" />
+              <ruleml:Data iri="type18" />
             </and>
             <Operator iri="lovo:include" />
           </ruleml:Atom>
@@ -5124,9 +5101,9 @@
             <ruleml:Rel iri="fuvo:type" />
             <ruleml:Var iri="buvo:fireSafetySystem" />
             <and>
-              <ruleml:Data iri="7" />
-              <ruleml:Data iri="9" />
-              <ruleml:Data iri="18" />
+              <ruleml:Data iri="type7" />
+              <ruleml:Data iri="type9" />
+              <ruleml:Data iri="type18" />
             </and>
             <Operator iri="lovo:include" />
           </ruleml:Atom>
@@ -5196,7 +5173,7 @@
               <ruleml:Atom>
                 <ruleml:Rel iri="fuvo:type" />
                 <ruleml:Var iri="buvo:fireSafetySystem" />
-                <ruleml:Data iri="7" />
+                <ruleml:Data iri="type7" />
                 <Operator iri="lovo:equal" />
               </ruleml:Atom>
             </fun>
@@ -5215,9 +5192,6 @@
       <!-- comment -->
       <ruleml:if>
         <and>
-          <ruleml:Atom>
-            <ruleml:Var iri="buvo:building" />
-          </ruleml:Atom>
           <Exp>
             <fun value="count" />
             <ruleml:Atom>
@@ -5230,24 +5204,13 @@
             <ruleml:Rel iri="fuvo:activity" />
             <ruleml:Var iri="buvo:building" />
             <ruleml:Data iri="earlyChildhoodCentreEcc" />
-            <Operator iri="lovo:include" />
-          </ruleml:Atom>
-          <ruleml:Atom>
-            <ruleml:Var iri="buvo:x" />
-            <ruleml:Data iri="buildingStorey" />
             <Operator iri="lovo:equal" />
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:elevation" />
-            <ruleml:Var iri="buvo:x" />
+            <ruleml:Var iri="buvo:buildingStorey" />
             <ruleml:Data iri="groundLevel" />
-            <Operator iri="lovo:equal" />
-          </ruleml:Atom>
-          <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:activity" />
-            <ruleml:Var iri="buvo:x" />
-            <ruleml:Data iri="earlyChildhoodCentreEcc" />
-            <Operator iri="lovo:notEqual" />
+            <Operator iri="lovo:above" />
           </ruleml:Atom>
         </and>
       </ruleml:if>
@@ -5269,8 +5232,14 @@
                 <and>
                   <ruleml:Atom>
                     <ruleml:Var iri="buvo:placeOfSafety" />
-                    <ruleml:Data iri="fireSeparation" />
-                    <Operator iri="lovo:separatedWith" />
+                    <ruleml:Data iri="firecell" />
+                    <Operator iri="lovo:is" />
+                  </ruleml:Atom>
+                  <ruleml:Atom>
+                    <ruleml:Rel iri="fuvo:type" />
+                    <ruleml:Var iri="buvo:fireSeparation" />
+                    <ruleml:Data iri="propertyRating" />
+                    <Operator iri="lovo:equal" />
                   </ruleml:Atom>
                   <ruleml:Atom>
                     <ruleml:Var iri="buvo:placeOfSafety" />
@@ -5771,7 +5740,7 @@
         <obligation>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:fireSafetySystem" />
-            <ruleml:Data iri="asnzs 1668.1" />
+            <ruleml:Data iri="as/nzs 1668.1" />
             <Operator iri="lovo:complyWith" />
           </ruleml:Atom>
         </obligation>
@@ -6754,7 +6723,7 @@
         <obligation>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:escapeRoute" />
-            <ruleml:Data iri="nzbc-d1" />
+            <ruleml:Data iri="nzbc-d1as1" />
             <Operator iri="lovo:complyWith" />
           </ruleml:Atom>
         </obligation>
@@ -6784,7 +6753,7 @@
         <obligation>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:buildingElement" />
-            <ruleml:Data iri="d1/as1" />
+            <ruleml:Data iri="nzbc-d1as1" />
             <Operator iri="lovo:complyWith" />
           </ruleml:Atom>
         </obligation>
@@ -8181,7 +8150,7 @@
         <and>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:walkingArea" />
-            <ruleml:Data iri="d1/as1" />
+            <ruleml:Data iri="nzbc-d1as1" />
             <Operator iri="lovo:describedIn" />
           </ruleml:Atom>
           <or>
@@ -8266,7 +8235,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:minorProjection" />
-            <ruleml:Data iri="d1/as1" />
+            <ruleml:Data iri="nzbc-d1as1" />
             <Operator iri="lovo:complyWith" />
           </ruleml:Atom>
         </and>
@@ -8299,7 +8268,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:sideHandrail" />
-            <ruleml:Data iri="d1/as1" />
+            <ruleml:Data iri="nzbc-d1as1" />
             <Operator iri="lovo:complyWith" />
           </ruleml:Atom>
           <ruleml:Atom>
@@ -8601,8 +8570,7 @@
           <Exp>
             <fun value="count" />
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:riskGroup" />
-              <ruleml:Var iri="buvo:openPath" />
+              <ruleml:Var iri="buvo:riskGroup" />
               <ruleml:Data iri="1" />
               <Operator iri="lovo:greaterThan" />
             </ruleml:Atom>
@@ -9278,8 +9246,8 @@
       <ruleml:then>
         <obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:openPathLength" />
-            <ruleml:Var iri="buvo:straightStair" />
+            <ruleml:Rel iri="fuvo:measured" />
+            <ruleml:Var iri="buvo:openPathLength" />
             <ruleml:Data iri="(1.2 *x) + y" />
             <Operator iri="lovo:equal" />
           </ruleml:Atom>
@@ -9314,8 +9282,8 @@
       <ruleml:then>
         <obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:openPathLength" />
-            <ruleml:Var iri="buvo:curvedStair" />
+            <ruleml:Rel iri="fuvo:measured" />
+            <ruleml:Var iri="buvo:openPathLength" />
             <ruleml:Data iri="(1.2 *x) + y" />
             <Operator iri="lovo:equal" />
           </ruleml:Atom>
@@ -9344,8 +9312,8 @@
       <ruleml:then>
         <obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:openPathLength" />
-            <ruleml:Var iri="buvo:spiralStair" />
+            <ruleml:Rel iri="fuvo:measured" />
+            <ruleml:Var iri="buvo:openPathLength" />
             <ruleml:Data iri="2 * x" />
             <Operator iri="lovo:equal" />
           </ruleml:Atom>
@@ -9374,8 +9342,8 @@
       <ruleml:then>
         <obligation>
           <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:openPathLength" />
-            <ruleml:Var iri="buvo:ladder" />
+            <ruleml:Rel iri="fuvo:measuredLength" />
+            <ruleml:Var iri="buvo:openPath" />
             <ruleml:Data iri="3 * x" />
             <Operator iri="lovo:equal" />
           </ruleml:Atom>
@@ -9890,7 +9858,7 @@
           <obligation>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:changeInElevation" />
-              <ruleml:Data iri="d1/as1" />
+              <ruleml:Data iri="nzbc-d1as1" />
               <Operator iri="lovo:complyWith" />
             </ruleml:Atom>
           </obligation>
@@ -10842,7 +10810,7 @@
           <obligation>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:handrail" />
-              <ruleml:Data iri="d1/as1" />
+              <ruleml:Data iri="nzbc-d1as1" />
               <Operator iri="lovo:complyWith" />
             </ruleml:Atom>
           </obligation>
@@ -10879,14 +10847,14 @@
           <obligation>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:riserHeight" />
-              <ruleml:Data iri="d1/as1" />
+              <ruleml:Data iri="nzbc-d1as1" />
               <Operator iri="lovo:complyWith" />
             </ruleml:Atom>
           </obligation>
           <obligation>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:treadDepth" />
-              <ruleml:Data iri="d1/as1" />
+              <ruleml:Data iri="nzbc-d1as1" />
               <Operator iri="lovo:complyWith" />
             </ruleml:Atom>
           </obligation>
@@ -11313,83 +11281,83 @@
                 <Operator iri="lovo:include" />
               </ruleml:Atom>
             </not>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:elevation" />
-              <ruleml:Var iri="buvo:upperFloor" />
-              <ruleml:Data iri="x" />
-              <Operator iri="lovo:equal" />
-            </ruleml:Atom>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:A" />
-              <ruleml:Data iri="buildingStorey" />
-              <Operator iri="lovo:serve" />
-            </ruleml:Atom>
-            <prohibition>
+            <and>
+              <ruleml:Atom>
+                <ruleml:Var iri="buvo:A" />
+                <ruleml:Data iri="upperFloor" />
+                <Operator iri="lovo:serve" />
+              </ruleml:Atom>
               <ruleml:Atom>
                 <ruleml:Rel iri="fuvo:elevation" />
-                <ruleml:Var iri="buvo:buildingStorey" />
+                <ruleml:Var iri="buvo:upperFloor" />
                 <ruleml:Data iri="x" />
-                <Operator iri="lovo:notEqual" />
+                <Operator iri="lovo:equal" />
               </ruleml:Atom>
-            </prohibition>
-            <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:elevation" />
-              <ruleml:Var iri="buvo:intermediateFloor" />
-              <ruleml:Data iri="x" />
-              <Operator iri="lovo:equal" />
-            </ruleml:Atom>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:A" />
-              <ruleml:Data iri="buildingStorey" />
-              <Operator iri="lovo:serve" />
-            </ruleml:Atom>
-            <prohibition>
+              <ruleml:Atom>
+                <ruleml:Var iri="buvo:A" />
+                <ruleml:Data iri="buildingStorey" />
+                <Operator iri="lovo:serve" />
+              </ruleml:Atom>
+              <prohibition>
+                <ruleml:Atom>
+                  <ruleml:Rel iri="fuvo:elevation" />
+                  <ruleml:Var iri="buvo:buildingStorey" />
+                  <ruleml:Data iri="x" />
+                  <Operator iri="lovo:notEqual" />
+                </ruleml:Atom>
+              </prohibition>
+            </and>
+            <and>
+              <ruleml:Atom>
+                <ruleml:Var iri="buvo:A" />
+                <ruleml:Data iri="intermediateFloor" />
+                <Operator iri="lovo:serve" />
+              </ruleml:Atom>
               <ruleml:Atom>
                 <ruleml:Rel iri="fuvo:elevation" />
-                <ruleml:Var iri="buvo:buildingStorey" />
+                <ruleml:Var iri="buvo:intermediateFloor" />
                 <ruleml:Data iri="x" />
-                <Operator iri="lovo:notEqual" />
+                <Operator iri="lovo:equal" />
               </ruleml:Atom>
-            </prohibition>
+              <ruleml:Atom>
+                <ruleml:Var iri="buvo:A" />
+                <ruleml:Data iri="buildingStorey" />
+                <Operator iri="lovo:serve" />
+              </ruleml:Atom>
+              <prohibition>
+                <ruleml:Atom>
+                  <ruleml:Rel iri="fuvo:elevation" />
+                  <ruleml:Var iri="buvo:buildingStorey" />
+                  <ruleml:Data iri="x" />
+                  <Operator iri="lovo:notEqual" />
+                </ruleml:Atom>
+              </prohibition>
+            </and>
             <ruleml:Atom>
-              <ruleml:Rel iri="fuvo:type" />
-              <ruleml:Var iri="buvo:B" />
-              <ruleml:Data iri="horizontal" />
-              <Operator iri="lovo:equal" />
+              <ruleml:Rel iri="fuvo:occupantLoad" />
+              <ruleml:Var iri="buvo:firecell" />
+              <ruleml:Data iri="150" />
+              <Operator iri="lovo:lessThan" />
             </ruleml:Atom>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:B" />
-              <ruleml:Data iri="A" />
-              <Operator iri="lovo:precede" />
-            </ruleml:Atom>
+            <and>
+              <ruleml:Atom>
+                <ruleml:Var iri="buvo:B" />
+                <ruleml:Data iri="safePath" />
+                <Operator iri="lovo:equal" />
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Rel iri="fuvo:type" />
+                <ruleml:Var iri="buvo:B" />
+                <ruleml:Data iri="horizontal" />
+                <Operator iri="lovo:equal" />
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Var iri="buvo:B" />
+                <ruleml:Data iri="A" />
+                <Operator iri="lovo:precede" />
+              </ruleml:Atom>
+            </and>
           </or>
-          <and>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:A" />
-              <ruleml:Data iri="upperFloor" />
-              <Operator iri="lovo:serve" />
-            </ruleml:Atom>
-          </and>
-          <and>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:A" />
-              <ruleml:Data iri="intermediateFloor" />
-              <Operator iri="lovo:serve" />
-            </ruleml:Atom>
-          </and>
-          <ruleml:Atom>
-            <ruleml:Rel iri="fuvo:occupantLoad" />
-            <ruleml:Var iri="buvo:firecell" />
-            <ruleml:Data iri="150" />
-            <Operator iri="lovo:lessThan" />
-          </ruleml:Atom>
-          <and>
-            <ruleml:Atom>
-              <ruleml:Var iri="buvo:B" />
-              <ruleml:Data iri="safePath" />
-              <Operator iri="lovo:equal" />
-            </ruleml:Atom>
-          </and>
         </and>
       </ruleml:if>
       <ruleml:then>
@@ -12562,7 +12530,7 @@
           <not>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:pressurizationSystem" />
-              <ruleml:Data iri="asnzs 1668.1" />
+              <ruleml:Data iri="as/nzs 1668.1" />
               <Operator iri="lovo:designedTo" />
             </ruleml:Atom>
           </not>
@@ -12652,7 +12620,7 @@
             <obligation>
               <ruleml:Atom>
                 <ruleml:Var iri="buvo:pressurizationSystem" />
-                <ruleml:Data iri="asnzs 1668.1" />
+                <ruleml:Data iri="as/nzs 1668.1" />
                 <Operator iri="lovo:designedTo" />
               </ruleml:Atom>
             </obligation>
@@ -29719,7 +29687,7 @@
           <obligation>
             <ruleml:Atom>
               <ruleml:Var iri="buvo:installation" />
-              <ruleml:Data iri="asnzs2918" />
+              <ruleml:Data iri="as/nzs2918" />
               <Operator iri="lovo:complyWith" />
             </ruleml:Atom>
           </obligation>
@@ -29738,7 +29706,7 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:asnzs2918" />
+          <ruleml:Var iri="buvo:as/nzs2918" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
@@ -29767,7 +29735,7 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:asnzs2918" />
+          <ruleml:Var iri="buvo:as/nzs2918" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
@@ -29803,7 +29771,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:section" />
-            <ruleml:Var iri="buvo:asnzs5601.1" />
+            <ruleml:Var iri="buvo:as/nzs5601.1" />
             <and>
               <ruleml:Data iri="6.7" />
               <ruleml:Data iri="6.8" />
@@ -29840,7 +29808,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:section" />
-            <ruleml:Var iri="buvo:asnzs5601.1" />
+            <ruleml:Var iri="buvo:as/nzs5601.1" />
             <and>
               <ruleml:Data iri="5.11" />
               <ruleml:Data iri="6.2" />
@@ -29871,7 +29839,7 @@
       <!-- comment -->
       <ruleml:if>
         <ruleml:Atom>
-          <ruleml:Var iri="buvo:asnzs5601.1" />
+          <ruleml:Var iri="buvo:as/nzs5601.1" />
         </ruleml:Atom>
       </ruleml:if>
       <ruleml:then>
@@ -30665,7 +30633,7 @@
           </obligation>
           <ruleml:Atom>
             <ruleml:Var iri="buvo:f4.9" />
-            <ruleml:Data iri="asnzs2918" />
+            <ruleml:Data iri="as/nzs2918" />
             <Operator iri="lovo:of" />
           </ruleml:Atom>
         </and>
@@ -30867,7 +30835,7 @@
           </ruleml:Atom>
           <ruleml:Atom>
             <ruleml:Rel iri="fuvo:section" />
-            <ruleml:Var iri="buvo:asnzs2918" />
+            <ruleml:Var iri="buvo:as/nzs2918" />
             <and>
               <ruleml:Data iri="2" />
               <ruleml:Data iri="4" />
@@ -30888,5 +30856,3 @@
     </ruleml:Rule>
   </lrml:PrescriptiveStatement>
 </lrml:Statements>
-
-</lrml:LegalRuleML>
