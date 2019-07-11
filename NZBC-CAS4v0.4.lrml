@@ -87,8 +87,8 @@
             <lrml:toTarget keyref="2.2.1.2.0.0.a.1"/>
             <lrml:toTarget keyref="2.2.1.2.0.0.a.2"/>
             <lrml:toTarget keyref="2.2.1.2.0.0.a.3"/>
-            <lrml:toTarget keyref="2.2.1.2.0.0.b.1"/>
-            <lrml:toTarget keyref="2.2.1.2.0.0.c.1"/>
+            <lrml:toTarget keyref="2.2.1.2.0.0.a.4"/>
+            <lrml:toTarget keyref="2.2.1.2.0.0.a.5"/>
             <lrml:toTarget keyref="2.2.1.3.0.0.a.1"/>
             <lrml:toTarget keyref="2.2.1.3.0.0.b.1"/>
             <lrml:toTarget keyref="2.2.1.4.0.0.a.1"/>
@@ -4494,69 +4494,217 @@
             <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.1">
                 <ruleml:if>
                     <and>
-                        <Exp>
-                            <fun iri="lovo:greaterThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:escapeHeight"/>
-                                <ruleml:Var iri="buvo:building"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="4 m"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:escapeHeight"/>
-                                <ruleml:Var iri="buvo:building"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="25 m"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:lessThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:occupantLoad"/>
-                                <ruleml:Var iri="buvo:building"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="200"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:fireSafetySystems"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="4"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:has"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:building"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="phoneForEmergency"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:isAvailable"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:phoneForEmergency"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="all time"/>
-                        </Exp>
+                        <or>
+                            <Exp>
+                                <fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:elevation"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="15 m"/>
+                            </Exp>
+                            <Exp>
+                                <fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:length"/>
+                                    <ruleml:Var iri="buvo:fireServiceHoseRun"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="75 m"/>
+                            </Exp>
+                        </or>
+                        <and>
+                            <Exp>
+                                <fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:escapeHeight"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="4 m"/>
+                            </Exp>
+                            <Exp>
+                                <fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:escapeHeight"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="25 m"/>
+                            </Exp>
+                        </and>
+                        <and>
+                            <Exp>
+                                <fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:occupantLoad"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="100"/>
+                            </Exp>
+                            <Exp>
+                                <fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:occupantLoad"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="1000"/>
+                            </Exp>
+                        </and>
                     </and>
                 </ruleml:if>
                 <ruleml:then>
-                    <permission>
-                        <Exp>
-                            <fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:directFSConnection"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="FALSE"/>
-                        </Exp>
-                    </permission>
+                    <and>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type4"/>
+                            </Exp>
+                        </obligation>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type9"/>
+                            </Exp>
+                        </obligation>
+                    </and>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.2">
             <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.2">
+                <ruleml:if>
+                    <or>
+                        <and>
+                            <Exp>
+                                <fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:escapeHeight"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="4 m"/>
+                            </Exp>
+                            <Exp>
+                                <fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:escapeHeight"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="25 m"/>
+                            </Exp>
+                        </and>
+                        <and>
+                            <Exp>
+                                <fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:occupantLoad"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="100"/>
+                            </Exp>
+                            <Exp>
+                                <fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:occupantLoad"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="1000"/>
+                            </Exp>
+                        </and>
+                    </or>
+                </ruleml:if>
+                <ruleml:then>
+                    <and>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type4"/>
+                            </Exp>
+                        </obligation>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type9"/>
+                            </Exp>
+                        </obligation>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type18"/>
+                            </Exp>
+                        </obligation>
+                    </and>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.3">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.3">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:lessThan"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:firecell"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="200"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:fireSafetySystem"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="type4"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:firecell"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="phoneForEmergency"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:always"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:phoneForEmergency"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="available"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <obligation>
+                        <Exp>
+                            <fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:directFSConnection"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="TRUE"/>
+                        </Exp>
+                    </obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.4">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.4">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -4566,75 +4714,21 @@
                             </ruleml:Atom>
                             <ruleml:Data iri="challenging"/>
                         </Exp>
-                        <or>
-                            <Exp>
-                                <fun iri="lovo:greaterThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="25 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="1000"/>
-                            </Exp>
-                        </or>
-                        <and>
-                            <Exp>
-                                <fun iri="lovo:lessThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:greaterThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="250"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="1000"/>
-                            </Exp>
-                        </and>
+                        <Exp>
+                            <fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:fireSafetySystem"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="type4"/>
+                        </Exp>
                     </and>
                 </ruleml:if>
                 <ruleml:then>
                     <and>
                         <permission>
                             <Exp>
-                                <fun iri="lovo:include"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:type"/>
-                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="type4"/>
-                            </Exp>
-                        </permission>
-                        <permission>
-                            <Exp>
-                                <fun iri="lovo:include"/>
+                                <fun iri="lovo:replacedWith"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:type"/>
                                     <ruleml:Var iri="buvo:fireSafetySystem"/>
@@ -4642,7 +4736,7 @@
                                 <ruleml:Data iri="type3"/>
                             </Exp>
                         </permission>
-                        <permission>
+                        <obligation>
                             <Exp>
                                 <fun iri="lovo:has"/>
                                 <ruleml:Atom>
@@ -4650,15 +4744,30 @@
                                 </ruleml:Atom>
                                 <ruleml:Data iri="supplementarySmokeDetector"/>
                             </Exp>
-                        </permission>
+                        </obligation>
                     </and>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.3">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.3">
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.5">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.a.5">
                 <ruleml:if>
                     <and>
+                        <Exp>
+                            <fun iri="lovo:lessThanEqual"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="500"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:buildingStorey"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="firecell"/>
+                        </Exp>
                         <Exp>
                             <fun iri="lovo:within"/>
                             <Exp>
@@ -4670,7 +4779,7 @@
                             <ruleml:Data iri="building"/>
                         </Exp>
                         <Exp>
-                            <fun iri="lovo:equal"/>
+                            <fun iri="lovo:is"/>
                             <Exp>
                                 <fun iri="fuvo:("/>
                                 <ruleml:Atom>
@@ -4680,270 +4789,26 @@
                             <ruleml:Data iri="firecell"/>
                         </Exp>
                         <Exp>
-                            <fun iri="lovo:complyWith"/>
-                            <Exp>
-                                <fun iri="fuvo:)"/>
-                                <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:limitedAreaIntermediateFloor"/>
-                                </ruleml:Atom>
-                            </Exp>
-                            <ruleml:Data iri="rule"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:equal"/>
+                            <fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:key"/>
-                                <ruleml:Var iri="buvo:rule"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="4.13.5"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:equal"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:firecell"/>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
                             </ruleml:Atom>
                             <ruleml:Data iri="sleeping"/>
                         </Exp>
-                        <or>
-                            <Exp>
-                                <fun iri="lovo:greaterThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="25 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="500"/>
-                            </Exp>
-                        </or>
-                        <and>
-                            <Exp>
-                                <fun iri="lovo:lessThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:greaterThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="250"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="500"/>
-                            </Exp>
-                        </and>
                     </and>
                 </ruleml:if>
                 <ruleml:then>
-                    <and>
-                        <permission>
-                            <Exp>
-                                <fun iri="lovo:include"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:type"/>
-                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="type4"/>
-                            </Exp>
-                        </permission>
-                        <permission>
-                            <Exp>
-                                <fun iri="lovo:include"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:type"/>
-                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="type6"/>
-                            </Exp>
-                        </permission>
-                    </and>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:2.2.1.2.0.0.b.1">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.b.1">
-                <ruleml:if>
-                    <or>
-                        <and>
-                            <Exp>
-                                <fun iri="lovo:greaterThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="25 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="1000"/>
-                            </Exp>
-                        </and>
-                        <and>
-                            <Exp>
-                                <fun iri="lovo:lessThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="1000"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:greaterThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="250"/>
-                            </Exp>
-                        </and>
-                    </or>
-                </ruleml:if>
-                <ruleml:then>
-                    <obligation>
+                    <permission>
                         <Exp>
-                            <fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:firesafetySystem"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="type9"/>
-                        </Exp>
-                    </obligation>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:2.2.1.2.0.0.c.1">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:2.2.1.2.0.0.c.1">
-                <ruleml:if>
-                    <and>
-                        <or>
-                            <Exp>
-                                <fun iri="lovo:greaterThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="25 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="1000"/>
-                            </Exp>
-                        </or>
-                        <and>
-                            <Exp>
-                                <fun iri="lovo:lessThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:escapeHeight"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="4 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:lessThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="1000"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:greaterThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="250"/>
-                            </Exp>
-                        </and>
-                        <or>
-                            <Exp>
-                                <fun iri="lovo:greaterThan"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:heightFSAP"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="15 m"/>
-                            </Exp>
-                            <Exp>
-                                <fun iri="lovo:greaterThanEqual"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:FShoseRunDistance"/>
-                                    <ruleml:Var iri="buvo:building"/>
-                                </ruleml:Atom>
-                                <ruleml:Data iri="75 m"/>
-                            </Exp>
-                        </or>
-                    </and>
-                </ruleml:if>
-                <ruleml:then>
-                    <obligation>
-                        <Exp>
-                            <fun iri="lovo:include"/>
+                            <fun iri="lovo:replacedWith"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
                                 <ruleml:Var iri="buvo:fireSafetySystem"/>
                             </ruleml:Atom>
-                            <ruleml:Data iri="18"/>
+                            <ruleml:Data iri="type6"/>
                         </Exp>
-                    </obligation>
+                    </permission>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
@@ -4958,6 +4823,14 @@
                                 <ruleml:Var iri="buvo:building"/>
                             </ruleml:Atom>
                             <ruleml:Data iri="4 m"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:greaterThanEqual"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="100"/>
                         </Exp>
                         <Exp>
                             <fun iri="lovo:lessThanEqual"/>
@@ -4987,24 +4860,36 @@
                             <ruleml:Data iri="phoneForEmergency"/>
                         </Exp>
                         <Exp>
-                            <fun iri="lovo:isAvailable"/>
+                            <fun iri="lovo:always"/>
                             <ruleml:Atom>
                                 <ruleml:Var iri="buvo:phoneForEmergency"/>
                             </ruleml:Atom>
-                            <ruleml:Data iri="all time"/>
+                            <ruleml:Data iri="available"/>
                         </Exp>
                     </and>
                 </ruleml:if>
                 <ruleml:then>
-                    <permission>
-                        <Exp>
-                            <fun iri="lovo:required"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:directFSConnection"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="TRUE"/>
-                        </Exp>
-                    </permission>
+                    <and>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:directFSConnection"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="TRUE"/>
+                            </Exp>
+                        </obligation>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type2"/>
+                            </Exp>
+                        </obligation>
+                    </and>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
@@ -5021,6 +4906,14 @@
                             <ruleml:Data iri="4 m"/>
                         </Exp>
                         <Exp>
+                            <fun iri="lovo:greaterThanEqual"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="100"/>
+                        </Exp>
+                        <Exp>
                             <fun iri="lovo:lessThanEqual"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:occupantLoad"/>
@@ -5028,20 +4921,46 @@
                             </ruleml:Atom>
                             <ruleml:Data iri="250"/>
                         </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <or>
+                                <ruleml:Data iri="earlyChildhoodCentreEc"/>
+                                <ruleml:Data iri="cinema"/>
+                                <ruleml:Data iri="theatre"/>
+                            </or>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="phoneForEmergency"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:always"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:phoneForEmergency"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="available"/>
+                        </Exp>
                         <or>
                             <Exp>
                                 <fun iri="lovo:greaterThan"/>
                                 <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:heightFSAP"/>
+                                    <ruleml:Rel iri="buvo:elevation"/>
                                     <ruleml:Var iri="buvo:building"/>
                                 </ruleml:Atom>
                                 <ruleml:Data iri="15 m"/>
                             </Exp>
                             <Exp>
-                                <fun iri="lovo:greaterThanEqual"/>
+                                <fun iri="lovo:greaterThan"/>
                                 <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:FShoseRunDistance"/>
-                                    <ruleml:Var iri="buvo:building"/>
+                                    <ruleml:Rel iri="buvo:length"/>
+                                    <ruleml:Var iri="buvo:fireServiceHoseRun"/>
                                 </ruleml:Atom>
                                 <ruleml:Data iri="75 m"/>
                             </Exp>
@@ -5049,16 +4968,37 @@
                     </and>
                 </ruleml:if>
                 <ruleml:then>
-                    <obligation>
-                        <Exp>
-                            <fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:fireSafetySystem"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="type18"/>
-                        </Exp>
-                    </obligation>
+                    <and>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:directFSConnection"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="TRUE"/>
+                            </Exp>
+                        </obligation>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type2"/>
+                            </Exp>
+                        </obligation>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="type18"/>
+                            </Exp>
+                        </obligation>
+                    </and>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
@@ -8736,19 +8676,21 @@
                     </or>
                 </ruleml:if>
                 <ruleml:then>
-                    <Exp>
-                        <fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:key"/>
-                            <ruleml:Var iri="buvo:rule"/>
-                        </ruleml:Atom>
-                        <or>
-                            <ruleml:Data iri="3.3.2.0.1.a.1"/>
-                            <ruleml:Data iri="3.3.2.0.1.b.1"/>
-                            <ruleml:Data iri="3.3.2.0.1.c.1"/>
-                            <ruleml:Data iri="3.3.2.0.1.d.1"/>
-                        </or>
-                    </Exp>
+                    <obligation>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:rule"/>
+                            </ruleml:Atom>
+                            <or>
+                                <ruleml:Data iri="3.3.2.0.1.a.1"/>
+                                <ruleml:Data iri="3.3.2.0.1.b.1"/>
+                                <ruleml:Data iri="3.3.2.0.1.c.1"/>
+                                <ruleml:Data iri="3.3.2.0.1.d.1"/>
+                            </or>
+                        </Exp>
+                    </obligation>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
@@ -24790,6 +24732,73 @@
                         <ruleml:Data iri="true"/>
                     </Exp>
                 </ruleml:if>
+                <ruleml:then>
+                    <or>
+                        <and>
+                            <obligation>
+                                <Exp>
+                                    <fun iri="lovo:fittedTo"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:cavityBarrier"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data iri="rigidConstruction"/>
+                                </Exp>
+                            </obligation>
+                            <obligation>
+                                <Exp>
+                                    <fun iri="lovo:fitted"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:cavityBarrier"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data iri="tightly"/>
+                                </Exp>
+                            </obligation>
+                            <obligation>
+                                <Exp>
+                                    <fun iri="lovo:fixed"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:cavityBarrier"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data iri="mechanically"/>
+                                </Exp>
+                            </obligation>
+                            <obligation>
+                                <Exp>
+                                    <fun iri="lovo:fixedTo"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:cavityBarrier"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data iri="rigidConstruction"/>
+                                </Exp>
+                            </obligation>
+                        </and>
+                        <and>
+                            <obligation>
+                                <Exp>
+                                    <fun iri="lovo:fireStopped"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:gap"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data iri="TRUE"/>
+                                </Exp>
+                            </obligation>
+                            <Exp>
+                                <fun iri="lovo:fitted"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:cavityBarrier"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="tightly"/>
+                            </Exp>
+                            <Exp>
+                                <fun iri="lovo:fixed"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:cavityBarrier"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="mechanically"/>
+                            </Exp>
+                        </and>
+                    </or>
+                </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:4.15.5.0.1.c.1">
@@ -28877,6 +28886,38 @@
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:5.1.2.0.1">
             <ruleml:Rule key="NZBC-NZBC.CAS4:5.1.2.0.1">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:subdivided"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="TRUE"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:appliedTo"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:fireSafetySystem"/>
+                            </ruleml:Atom>
+                            <and>
+                                <ruleml:Data iri="title"/>
+                                <ruleml:Data iri="commonArea"/>
+                            </and>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:include"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:fireSafetySystem"/>
+                            </ruleml:Atom>
+                            <or>
+                                <ruleml:Data iri="type6"/>
+                                <ruleml:Data iri="type7"/>
+                            </or>
+                        </Exp>
+                    </and>
+                </ruleml:if>
                 <ruleml:then>
                     <and>
                         <permission>
@@ -55407,20 +55448,24 @@
                 </ruleml:if>
                 <ruleml:then>
                     <and>
-                        <Exp>
-                            <fun iri="lovo:complyWith"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:installation"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="section"/>
-                        </Exp>
-                        <Exp>
-                            <fun iri="lovo:complyWith"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:construction"/>
-                            </ruleml:Atom>
-                            <ruleml:Data iri="section"/>
-                        </Exp>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:complyWith"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:installation"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="section"/>
+                            </Exp>
+                        </obligation>
+                        <obligation>
+                            <Exp>
+                                <fun iri="lovo:complyWith"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:construction"/>
+                                </ruleml:Atom>
+                                <ruleml:Data iri="section"/>
+                            </Exp>
+                        </obligation>
                     </and>
                 </ruleml:then>
             </ruleml:Rule>
