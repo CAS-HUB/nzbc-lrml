@@ -38,7 +38,7 @@
         </lrml:Association>
         <lrml:Association>
             <lrml:appliesSource keyref="2.1.2"/>
-            <lrml:toTarget keyref="2.1.2.0.1"/>
+            <lrml:toTarget keyref="2.1.2.0.2"/>
         </lrml:Association>
         <lrml:Association>
             <lrml:appliesSource keyref="2.1.3"/>
@@ -62,15 +62,15 @@
         <lrml:Association>
             <lrml:appliesSource keyref="3.2.2"/>
             <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
-            <lrml:toTarget keyref="3.2.2.3.0.1"/>
+            <lrml:toTarget keyref="3.2.2.3.0.2"/>
+            <lrml:toTarget keyref="3.2.2.3.0.3"/>
+            <lrml:toTarget keyref="3.2.2.3.0.4"/>
+            <lrml:toTarget keyref="3.2.2.3.0.5"/>
+            <lrml:toTarget keyref="3.2.2.3.0.6"/>
+            <lrml:toTarget keyref="3.2.2.3.0.7"/>
+            <lrml:toTarget keyref="3.2.2.3.0.8"/>
+            <lrml:toTarget keyref="3.2.2.3.0.9"/>
+            <lrml:toTarget keyref="3.2.2.3.0.10"/>
         </lrml:Association>
         <lrml:Association>
             <lrml:appliesSource keyref="3.2.3"/>
@@ -277,330 +277,606 @@
             <lrml:toTarget keyref="t1.139"/>
         </lrml:Association>
     </lrml:Context>
-    <lrml:Statements>
+    <lrml:Statements key="B2AS1">
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.1.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.1.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.1.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>publication</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:material"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>publication</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:component"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>publication</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:system"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>publication</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:referencedBy"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:publication"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:publication"/>
+                            </lrml:Atom>
+                            <lrml:Data>conditionOfUse</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:conditionOfUse"/>
+                            </lrml:Atom>
+                            <lrml:Data>TRUE</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-b2as1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:material"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-b2as1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:component"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-b2as1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:system"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-b2as1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:c1.1.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:c1.1.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:c1.1.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.1.0.1.a.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.a.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.a.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.1.0.1.b.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.b.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.b.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.1.0.1.c.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.c.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.c.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.1.0.1.d.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.d.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.d.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.1.0.1.e.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.e.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.e.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.1.0.1.f.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.f.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.1.0.1.f.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.2.2.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.2.2.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.2.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:1.3.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:1.3.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:1.3.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:2.1.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:2.1.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:2.1.1.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:2.1.2.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:2.1.2.0.1">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:specifiedBy"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:element"/>
-                            <ruleml:Var iri="buvo:building"/>
-                        </ruleml:Atom>
-                        <ruleml:Data>specifier</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:And>
-                        <ruleml:Obligation>
-                            <ruleml:Expr>
-                                <ruleml:Fun iri="lovo:include"/>
-                                <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:maintenance"/>
-                                </ruleml:Atom>
-                                <ruleml:Data>manufacturer's recommendations</ruleml:Data>
-                            </ruleml:Expr>
-                        </ruleml:Obligation>
-                        <ruleml:Obligation>
-                            <ruleml:Expr>
-                                <ruleml:Fun iri="lovo:include"/>
-                                <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:maintenance"/>
-                                </ruleml:Atom>
-                                <ruleml:Data>periodic inspections</ruleml:Data>
-                            </ruleml:Expr>
-                        </ruleml:Obligation>
-                        <ruleml:Obligation>
-                            <ruleml:Expr>
-                                <ruleml:Fun iri="lovo:is"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:responsibility"/>
-                                    <ruleml:Var iri="buvo:maintenance"/>
-                                </ruleml:Atom>
-                                <ruleml:Data>specifier</ruleml:Data>
-                            </ruleml:Expr>
-                        </ruleml:Obligation>
-                    </ruleml:And>
-                </ruleml:then>
-            </ruleml:Rule>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:2.1.2.0.2">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:2.1.2.0.2">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:specifiedBy"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:element"/>
+                            <lrml:Var iri="buvo:building"/>
+                        </lrml:Atom>
+                        <lrml:Data>specifier</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>manufacturer's recommendations</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>periodic inspections</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:responsibility"/>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>specifier</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:2.1.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:2.1.3.0.1">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:require"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:element"/>
-                            <ruleml:Var iri="buvo:building"/>
-                        </ruleml:Atom>
-                        <ruleml:Data>maintenance</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:And>
-                        <ruleml:Obligation>
-                            <ruleml:Expr>
-                                <ruleml:Fun iri="lovo:include"/>
-                                <ruleml:Atom>
-                                    <ruleml:Rel iri="buvo:tasks"/>
-                                    <ruleml:Var iri="buvo:maintenance"/>
-                                </ruleml:Atom>
-                                <ruleml:Data>manufacturer's recommendations</ruleml:Data>
-                            </ruleml:Expr>
-                        </ruleml:Obligation>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                            <ruleml:Data>Washing down surfaces, particularly exterior building elements subject to wind driven salt spray,</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                            <ruleml:And>
-                                <ruleml:Data>Re-coating interior</ruleml:Data>
-                                <ruleml:Data>exterior protective finishes,</ruleml:Data>
-                            </ruleml:And>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                            <ruleml:And>
-                                <ruleml:Data>Replacing sealant, seals</ruleml:Data>
-                                <ruleml:Data>gaskets in joints,</ruleml:Data>
-                            </ruleml:And>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                            <ruleml:And>
-                                <ruleml:Data>Replacing valves, washers</ruleml:Data>
-                                <ruleml:Data>similar high wear components in easily accessed service equipment</ruleml:Data>
-                                <ruleml:Data>other building elements,</ruleml:Data>
-                            </ruleml:And>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                            <ruleml:And>
-                                <ruleml:Data>Cleaning</ruleml:Data>
-                                <ruleml:Data>replacing filters in building services systems,</ruleml:Data>
-                            </ruleml:And>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                            <ruleml:And>
-                                <ruleml:Data>The regular servicing of boilers, cooling towers, lifts, escalators, emergency lighting</ruleml:Data>
-                                <ruleml:Data>fire protection equipment, and</ruleml:Data>
-                            </ruleml:And>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                            <ruleml:And>
-                                <ruleml:Data>The maintenance of signs for access, escape routes, emergency equipment</ruleml:Data>
-                                <ruleml:Data>hazardous areas.</ruleml:Data>
-                            </ruleml:And>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:include"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tasks"/>
-                                <ruleml:Var iri="buvo:maintenance"/>
-                            </ruleml:Atom>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:then>
-            </ruleml:Rule>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:2.1.3.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:require"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>maintenance</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>normal</lrml:Data>
+                                <lrml:Data>basic</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:task"/>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>manufacturer's recommendations</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:task"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:Data>Washing down surfaces, particularly exterior building elements subject to wind driven salt spray,</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:task"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>Re-coating interior</lrml:Data>
+                                <lrml:Data>exterior protective finishes,</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:task"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>Replacing sealant, seals</lrml:Data>
+                                <lrml:Data>gaskets in joints,</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:task"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>Replacing valves, washers</lrml:Data>
+                                <lrml:Data>similar high wear components in easily accessed service equipment</lrml:Data>
+                                <lrml:Data>other building elements,</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:task"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>Cleaning</lrml:Data>
+                                <lrml:Data>replacing filters in building services systems,</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:task"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>The regular servicing of boilers, cooling towers, lifts, escalators, emergency lighting</lrml:Data>
+                                <lrml:Data>fire protection equipment, and</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:task"/>
+                                <lrml:Var iri="buvo:maintenance"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>The maintenance of signs for access, escape routes, emergency equipment</lrml:Data>
+                                <lrml:Data>hazardous areas.</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:task"/>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>upgrade of building element to meet demand of new technology</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:task"/>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>upgrade of building element to meet demand of increased environmental expectations of users</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:c2.1.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:c2.1.3.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:c2.1.3.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:2.2.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:2.2.1.0.1">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:scheduled"/>
-                            <ruleml:Var iri="buvo:maintenance"/>
-                        </ruleml:Atom>
-                        <ruleml:Data>required</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-            </ruleml:Rule>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:2.2.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:require"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>maintenance</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:type"/>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>scheduled</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:task"/>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:And>
+                                    <lrml:Data>inspection, maintenance</lrml:Data>
+                                    <lrml:Data>reporting procedures for building elements required to have a compliance schedule in terms of section 44 of the Building Act</lrml:Data>
+                                </lrml:And>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Permission>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:task"/>
+                                    <lrml:Var iri="buvo:maintenance"/>
+                                </lrml:Atom>
+                                <lrml:Data>totalReplacement</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Permission>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.1.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.1.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.1.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.1.0.1.a.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1.a.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1.a.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.1.0.1.b.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1.b.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1.b.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.1.0.1.c.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1.c.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.1.0.1.c.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:c3.2.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:c3.2.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:c3.2.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.a.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.a.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.a.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.b.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.b.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.b.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.c.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.c.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.c.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.d.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.d.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.d.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.e.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.e.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.e.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.f.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.f.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.f.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.g.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.g.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.g.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.h.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.h.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.h.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.i.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.i.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.i.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.j.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.j.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.2.0.0.j.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:c3.2.2.2.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:c3.2.2.2.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:c3.2.2.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.2">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.2"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.3">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.3"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.4">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.4"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.5">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.5"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.6">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.6"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.7">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.7"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.8">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.8"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.9">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.9"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.1"/>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.2.3.0.10">
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.2.3.0.10"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.3.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.3.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.3.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.2.3.2.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.2.3.2.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.2.3.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.3.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.3.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.3.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:material"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>cement</lrml:Data>
+                                <lrml:Data>plaster</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Or>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:element"/>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                                <lrml:Data>wall</lrml:Data>
+                            </lrml:Expr>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:element"/>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                                <lrml:Data>ceiling</lrml:Data>
+                            </lrml:Expr>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:element"/>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                                <lrml:Data>soffit</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Or>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Permission>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzs4251-1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Permission>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.4.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.4.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.4.1.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:type"/>
+                            <lrml:Var iri="buvo:contruction"/>
+                        </lrml:Atom>
+                        <lrml:Data>earth</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Permission>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>nzs4297</lrml:Data>
+                                <lrml:Data>nzs4299</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                    </lrml:Permission>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.5.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.5.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.5.1.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:has"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:property"/>
+                            <lrml:Var iri="buvo:glazing"/>
+                        </lrml:Atom>
+                        <lrml:Data>insulation</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Permission>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:glazing"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzs4223.2</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Permission>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.5.2.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.5.2.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.5.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:3.6.1.0.1">
-            <ruleml:Rule key="NZBC-NZBC.B2AS1:3.6.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B2AS1:3.6.1.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:material"/>
+                            <lrml:Var iri="buvo:building"/>
+                        </lrml:Atom>
+                        <lrml:Data>steel</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Permission>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>snzts3404</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Permission>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B2AS1:t1A.1">
             <ruleml:Rule key="NZBC-NZBC.B2AS1:t1A.1">
