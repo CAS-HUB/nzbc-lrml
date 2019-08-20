@@ -2790,21 +2790,26 @@
                                 <lrml:Data>nzs3604</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:asModifiedIn"/>
-                            <lrml:Atom>
-                                <lrml:Var iri="buvo:nzs3604"/>
-                            </lrml:Atom>
-                            <lrml:Data>rule</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:equal"/>
-                            <lrml:Atom>
-                                <lrml:Rel iri="buvo:key"/>
-                                <lrml:Var iri="buvo:rule"/>
-                            </lrml:Atom>
-                            <lrml:Data>3.1</lrml:Data>
-                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:modifiedBy"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:requirement"/>
+                                    <lrml:Var iri="buvo:nzs3604"/>
+                                </lrml:Atom>
+                                <lrml:Data>rule</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:equal"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:key"/>
+                                    <lrml:Var iri="buvo:rule"/>
+                                </lrml:Atom>
+                                <lrml:Data>3.1</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
             </lrml:Rule>
@@ -3326,6 +3331,16 @@
                             </lrml:Atom>
                             <lrml:Data>broken</lrml:Data>
                         </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:define"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:height"/>
+                                    <lrml:Var iri="buvo:barrier"/>
+                                </lrml:Atom>
+                                <lrml:Data>h1</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
                     </lrml:And>
                 </lrml:if>
                 <lrml:then>
@@ -3341,11 +3356,12 @@
                         </lrml:Obligation>
                         <lrml:Obligation>
                             <lrml:Expr>
-                                <lrml:Fun iri="lovo:spannedAt"/>
+                                <lrml:Fun iri="lovo:equal"/>
                                 <lrml:Atom>
+                                    <lrml:Rel iri="buvo:span"/>
                                     <lrml:Var iri="buvo:pane"/>
                                 </lrml:Atom>
-                                <lrml:Data>requiredBarrierHeight</lrml:Data>
+                                <lrml:Data>h1</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
                         <lrml:Obligation>
@@ -3354,14 +3370,32 @@
                                 <lrml:Atom>
                                     <lrml:Var iri="buvo:rail"/>
                                 </lrml:Atom>
-                                <lrml:Data>lineAndConcentratedDesignLoad</lrml:Data>
+                                <lrml:Data>lineDesignLoad</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:resist"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:rail"/>
+                                </lrml:Atom>
+                                <lrml:Data>concentratedDesignLoad</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
                         <lrml:Obligation>
                             <lrml:Expr>
                                 <lrml:Fun iri="lovo:asPer"/>
                                 <lrml:Atom>
-                                    <lrml:Var iri="buvo:lineAndConcentratedDesignLoad"/>
+                                    <lrml:Var iri="buvo:lineDesignLoad"/>
+                                </lrml:Atom>
+                                <lrml:Data>table</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:asPer"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:concentratedDesignLoad"/>
                                 </lrml:Atom>
                                 <lrml:Data>table</lrml:Data>
                             </lrml:Expr>
@@ -3393,20 +3427,18 @@
                         </lrml:Obligation>
                         <lrml:Obligation>
                             <lrml:Expr>
-                                <lrml:Fun iri="lovo:in"/>
+                                <lrml:Fun iri="lovo:measuredIn"/>
                                 <lrml:Atom>
-                                    <lrml:Rel iri="buvo:deflection"/>
-                                    <lrml:Var iri="buvo:rail"/>
+                                    <lrml:Var iri="buvo:deflection"/>
                                 </lrml:Atom>
                                 <lrml:Data>anyDirection</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
                         <lrml:Obligation>
                             <lrml:Expr>
-                                <lrml:Fun iri="lovo:under"/>
+                                <lrml:Fun iri="lovo:dueTo"/>
                                 <lrml:Atom>
-                                    <lrml:Rel iri="buvo:deflection"/>
-                                    <lrml:Var iri="buvo:rail"/>
+                                    <lrml:Var iri="buvo:deflection"/>
                                 </lrml:Atom>
                                 <lrml:Data>designLoad</lrml:Data>
                             </lrml:Expr>
@@ -3422,69 +3454,100 @@
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:material"/>
-                                <lrml:Var iri="buvo:structure"/>
-                            </lrml:Atom>
-                            <lrml:Data>glass</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:actAs"/>
-                            <lrml:Atom>
                                 <lrml:Var iri="buvo:structure"/>
                             </lrml:Atom>
                             <lrml:Data>safetyBarrier</lrml:Data>
                         </lrml:Expr>
                         <lrml:Expr>
-                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Fun iri="lovo:contain"/>
                             <lrml:Atom>
                                 <lrml:Var iri="buvo:structure"/>
                             </lrml:Atom>
-                            <lrml:Or>
-                                <lrml:Data>heatStrengthened</lrml:Data>
-                                <lrml:Data>toughened</lrml:Data>
-                            </lrml:Or>
+                            <lrml:Data>glass</lrml:Data>
                         </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:class"/>
+                                    <lrml:Var iri="buvo:glass"/>
+                                </lrml:Atom>
+                                <lrml:Data>safety</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:type"/>
+                                    <lrml:Var iri="buvo:glass"/>
+                                </lrml:Atom>
+                                <lrml:Data>laminated</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:glass"/>
+                                </lrml:Atom>
+                                <lrml:Or>
+                                    <lrml:Data>heatStrengthened</lrml:Data>
+                                    <lrml:Data>toughened</lrml:Data>
+                                </lrml:Or>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:has"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:glass"/>
+                                </lrml:Atom>
+                                <lrml:Or>
+                                    <lrml:Data>topCapping</lrml:Data>
+                                    <lrml:Data>cornerBracket</lrml:Data>
+                                    <lrml:Data>proprietaryProtectionSystem</lrml:Data>
+                                </lrml:Or>
+                            </lrml:Expr>
+                        </lrml:Obligation>
                         <lrml:Expr>
-                            <lrml:Fun iri="lovo:is"/>
-                            <lrml:Atom>
-                                <lrml:Var iri="buvo:structure"/>
-                            </lrml:Atom>
-                            <lrml:Data>laminated</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:has"/>
-                            <lrml:Atom>
-                                <lrml:Var iri="buvo:structure"/>
-                            </lrml:Atom>
-                            <lrml:Or>
-                                <lrml:Data>topCapping</lrml:Data>
-                                <lrml:Data>cornerBracket</lrml:Data>
-                                <lrml:Data>proprietarySystem</lrml:Data>
-                            </lrml:Or>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:is"/>
-                            <lrml:Atom>
-                                <lrml:Rel iri="buvo:pane"/>
-                                <lrml:Var iri="buvo:structure"/>
-                            </lrml:Atom>
-                            <lrml:Data>fractured</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:is"/>
-                            <lrml:Atom>
-                                <lrml:Rel iri="buvo:resistance"/>
-                                <lrml:Var iri="buvo:structure"/>
-                            </lrml:Atom>
-                            <lrml:Data>0.2 kN concentrated load</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:lessThanEqual"/>
-                            <lrml:Atom>
-                                <lrml:Rel iri="buvo:deflection"/>
-                                <lrml:Var iri="buvo:structure"/>
-                            </lrml:Atom>
-                            <lrml:Data>250 mm</lrml:Data>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:forEach"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:pane"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>laminate</lrml:Data>
+                            <lrml:And>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:is"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:pane"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>fractured</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Obligation>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="lovo:greaterThanEqual"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:resistance"/>
+                                            <lrml:Var iri="buvo:pane"/>
+                                        </lrml:Atom>
+                                        <lrml:Data>0.2 kN concentrated load</lrml:Data>
+                                    </lrml:Expr>
+                                </lrml:Obligation>
+                                <lrml:Obligation>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="lovo:lessThanEqual"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:deflection"/>
+                                            <lrml:Var iri="buvo:pane"/>
+                                        </lrml:Atom>
+                                        <lrml:Data>250 mm</lrml:Data>
+                                    </lrml:Expr>
+                                </lrml:Obligation>
+                            </lrml:And>
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:if>
@@ -3492,11 +3555,11 @@
                     <lrml:Permission>
                         <lrml:Not>
                             <lrml:Expr>
-                                <lrml:Fun iri="lovo:for"/>
+                                <lrml:Fun iri="lovo:has"/>
                                 <lrml:Atom>
-                                    <lrml:Var iri="buvo:interlinkedRail"/>
+                                    <lrml:Var iri="buvo:structure"/>
                                 </lrml:Atom>
-                                <lrml:Data>structure</lrml:Data>
+                                <lrml:Data>interlinkingRail</lrml:Data>
                             </lrml:Expr>
                         </lrml:Not>
                     </lrml:Permission>
@@ -3888,14 +3951,6 @@
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:material"/>
-                                <lrml:Var iri="buvo:structure"/>
-                            </lrml:Atom>
-                            <lrml:Data>glass</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:actAs"/>
-                            <lrml:Atom>
                                 <lrml:Var iri="buvo:structure"/>
                             </lrml:Atom>
                             <lrml:Data>safetyBarrier</lrml:Data>
@@ -3905,17 +3960,13 @@
                             <lrml:Atom>
                                 <lrml:Var iri="buvo:structure"/>
                             </lrml:Atom>
-                            <lrml:And>
-                                <lrml:Data>connection</lrml:Data>
-                                <lrml:Data>fastener</lrml:Data>
-                                <lrml:Data>mountingHardware</lrml:Data>
-                            </lrml:And>
+                            <lrml:Data>glass</lrml:Data>
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:if>
                 <lrml:then>
                     <lrml:And>
-                        <lrml:Not>
+                        <lrml:Prohibition>
                             <lrml:Expr>
                                 <lrml:Fun iri="lovo:complyWith"/>
                                 <lrml:Atom>
@@ -3924,8 +3975,8 @@
                                 </lrml:Atom>
                                 <lrml:Data>nzbc-b1as1</lrml:Data>
                             </lrml:Expr>
-                        </lrml:Not>
-                        <lrml:Not>
+                        </lrml:Prohibition>
+                        <lrml:Prohibition>
                             <lrml:Expr>
                                 <lrml:Fun iri="lovo:complyWith"/>
                                 <lrml:Atom>
@@ -3934,8 +3985,8 @@
                                 </lrml:Atom>
                                 <lrml:Data>nzbc-b1as1</lrml:Data>
                             </lrml:Expr>
-                        </lrml:Not>
-                        <lrml:Not>
+                        </lrml:Prohibition>
+                        <lrml:Prohibition>
                             <lrml:Expr>
                                 <lrml:Fun iri="lovo:complyWith"/>
                                 <lrml:Atom>
@@ -3944,31 +3995,37 @@
                                 </lrml:Atom>
                                 <lrml:Data>nzbc-b1as1</lrml:Data>
                             </lrml:Expr>
-                        </lrml:Not>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:is"/>
-                            <lrml:Atom>
-                                <lrml:Rel iri="buvo:design"/>
-                                <lrml:Var iri="buvo:connection"/>
-                            </lrml:Atom>
-                            <lrml:Data>specific</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:is"/>
-                            <lrml:Atom>
-                                <lrml:Rel iri="buvo:design"/>
-                                <lrml:Var iri="buvo:fastener"/>
-                            </lrml:Atom>
-                            <lrml:Data>specific</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:is"/>
-                            <lrml:Atom>
-                                <lrml:Rel iri="buvo:design"/>
-                                <lrml:Var iri="buvo:mountingHardware"/>
-                            </lrml:Atom>
-                            <lrml:Data>specific</lrml:Data>
-                        </lrml:Expr>
+                        </lrml:Prohibition>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:design"/>
+                                    <lrml:Var iri="buvo:connection"/>
+                                </lrml:Atom>
+                                <lrml:Data>specific</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:design"/>
+                                    <lrml:Var iri="buvo:fastener"/>
+                                </lrml:Atom>
+                                <lrml:Data>specific</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:design"/>
+                                    <lrml:Var iri="buvo:mountingHardware"/>
+                                </lrml:Atom>
+                                <lrml:Data>specific</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
             </lrml:Rule>
@@ -4162,11 +4219,11 @@
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
-                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Var iri="buvo:chimney"/>
+                                <lrml:Var iri="buvo:structure"/>
                             </lrml:Atom>
-                            <lrml:Data>TRUE</lrml:Data>
+                            <lrml:Data>chimney</lrml:Data>
                         </lrml:Expr>
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
@@ -4179,15 +4236,28 @@
                     </lrml:And>
                 </lrml:if>
                 <lrml:then>
-                    <lrml:Obligation>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:complyWith"/>
-                            <lrml:Atom>
-                                <lrml:Var iri="buvo:chimney"/>
-                            </lrml:Atom>
-                            <lrml:Data>NZBC-B1AS3</lrml:Data>
-                        </lrml:Expr>
-                    </lrml:Obligation>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:design"/>
+                                    <lrml:Var iri="buvo:chimney"/>
+                                </lrml:Atom>
+                                <lrml:Data>NZBC-B1AS3</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:installation"/>
+                                    <lrml:Var iri="buvo:chimney"/>
+                                </lrml:Atom>
+                                <lrml:Data>NZBC-B1AS3</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
                 </lrml:then>
             </lrml:Rule>
         </lrml:PrescriptiveStatement>
