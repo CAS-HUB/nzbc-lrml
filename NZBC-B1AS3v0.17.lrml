@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ ../../schemas/xsd/xsd-compact/lrml-compact.xsd">
+	<lrml:Prefix pre="devo" refID="http://example.com/deontic-vocabulary#"/>
+	<lrml:Prefix pre="lovo" refID="http://example.com/logic-vocabulary#"/>
+	<lrml:Prefix pre="buvo" refID="./vocabulary-D1#"/>
+	<lrml:Jurisdictions>
+		<lrml:Jurisdiction key="jur:nz" sameAs="http://example.org/jurisdiction#newzealand"/>
+	</lrml:Jurisdictions>
+	<lrml:LegalSources key="ls1">
+		<lrml:LegalSource key="NZBC.B1AS3" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/b-stability/b1-structure/asvm/b1-structure-1st-edition-amendment-17.pdf"/>
+	</lrml:LegalSources>
+	<lrml:Context>
+		<lrml:Association>
+			<lrml:appliesSource keyref="t1"/>
+			<lrml:toTarget keyref="t1.1"/>
+			<lrml:toTarget keyref="t1.2"/>
+			<lrml:toTarget keyref="t1.3"/>
+			<lrml:toTarget keyref="t1.4"/>
+		</lrml:Association>
+		<lrml:Association>
+			<lrml:appliesSource keyref="t2"/>
+			<lrml:toTarget keyref="t2.1"/>
+			<lrml:toTarget keyref="t2.2"/>
+			<lrml:toTarget keyref="t2.3"/>
+			<lrml:toTarget keyref="t2.4"/>
+			<lrml:toTarget keyref="t2.5"/>
+			<lrml:toTarget keyref="t2.6"/>
+			<lrml:toTarget keyref="t2.7"/>
+			<lrml:toTarget keyref="t2.8"/>
+			<lrml:toTarget keyref="t2.9"/>
+			<lrml:toTarget keyref="t2.10"/>
+			<lrml:toTarget keyref="t2.11"/>
+			<lrml:toTarget keyref="t2.12"/>
+			<lrml:toTarget keyref="t2.13"/>
+			<lrml:toTarget keyref="t2.14"/>
+			<lrml:toTarget keyref="t2.15"/>
+			<lrml:toTarget keyref="t2.16"/>
+			<lrml:toTarget keyref="t2.17"/>
+			<lrml:toTarget keyref="t2.18"/>
+			<lrml:toTarget keyref="t2.19"/>
+			<lrml:toTarget keyref="t2.20"/>
+			<lrml:toTarget keyref="t2.21"/>
+		</lrml:Association>
+	</lrml:Context>
+	<lrml:Statements key="B1AS3">
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t1.1">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t1.1">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBreastMaterial"/>
+							</ruleml:Atom>
+							<ruleml:Data>brick</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:lessThanEqual"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:openingWidth"/>
+							</ruleml:Atom>
+							<ruleml:Data>1.0 m</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<or>
+							<and>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Rel iri="buvo:type"/>
+										<ruleml:Var iri="buvo:lintelReinforcing"/>
+									</ruleml:Atom>
+									<ruleml:Data>mildSteel</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Rel iri="buvo:type"/>
+										<ruleml:Var iri="buvo:metal"/>
+									</ruleml:Atom>
+									<ruleml:Data>flat</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:width"/>
+									</ruleml:Atom>
+									<ruleml:Data>65.0 mm</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:tickness"/>
+									</ruleml:Atom>
+									<ruleml:Data>10.0 mm</ruleml:Data>
+								</Exp>
+							</and>
+							<and>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Rel iri="buvo:type"/>
+										<ruleml:Var iri="buvo:lintelReinforcing"/>
+									</ruleml:Atom>
+									<ruleml:Data>mildSteel</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Rel iri="buvo:type"/>
+										<ruleml:Var iri="buvo:metal"/>
+									</ruleml:Atom>
+									<ruleml:Data>angle</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:width"/>
+									</ruleml:Atom>
+									<ruleml:Data>80.0 mm</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:tickness"/>
+									</ruleml:Atom>
+									<ruleml:Data>5.0 mm</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:depth"/>
+									</ruleml:Atom>
+									<ruleml:Data>60.0 mm</ruleml:Data>
+								</Exp>
+							</and>
+						</or>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t1.2">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t1.2">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBreastMaterial"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:lessThanEqual"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:openingWidth"/>
+							</ruleml:Atom>
+							<ruleml:Data>900 mm</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<and>
+							<Exp>
+								<fun iri="lovo:equal"/>
+								<ruleml:Atom>
+									<ruleml:Rel iri="buvo:type"/>
+									<ruleml:Var iri="buvo:lintelReinforcing"/>
+								</ruleml:Atom>
+								<ruleml:Data>rod</ruleml:Data>
+							</Exp>
+							<and>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:upperRod"/>
+									</ruleml:Atom>
+									<ruleml:Data>D10</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:lowerRod"/>
+									</ruleml:Atom>
+									<ruleml:Data>D10</ruleml:Data>
+								</Exp>
+							</and>
+						</and>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t1.3">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t1.3">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBreastMaterial"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<and>
+							<Exp>
+								<fun iri="lovo:greaterThan"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:openingWidth"/>
+								</ruleml:Atom>
+								<ruleml:Data>900 mm</ruleml:Data>
+							</Exp>
+							<Exp>
+								<fun iri="lovo:lessThanEqual"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:openingWidth"/>
+								</ruleml:Atom>
+								<ruleml:Data>1500 mm</ruleml:Data>
+							</Exp>
+						</and>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<and>
+							<Exp>
+								<fun iri="lovo:equal"/>
+								<ruleml:Atom>
+									<ruleml:Rel iri="buvo:type"/>
+									<ruleml:Var iri="buvo:lintelReinforcing"/>
+								</ruleml:Atom>
+								<ruleml:Data>rod</ruleml:Data>
+							</Exp>
+							<and>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:upperRod"/>
+									</ruleml:Atom>
+									<ruleml:Data>D12</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:lowerRod"/>
+									</ruleml:Atom>
+									<ruleml:Data>D16</ruleml:Data>
+								</Exp>
+							</and>
+						</and>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t1.4">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t1.4">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBreastMaterial"/>
+							</ruleml:Atom>
+							<ruleml:Data>precastPumice</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:lessThanEqual"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:openingWidth"/>
+							</ruleml:Atom>
+							<ruleml:Data>1.0 m</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<and>
+							<Exp>
+								<fun iri="lovo:equal"/>
+								<ruleml:Atom>
+									<ruleml:Rel iri="buvo:type"/>
+									<ruleml:Var iri="buvo:lintelReinforcing"/>
+								</ruleml:Atom>
+								<ruleml:Data>rod</ruleml:Data>
+							</Exp>
+							<and>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:upperRod"/>
+									</ruleml:Atom>
+									<ruleml:Data>D10</ruleml:Data>
+								</Exp>
+								<Exp>
+									<fun iri="lovo:equal"/>
+									<ruleml:Atom>
+										<ruleml:Var iri="buvo:lowerRod"/>
+									</ruleml:Atom>
+									<ruleml:Data>D10</ruleml:Data>
+								</Exp>
+							</and>
+						</and>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.1">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.1">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>precastPumiceStandard</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>1</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>500 x 400</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1600 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneA</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>60</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.2">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.2">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>precastPumiceLarge</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>2</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1100 x 400</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1600 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneA</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>110</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.3">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.3">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brickSingleSkin</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>3</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>500 x 500</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneA</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>90</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.4">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.4">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brickDoubleSkin</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>4</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>590 x 590</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneA</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>130</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.5">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.5">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brick</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>5</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 680</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneA</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>240</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.6">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.6">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>6</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>590 x 590</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneA</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>210</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.7">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.7">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>7</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 700</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneA</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>390</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.8">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.8">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>precastPumiceStandard</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>1</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>500 x 400</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1600 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneB</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>50</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.9">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.9">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>precastPumiceLarge</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>2</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1100 x 400</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1600 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneB</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>90</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.10">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.10">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brickSingleSkin</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>3</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>500 x 500</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneB</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>70</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.11">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.11">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brickDoubleSkin</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>4</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>590 x 590</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneB</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>100</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.12">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.12">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brick</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>5</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 680</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneB</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>200</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.13">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.13">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>6</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>590 x 590</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneB</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>170</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.14">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.14">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>7</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 700</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneB</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>320</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.15">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.15">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>precastPumiceStandard</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>1</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>500 x 400</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1600 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneC</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>40</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.16">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.16">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>precastPumiceLarge</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>2</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1100 x 400</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1600 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneC</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>70</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.17">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.17">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brickSingleSkin</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>3</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>500 x 500</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneC</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>60</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.18">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.18">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brickDoubleSkin</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>4</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>590 x 590</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneC</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>80</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.19">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.19">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>brick</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>5</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 680</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneC</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>160</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.20">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.20">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>6</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>590 x 590</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneC</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>140</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t2.21">
+			<ruleml:Rule key="NZBC-NZBC.B1AS3:t2.21">
+				<ruleml:if>
+					<and>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyConstruction"/>
+							</ruleml:Atom>
+							<ruleml:Data>concrete</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyType"/>
+							</ruleml:Atom>
+							<ruleml:Data>7</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyStackSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 700</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:chimneyBaseSize"/>
+							</ruleml:Atom>
+							<ruleml:Data>1200 x 1050</ruleml:Data>
+						</Exp>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<ruleml:Atom>
+								<ruleml:Var iri="buvo:earthquakeZone"/>
+							</ruleml:Atom>
+							<ruleml:Data>ZoneC</ruleml:Data>
+						</Exp>
+					</and>
+				</ruleml:if>
+				<ruleml:then>
+					<obligation>
+						<Exp>
+							<fun iri="lovo:equal"/>
+							<Exp>
+								<fun iri="fuvo:count"/>
+								<ruleml:Atom>
+									<ruleml:Var iri="buvo:braceUnit"/>
+								</ruleml:Atom>
+							</Exp>
+							<ruleml:Data>260</ruleml:Data>
+						</Exp>
+					</obligation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+	</lrml:Statements>
+</lrml:LegalRuleML>
