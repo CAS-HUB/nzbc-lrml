@@ -160,6 +160,8 @@
         <lrml:Association>
             <lrml:appliesSource keyref="1.8.2"/>
             <lrml:toTarget keyref="1.8.2.0.1"/>
+            <lrml:toTarget keyref="1.8.2.0.2"/>
+            <lrml:toTarget keyref="1.8.2.0.3"/>
         </lrml:Association>
         <lrml:Association>
             <lrml:appliesSource keyref="1.8.3"/>
@@ -214,8 +216,6 @@
         <lrml:Association>
             <lrml:appliesSource keyref="2.2.1"/>
             <lrml:toTarget keyref="2.2.1.0.1"/>
-            <lrml:toTarget keyref="2.2.1.0.1.b.1"/>
-            <lrml:toTarget keyref="2.2.1.0.1.c.1"/>
         </lrml:Association>
         <lrml:Association>
             <lrml:appliesSource keyref="2.2.2"/>
@@ -2820,11 +2820,11 @@
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.2.0.1">
             <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.1">
                 <lrml:if>
-                    <lrml:Or>
+                    <lrml:And>
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:material"/>
+                                <lrml:Rel iri="buvo:construction"/>
                                 <lrml:Var iri="buvo:chimney"/>
                             </lrml:Atom>
                             <lrml:Data>reinforcedConcrete</lrml:Data>
@@ -2832,7 +2832,41 @@
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:material"/>
+                                <lrml:Rel iri="buvo:grade"/>
+                                <lrml:Var iri="buvo:concrete"/>
+                            </lrml:Atom>
+                            <lrml:Data>ordinary</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:chimney"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzs3109</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.2.0.2">
+            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.2">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:chimney"/>
+                            </lrml:Atom>
+                            <lrml:Data>foundation</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:construction"/>
                                 <lrml:Var iri="buvo:foundation"/>
                             </lrml:Atom>
                             <lrml:Data>reinforcedConcrete</lrml:Data>
@@ -2840,19 +2874,69 @@
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:material"/>
-                                <lrml:Var iri="buvo:hearthSlab"/>
+                                <lrml:Rel iri="buvo:grade"/>
+                                <lrml:Var iri="buvo:concrete"/>
                             </lrml:Atom>
-                            <lrml:Data>reinforcedConcrete</lrml:Data>
+                            <lrml:Data>ordinary</lrml:Data>
                         </lrml:Expr>
-                    </lrml:Or>
+                    </lrml:And>
                 </lrml:if>
                 <lrml:then>
                     <lrml:Obligation>
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:complyWith"/>
                             <lrml:Atom>
-                                <lrml:Var iri="buvo:reinforcedConcrete"/>
+                                <lrml:Var iri="buvo:foundation"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzs3109</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.2.0.3">
+            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.3">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:chimney"/>
+                            </lrml:Atom>
+                            <lrml:Data>slab</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:slab"/>
+                            </lrml:Atom>
+                            <lrml:Data>hearth</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:construction"/>
+                                <lrml:Var iri="buvo:slab"/>
+                            </lrml:Atom>
+                            <lrml:Data>reinforcedConcrete</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:grade"/>
+                                <lrml:Var iri="buvo:concrete"/>
+                            </lrml:Atom>
+                            <lrml:Data>ordinary</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:slab"/>
                             </lrml:Atom>
                             <lrml:Data>nzs3109</lrml:Data>
                         </lrml:Expr>
@@ -2875,33 +2959,243 @@
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:has"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:component"/>
                                 <lrml:Var iri="buvo:chimney"/>
                             </lrml:Atom>
+                            <lrml:Data>part</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:construction"/>
+                                <lrml:Var iri="buvo:part"/>
+                            </lrml:Atom>
+                            <lrml:Data>pumiceConcrete</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:selectedBy"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:aggregate"/>
+                                <lrml:Var iri="buvo:pumice"/>
+                            </lrml:Atom>
+                            <lrml:Data>sieve</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:size"/>
+                                <lrml:Var iri="buvo:sieve"/>
+                            </lrml:Atom>
+                            <lrml:Data>4.75 mm</lrml:Data>
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Not>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:include"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:aggregate"/>
+                                        <lrml:Var iri="buvo:pumice"/>
+                                    </lrml:Atom>
+                                    <lrml:Or>
+                                        <lrml:Data>combustible</lrml:Data>
+                                        <lrml:Data>organic</lrml:Data>
+                                    </lrml:Or>
+                                </lrml:Expr>
+                            </lrml:Not>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:lessThanEqual"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:size"/>
+                                <lrml:Var iri="buvo:aggregate"/>
+                            </lrml:Atom>
+                            <lrml:Data>19 mm</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThanEqual"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:ratio"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:sieved"/>
+                                    <lrml:Var iri="buvo:aggregate"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>40%</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:lessThanEqual"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:ratio"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:sieved"/>
+                                    <lrml:Var iri="buvo:aggregate"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>60%</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:volume"/>
+                                <lrml:Var iri="buvo:aggregate"/>
+                            </lrml:Atom>
+                            <lrml:Data>v1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:volume"/>
+                                <lrml:Var iri="buvo:cement"/>
+                            </lrml:Atom>
+                            <lrml:Data>v2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:lessThanEqual"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:v2"/>
+                            </lrml:Atom>
+                            <lrml:Data>v1/5</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:mix"/>
+                                <lrml:Var iri="buvo:aggregate"/>
+                            </lrml:Atom>
+                            <lrml:Data>v1 + v2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThanEqual"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:compressiveStrength"/>
+                                <lrml:Var iri="buvo:aggregate"/>
+                            </lrml:Atom>
+                            <lrml:Data>7 MPa</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:measuredAt"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:compressiveStrength"/>
+                                <lrml:Var iri="buvo:aggregate"/>
+                            </lrml:Atom>
+                            <lrml:Data>28 days</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:compressiveStrength"/>
+                                <lrml:Var iri="buvo:aggregate"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzs3112-2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:part"/>
+                                <lrml:Var iri="buvo:chimney"/>
+                            </lrml:Atom>
+                            <lrml:Data>protected</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:for"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:protection"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>storing</lrml:Data>
+                                <lrml:Data>transport</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:method"/>
+                                <lrml:Var iri="buvo:protection"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>curing</lrml:Data>
+                                <lrml:Data>airDrying</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:from"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:protection"/>
+                            </lrml:Atom>
+                            <lrml:Data>rain</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:joinedWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:part"/>
+                                <lrml:Var iri="buvo:chimney"/>
+                            </lrml:Atom>
+                            <lrml:Data>mortar</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:mortar"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzs4210</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:part"/>
+                                <lrml:Var iri="buvo:chimney"/>
+                            </lrml:Atom>
+                            <lrml:Data>duct</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:filledWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:duct"/>
+                            </lrml:Atom>
+                            <lrml:Data>grout</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:duct"/>
+                            </lrml:Atom>
+                            <lrml:Data>nz4210</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:then>
             </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.4.0.1">
             <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.4.0.1">
                 <lrml:if>
-                    <lrml:Expr>
-                        <lrml:Fun iri="lovo:is"/>
-                        <lrml:Atom>
-                            <lrml:Rel iri="buvo:construction"/>
-                            <lrml:Var iri="buvo:chimneyFoundationWall"/>
-                        </lrml:Atom>
-                        <lrml:Data>concreteMasonry</lrml:Data>
-                    </lrml:Expr>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:chimney"/>
+                            </lrml:Atom>
+                            <lrml:Data>foundation</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:construction"/>
+                                <lrml:Var iri="buvo:foundation"/>
+                            </lrml:Atom>
+                            <lrml:Data>concreteMasonry</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
                 </lrml:if>
                 <lrml:then>
                     <lrml:Obligation>
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:complyWith"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:construction"/>
-                                <lrml:Var iri="buvo:concreteMasonry"/>
+                                <lrml:Rel iri="buvo:wall"/>
+                                <lrml:Var iri="buvo:foundation"/>
                             </lrml:Atom>
                             <lrml:Data>nzs4229</lrml:Data>
                         </lrml:Expr>
@@ -3706,7 +4000,65 @@
             </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.1.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.1.1.0.1"/>
+            <lrml:Rule key="NZBC-NZBC.B1AS3:2.1.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>burner</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>domestic</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>chimney</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fuelType"/>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>solid</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:chimney"/>
+                                </lrml:Atom>
+                                <lrml:Data>rule</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:equal"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:key"/>
+                                    <lrml:Var iri="buvo:rule"/>
+                                </lrml:Atom>
+                                <lrml:Data>1.1.1 to 1.9.6</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.1.0.1">
             <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.1.0.1">
@@ -3715,16 +4067,30 @@
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:solidFuelBurning"/>
-                                <lrml:Var iri="buvo:domesticAppliance"/>
+                                <lrml:Var iri="buvo:appliance"/>
                             </lrml:Atom>
-                            <lrml:Data>TRUE</lrml:Data>
+                            <lrml:Data>burner</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>domestic</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>chimney</lrml:Data>
                         </lrml:Expr>
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:lessThanEqual"/>
                             <lrml:Atom>
                                 <lrml:Rel iri="buvo:weight"/>
-                                <lrml:Var iri="buvo:domesticAppliance"/>
+                                <lrml:Var iri="buvo:appliance"/>
                             </lrml:Atom>
                             <lrml:Data>130 kg</lrml:Data>
                         </lrml:Expr>
@@ -3736,109 +4102,156 @@
                             <lrml:Expr>
                                 <lrml:Fun iri="lovo:supportedOn"/>
                                 <lrml:Atom>
-                                    <lrml:Var iri="buvo:domesticAppliance"/>
+                                    <lrml:Var iri="buvo:appliance"/>
                                 </lrml:Atom>
-                                <lrml:Data>hearthSlab</lrml:Data>
+                                <lrml:Data>slab</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
                         <lrml:Expr>
-                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:slab"/>
+                            </lrml:Atom>
+                            <lrml:Data>hearth</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThanEqual"/>
                             <lrml:Atom>
                                 <lrml:Rel iri="buvo:thickness"/>
-                                <lrml:Var iri="buvo:hearthSlab"/>
+                                <lrml:Var iri="buvo:slab"/>
                             </lrml:Atom>
                             <lrml:Data>65 mm</lrml:Data>
                         </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:construction"/>
+                                <lrml:Var iri="buvo:slab"/>
+                            </lrml:Atom>
+                            <lrml:Data>concrete</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:concrete"/>
+                            </lrml:Atom>
+                            <lrml:Data>reinforcing</lrml:Data>
+                        </lrml:Expr>
                         <lrml:Or>
-                            <lrml:Expr>
-                                <lrml:Fun iri="lovo:is"/>
-                                <lrml:Atom>
-                                    <lrml:Rel iri="buvo:reinforcingMaterial"/>
-                                    <lrml:Var iri="buvo:hearthSlab"/>
-                                </lrml:Atom>
-                                <lrml:Data>665 mesh</lrml:Data>
-                            </lrml:Expr>
-                            <lrml:Expr>
-                                <lrml:Fun iri="lovo:is"/>
-                                <lrml:Atom>
-                                    <lrml:Rel iri="buvo:reinforcingMaterial"/>
-                                    <lrml:Var iri="buvo:hearthSlab"/>
-                                </lrml:Atom>
-                                <lrml:Data>D10 rods</lrml:Data>
-                            </lrml:Expr>
                             <lrml:And>
                                 <lrml:Expr>
-                                    <lrml:Fun iri="lovo:placedAt"/>
+                                    <lrml:Fun iri="lovo:is"/>
                                     <lrml:Atom>
-                                        <lrml:Var iri="buvo:D10Rods"/>
+                                        <lrml:Rel iri="buvo:type"/>
+                                        <lrml:Var iri="buvo:reinforcing"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>665 mesh</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:is"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:placement"/>
+                                        <lrml:Var iri="buvo:reinforcing"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>centrally in slab thickness</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:And>
+                            <lrml:And>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:is"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:type"/>
+                                        <lrml:Var iri="buvo:reinforcing"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>D10 rod</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:at"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:spacing"/>
+                                        <lrml:Var iri="buvo:reinforcing"/>
                                     </lrml:Atom>
                                     <lrml:Data>300 mm centres each way</lrml:Data>
                                 </lrml:Expr>
                                 <lrml:Expr>
-                                    <lrml:Fun iri="lovo:placedAt"/>
+                                    <lrml:Fun iri="lovo:is"/>
                                     <lrml:Atom>
-                                        <lrml:Var iri="buvo:reinforcingMaterial"/>
+                                        <lrml:Rel iri="buvo:placement"/>
+                                        <lrml:Var iri="buvo:reinforcing"/>
                                     </lrml:Atom>
                                     <lrml:Data>centrally in slab thickness</lrml:Data>
                                 </lrml:Expr>
                             </lrml:And>
                         </lrml:Or>
-                    </lrml:And>
-                </lrml:then>
-            </lrml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.1.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.1.0.1.b.1">
-                <lrml:if>
-                    <lrml:And>
+                        <lrml:Or>
+                            <lrml:And>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:supportedOn"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:slab"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>floor</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:is"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:construction"/>
+                                        <lrml:Var iri="buvo:floor"/>
+                                    </lrml:Atom>
+                                    <lrml:Or>
+                                        <lrml:Data>timber</lrml:Data>
+                                        <lrml:Data>concrete</lrml:Data>
+                                    </lrml:Or>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:complyWith"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:floor"/>
+                                    </lrml:Atom>
+                                    <lrml:Or>
+                                        <lrml:Data>nzs3604</lrml:Data>
+                                        <lrml:Data>nzs4229</lrml:Data>
+                                    </lrml:Or>
+                                </lrml:Expr>
+                            </lrml:And>
+                            <lrml:And>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:part of"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:slab"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>floor</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:is"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:construction"/>
+                                        <lrml:Var iri="buvo:floor"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>concrete</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:And>
+                        </lrml:Or>
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:is"/>
                             <lrml:Atom>
-                                <lrml:Rel iri="buvo:solidFuelBurning"/>
-                                <lrml:Var iri="buvo:domesticAppliance"/>
+                                <lrml:Rel iri="buvo:grade"/>
+                                <lrml:Var iri="buvo:concrete"/>
                             </lrml:Atom>
-                            <lrml:Data>TRUE</lrml:Data>
+                            <lrml:Data>ordinary</lrml:Data>
                         </lrml:Expr>
                         <lrml:Expr>
-                            <lrml:Fun iri="lovo:supportedOn"/>
+                            <lrml:Fun iri="lovo:complyWith"/>
                             <lrml:Atom>
-                                <lrml:Var iri="buvo:domesticAppliance"/>
+                                <lrml:Rel iri="buvo:grade"/>
+                                <lrml:Var iri="buvo:concrete"/>
                             </lrml:Atom>
-                            <lrml:Data>hearthSlab</lrml:Data>
+                            <lrml:Data>nzs3109</lrml:Data>
                         </lrml:Expr>
                     </lrml:And>
-                </lrml:if>
-                <lrml:then>
-                    <lrml:Or>
-                        <lrml:Obligation>
-                            <lrml:Expr>
-                                <lrml:Fun iri="lovo:supportedOn"/>
-                                <lrml:Atom>
-                                    <lrml:Var iri="buvo:hearthSlab"/>
-                                </lrml:Atom>
-                                <lrml:Data>timberFloor</lrml:Data>
-                            </lrml:Expr>
-                        </lrml:Obligation>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:supportedOn"/>
-                            <lrml:Atom>
-                                <lrml:Var iri="buvo:hearthSlab"/>
-                            </lrml:Atom>
-                            <lrml:Data>concreteFloor</lrml:Data>
-                        </lrml:Expr>
-                        <lrml:Expr>
-                            <lrml:Fun iri="lovo:integralWith"/>
-                            <lrml:Atom>
-                                <lrml:Var iri="buvo:hearthSlab"/>
-                            </lrml:Atom>
-                            <lrml:Data>concreteFloor</lrml:Data>
-                        </lrml:Expr>
-                    </lrml:Or>
                 </lrml:then>
             </lrml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.1.0.1.c.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.1.0.1.c.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.2.0.1">
             <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.2.0.1">
@@ -4029,25 +4442,65 @@
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.4.0.1">
             <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.4.0.1">
                 <lrml:if>
-                    <lrml:Expr>
-                        <lrml:Fun iri="lovo:is"/>
-                        <lrml:Atom>
-                            <lrml:Rel iri="buvo:solidFuelBurning"/>
-                            <lrml:Var iri="buvo:domesticAppliance"/>
-                        </lrml:Atom>
-                        <lrml:Data>TRUE</lrml:Data>
-                    </lrml:Expr>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>burner</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>domestic</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>chimney</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:supportedOn"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:appliance"/>
+                            </lrml:Atom>
+                            <lrml:Data>slab</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:slab"/>
+                            </lrml:Atom>
+                            <lrml:Data>hearth</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
                 </lrml:if>
                 <lrml:then>
-                    <lrml:Obligation>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:slab"/>
+                                </lrml:Atom>
+                                <lrml:Data>asnz2918</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
                         <lrml:Expr>
                             <lrml:Fun iri="lovo:complyWith"/>
                             <lrml:Atom>
-                                <lrml:Var iri="buvo:hearthSlab"/>
+                                <lrml:Var iri="buvo:slab"/>
                             </lrml:Atom>
-                            <lrml:Data>asnz2918</lrml:Data>
+                            <lrml:Data>nzbc.c2.2</lrml:Data>
                         </lrml:Expr>
-                    </lrml:Obligation>
+                    </lrml:And>
                 </lrml:then>
             </lrml:Rule>
         </lrml:PrescriptiveStatement>
