@@ -112,12 +112,12 @@
 					</ruleml:Or>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:disposalMethod" />
 							<ruleml:Data iri="moveableContainer" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:And>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:volume()" />
@@ -147,14 +147,14 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:length" />
 							<ruleml:Var iri="buvo:wasteStorageArea" />
 							<ruleml:Data iri="0.5 m per householdUnit" />
 							<ruleml:Operator iri="lovo:greaterThanEqual" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:And>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:width" />
@@ -196,13 +196,13 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:complyWith" />
 							<ruleml:Var iri="buvo:ventilation" />
 							<ruleml:Data iri="nzbc-g4" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -246,13 +246,13 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:interiorSurface" />
 							<ruleml:Data iri="easilyCleaned" />
 							<ruleml:Operator iri="lovo:equal" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -272,13 +272,13 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:enclosure" />
 							<ruleml:Data iri="fullyEnclosed" />
 							<ruleml:Operator iri="lovo:equal" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:And>
 						<ruleml:Not>
 							<ruleml:Atom>
@@ -316,14 +316,14 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Not>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:exposure" />
 								<ruleml:Data iri="highTemperature" />
 							</ruleml:Atom>
 						</ruleml:Not>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -341,14 +341,14 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:visualImpact" />
 							<ruleml:Data iri="low" />
 							<ruleml:Operator iri="lovo:equal" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:screenedFrom" />
@@ -356,7 +356,7 @@
 								<ruleml:Data iri="habitableSpace" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 					<ruleml:Atom />
 				</ruleml:then>
@@ -385,14 +385,14 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:surfaceFinish" />
 							<ruleml:Data iri="U5" />
 							<ruleml:Operator iri="lovo:equal" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:slope" />
@@ -400,8 +400,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:towards" />
@@ -409,8 +409,8 @@
 								<ruleml:Data iri="floorWaste" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -418,7 +418,7 @@
 								<ruleml:Data iri="nzbc-g13" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -438,14 +438,14 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:material" />
 							<ruleml:Data iri="concrete" />
 							<ruleml:Operator iri="lovo:equal" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:material" />
@@ -453,8 +453,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:Or>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:material" />
@@ -462,8 +462,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:Or>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:material" />
@@ -471,8 +471,8 @@
 								<ruleml:Operator iri="lovo:similarTo" />
 							</ruleml:Atom>
 						</ruleml:Or>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:material" />
@@ -480,8 +480,8 @@
 								<ruleml:Operator iri="lovo:similarTo" />
 							</ruleml:Atom>
 						</ruleml:Or>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:material" />
@@ -489,7 +489,7 @@
 								<ruleml:Operator iri="lovo:similarTo" />
 							</ruleml:Atom>
 						</ruleml:Or>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 					<ruleml:Atom />
 				</ruleml:then>
@@ -516,13 +516,13 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:screenedFrom" />
 							<ruleml:Var iri="buvo:thermalExposure" />
 							<ruleml:Data iri="directSunlight" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -539,12 +539,12 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Permission>
+					<lrml:Permission>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:wasteStorageArea" />
 							<ruleml:Data iri="refrigerated" />
 						</ruleml:Atom>
-					</lrml:devo:Permission>
+					</lrml:Permission>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -569,13 +569,13 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:screenedFrom" />
 							<ruleml:Var iri="buvo:access" />
 							<ruleml:Data iri="vermin" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -593,7 +593,7 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Expr>
 							<ruleml:Fun />
 						</ruleml:Expr>
@@ -602,8 +602,8 @@
 							<ruleml:Data iri="1" />
 							<ruleml:Operator iri="lovo:greaterThan" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -611,7 +611,7 @@
 								<ruleml:Data iri="nzbc-g12" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -631,13 +631,13 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:complyWith" />
 							<ruleml:Var iri="buvo:ventilation" />
 							<ruleml:Data iri="nzbc-g4" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -656,14 +656,14 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:ventilationRate" />
 							<ruleml:Data iri="6 air changes per hour" />
 							<ruleml:Operator iri="lovo:greaterThanEqual" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:airPressure" />
@@ -671,8 +671,8 @@
 								<ruleml:Operator iri="lovo:lessThan" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:towards" />
@@ -681,7 +681,7 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -706,13 +706,13 @@
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:complyWith" />
 							<ruleml:Var iri="buvo:accessRoute" />
 							<ruleml:Data iri="nzbc-d1" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
@@ -725,13 +725,13 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Permission>
+					<lrml:Permission>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:complyWith" />
 							<ruleml:Var iri="buvo:wasteStorageArea" />
 							<ruleml:Data iri="lrml:PrescriptiveStatement nzs4304.6.2" />
 						</ruleml:Atom>
-					</lrml:devo:Permission>
+					</lrml:Permission>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -745,14 +745,14 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:internalDiameter" />
 							<ruleml:Data iri="450 mm" />
 							<ruleml:Operator iri="lovo:greaterThanEqual" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:cleaningMode" />
@@ -760,8 +760,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:orientation" />
@@ -769,8 +769,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:interiorSurface" />
@@ -778,32 +778,32 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:hasVent" />
 								<ruleml:Data iri="aboveRoofLine" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:hasVent" />
 								<ruleml:Data iri="bottomOfChute" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:disposalMethod" />
 								<ruleml:Data iri="moveableContainer" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:located" />
@@ -811,8 +811,8 @@
 								<ruleml:Data iri="room" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -820,8 +820,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.1" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -829,8 +829,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.2" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -838,8 +838,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.3" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -847,8 +847,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.4" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -856,8 +856,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.5" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -865,8 +865,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.6" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -874,8 +874,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.7" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -883,8 +883,8 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.8" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -892,7 +892,7 @@
 								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.9" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -906,21 +906,21 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:openingDiameter" />
 							<ruleml:Data iri="250 mm" />
 							<ruleml:Operator iri="lovo:lessThanEqual" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:hasDoor" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:door" />
@@ -928,8 +928,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:door" />
@@ -937,24 +937,24 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surfaceFinish" />
 								<ruleml:Data iri="easilyCleaned" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Permission>
+					</lrml:Obligation>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surface" />
 								<ruleml:Data iri="galvanisedSteelSheet" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
-					<lrml:devo:Obligation>
+					</lrml:Permission>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -964,8 +964,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -975,8 +975,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -986,8 +986,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -997,16 +997,16 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:ventilation" />
 								<ruleml:Data iri="adequate" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Permission>
+					</lrml:Obligation>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:located" />
@@ -1014,7 +1014,7 @@
 								<ruleml:Data iri="openAir" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
+					</lrml:Permission>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -1028,21 +1028,21 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:openingDiameter" />
 							<ruleml:Data iri="250 mm" />
 							<ruleml:Operator iri="lovo:lessThanEqual" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:hasDoor" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:door" />
@@ -1050,8 +1050,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:door" />
@@ -1059,24 +1059,24 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surfaceFinish" />
 								<ruleml:Data iri="easilyCleaned" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Permission>
+					</lrml:Obligation>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surface" />
 								<ruleml:Data iri="ceramicTiles" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
-					<lrml:devo:Obligation>
+					</lrml:Permission>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1086,8 +1086,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1097,8 +1097,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1108,8 +1108,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1119,16 +1119,16 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:ventilation" />
 								<ruleml:Data iri="adequate" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Permission>
+					</lrml:Obligation>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:located" />
@@ -1136,7 +1136,7 @@
 								<ruleml:Data iri="openAir" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
+					</lrml:Permission>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -1150,21 +1150,21 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:openingDiameter" />
 							<ruleml:Data iri="250 mm" />
 							<ruleml:Operator iri="lovo:lessThanEqual" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:hasDoor" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:door" />
@@ -1172,8 +1172,8 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:door" />
@@ -1181,24 +1181,24 @@
 								<ruleml:Operator iri="lovo:equal" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surfaceFinish" />
 								<ruleml:Data iri="easilyCleaned" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Permission>
+					</lrml:Obligation>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surface" />
 								<ruleml:Data iri="materials" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
-					<lrml:devo:Permission>
+					</lrml:Permission>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surface" />
@@ -1206,8 +1206,8 @@
 								<ruleml:Operator iri="lovo:similarTo" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
-					<lrml:devo:Permission>
+					</lrml:Permission>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:surface" />
@@ -1215,8 +1215,8 @@
 								<ruleml:Operator iri="lovo:similarTo" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
-					<lrml:devo:Obligation>
+					</lrml:Permission>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1226,8 +1226,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1237,8 +1237,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1248,8 +1248,8 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
@@ -1259,16 +1259,16 @@
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Var iri="buvo:ventilation" />
 								<ruleml:Data iri="adequate" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
-					<lrml:devo:Permission>
+					</lrml:Obligation>
+					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:located" />
@@ -1276,8 +1276,8 @@
 								<ruleml:Data iri="openAir" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Permission>
-					<lrml:devo:Obligation>
+					</lrml:Permission>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:complyWith" />
@@ -1285,7 +1285,7 @@
 								<ruleml:Data iri="nzbc-g4" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -1299,13 +1299,13 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:waterSupplyTap" />
 							<ruleml:Data iri="1 per every second floor" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
-					<lrml:devo:Obligation>
+					</lrml:Obligation>
+					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
 								<ruleml:Rel iri="fuvo:adjacent" />
@@ -1313,7 +1313,7 @@
 								<ruleml:Data iri="solidWasteChute" />
 							</ruleml:Atom>
 						</ruleml:And>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -1327,14 +1327,14 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Rel iri="fuvo:height" />
 							<ruleml:Var iri="buvo:room" />
 							<ruleml:Data iri="2000mm" />
 							<ruleml:Operator iri="lovo:greaterThanEqual" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -1348,11 +1348,11 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:opening" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -1366,11 +1366,11 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:bottomOfChute" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 				</ruleml:then>
 			</ruleml:Rule>
@@ -1384,11 +1384,11 @@
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
-					<lrml:devo:Obligation>
+					<lrml:Obligation>
 						<ruleml:Atom>
 							<ruleml:Var iri="buvo:bottomOfChute" />
 						</ruleml:Atom>
-					</lrml:devo:Obligation>
+					</lrml:Obligation>
 					<ruleml:Atom />
 					<ruleml:Atom />
 					<ruleml:Atom />

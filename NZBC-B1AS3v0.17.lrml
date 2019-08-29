@@ -295,7 +295,7 @@
     </lrml:Context>
     <lrml:Statements>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.1.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -352,10 +352,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.2.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.2.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -412,10 +412,10 @@
                         </lrml:Expr>
                     </lrml:Prohibition>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.2.0.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.2.0.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.2.0.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -447,10 +447,10 @@
                         </lrml:Expr>
                     </lrml:Prohibition>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -523,10 +523,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -602,10 +602,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.3">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.3">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.a.3">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -678,10 +678,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.3.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.b.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.b.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -754,10 +754,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.3.0.1.b.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.b.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.b.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -833,13 +833,13 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.3.0.1.c.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.c.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.3.0.1.c.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.1.4.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.1.4.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.1.4.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:has"/>
@@ -897,13 +897,13 @@
                         </lrml:And>
                     </lrml:Or>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.2.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.2.1.0.1.a.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.a.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.a.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -948,10 +948,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.2.1.0.1.a.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.a.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.a.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -996,10 +996,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.2.1.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.b.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.b.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1036,10 +1036,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.2.1.0.1.c.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.c.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.2.1.0.1.c.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1076,25 +1076,25 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.1.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.1.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.2.0.1.a.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1.a.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1.a.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.2.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1.b.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1.b.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.2.0.1.c.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1.c.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.2.0.1.c.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.3.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.3.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.3.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1151,10 +1151,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.3.0.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.3.0.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.3.0.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1211,10 +1211,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.3.3.0.3">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.3.3.0.3">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.3.3.0.3">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1273,19 +1273,19 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:f1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:f1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:f1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:f2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:f2"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:f2"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:f3">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:f3"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:f3"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.4.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.4.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.4.1.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1357,10 +1357,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.5.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.5.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.5.1.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1420,10 +1420,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.6.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.6.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.6.1.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1529,10 +1529,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.6.1.0.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.6.1.0.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.6.1.0.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1644,10 +1644,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.6.1.0.3">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.6.1.0.3">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.6.1.0.3">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -1781,19 +1781,19 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.6.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.6.2.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.6.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.6.2.0.1.a.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.6.2.0.1.a.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.6.2.0.1.a.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.6.2.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.6.2.0.1.b.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.6.2.0.1.b.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.1.0.1">
                 <lrml:if>
                     <lrml:Not>
                         <lrml:Expr>
@@ -1806,10 +1806,10 @@
                         </lrml:Expr>
                     </lrml:Not>
                 </lrml:if>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.2.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.2.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:inBetween"/>
@@ -1864,13 +1864,13 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:c1.7.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:c1.7.2.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:c1.7.2.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.3.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.3.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.3.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Not>
@@ -1903,22 +1903,22 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:f4">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:f4"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:f4"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:f5">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:f5"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:f5"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.4.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.4.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.4.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.5.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.5.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.5.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.6.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:equal"/>
@@ -1981,19 +1981,19 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.6.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1.b.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1.b.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.6.0.1.c.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1.c.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1.c.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.6.0.1.d.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1.d.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.6.0.1.d.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.7.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.7.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.7.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:lessThanEqual"/>
@@ -2024,10 +2024,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.7.0.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.7.0.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.7.0.2">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:greaterThan"/>
@@ -2065,10 +2065,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.8.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.8.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.8.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:equal"/>
@@ -2103,10 +2103,10 @@
                         </lrml:Expr>
                     </lrml:Or>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.9.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.9.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.9.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:equal"/>
@@ -2128,10 +2128,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.10.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.10.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.10.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2166,10 +2166,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.10.0.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.10.0.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.10.0.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2206,10 +2206,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.11.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.11.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.11.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:is"/>
@@ -2220,19 +2220,19 @@
                         <lrml:Data>cast-in</lrml:Data>
                     </lrml:Expr>
                 </lrml:if>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.11.0.1.a.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.11.0.1.a.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.11.0.1.a.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.11.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.11.0.1.b.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.11.0.1.b.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.12.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.12.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.12.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.13.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.13.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.13.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:is"/>
@@ -2382,10 +2382,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.14.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.14.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.14.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:is"/>
@@ -2514,10 +2514,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.15.0.1.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.15.0.1.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.15.0.1.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:is"/>
@@ -2539,10 +2539,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.15.0.1.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.15.0.1.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.15.0.1.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2577,10 +2577,10 @@
                         </lrml:Not>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.15.0.1.3">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.15.0.1.3">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.15.0.1.3">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2615,16 +2615,16 @@
                         </lrml:Not>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:f6">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:f6"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:f6"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:f7">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:f7"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:f7"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.16.0.1.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:is"/>
@@ -2688,10 +2688,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.16.0.1.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.2">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:is"/>
@@ -2713,10 +2713,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.16.0.1.3">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.3">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.3">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2751,10 +2751,10 @@
                         </lrml:Not>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.7.16.0.1.4">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.4">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.7.16.0.1.4">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2789,10 +2789,10 @@
                         </lrml:Not>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.1.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:is"/>
@@ -2815,10 +2815,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2850,10 +2850,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.2.0.2">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.2">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.2">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2892,10 +2892,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.2.0.3">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.3">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.2.0.3">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -2942,10 +2942,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.3.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.3.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.3.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3166,10 +3166,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.4.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.4.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.4.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3201,10 +3201,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.5.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:has"/>
@@ -3226,10 +3226,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.5.0.1.a.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1.a.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1.a.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3273,10 +3273,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.5.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1.b.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1.b.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3320,10 +3320,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.5.0.1.c.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1.c.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.5.0.1.c.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3375,10 +3375,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.8.6.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.8.6.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.8.6.0.1">
                 <lrml:if>
                     <lrml:Expr>
                         <lrml:Fun iri="lovo:has"/>
@@ -3400,10 +3400,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.1.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3570,10 +3570,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.2.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.2.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3594,10 +3594,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:if>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.3.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.3.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.3.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3655,13 +3655,13 @@
                         </lrml:And>
                     </lrml:Expr>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:c1.9.3.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:c1.9.3.0.1"/>
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:c1.9.3.0.1"/>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.4.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3682,10 +3682,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:if>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.4.0.1.a.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1.a.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1.a.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3733,10 +3733,10 @@
                         <lrml:Data>building</lrml:Data>
                     </lrml:Expr>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.4.0.1.b.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1.b.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1.b.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3791,10 +3791,10 @@
                         <lrml:Data>building</lrml:Data>
                     </lrml:Expr>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.4.0.1.c.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1.c.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.4.0.1.c.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3867,10 +3867,10 @@
                         <lrml:Data>building</lrml:Data>
                     </lrml:Expr>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.5.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.5.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.5.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3949,10 +3949,10 @@
                         </lrml:And>
                     </lrml:Expr>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:1.9.6.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:1.9.6.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:1.9.6.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -3997,10 +3997,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.1.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.1.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:2.1.1.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -4058,10 +4058,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.1.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:2.2.1.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -4251,10 +4251,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.2.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:2.2.2.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -4341,10 +4341,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.3.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.3.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:2.2.3.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -4437,10 +4437,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:2.2.4.0.1">
-            <lrml:Rule key="NZBC-NZBC.B1AS3:2.2.4.0.1">
+            <ruleml:Rule key="NZBC-NZBC.B1AS3:2.2.4.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -4502,7 +4502,7 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.B1AS3:t1.1">
             <ruleml:Rule key="NZBC-NZBC.B1AS3:t1.1">
