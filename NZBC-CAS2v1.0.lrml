@@ -70,11 +70,736 @@
         </lrml:Association>
     </lrml:Context>
     <lrml:Statements>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                                <lrml:Or>
+                                    <lrml:Data>nzbc.c1</lrml:Data>
+                                    <lrml:Data>nzbc.c2</lrml:Data>
+                                    <lrml:Data>nzbc.c3</lrml:Data>
+                                    <lrml:Data>nzbc.c5</lrml:Data>
+                                    <lrml:Data>nzbc.c6</lrml:Data>
+                                </lrml:Or>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:asPer"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>table</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:table"/>
+                            </lrml:Atom>
+                            <lrml:Data>t1.1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:asPer"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>rule</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:rule"/>
+                            </lrml:Atom>
+                            <lrml:Data>1.1.1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.0.2">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.0.2">
+                <lrml:if>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>SH</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-cas1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.0.3">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.0.3">
+                <lrml:if>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>backcountryHut</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-bchas1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:asPer"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>table</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:table"/>
+                            </lrml:Atom>
+                            <lrml:Data>t1.1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:riskGroup"/>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                                <lrml:Data>SH</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.1.0.2">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.1.0.2">
+                <lrml:if>
+                    <lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>sleeping</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>SM</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Or>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.1.0.3">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.1.0.3">
+                <lrml:if>
+                    <lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>care</lrml:Data>
+                                <lrml:Data>detention</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>SI</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Or>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.1.0.4">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.1.0.4">
+                <lrml:if>
+                    <lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>crowd</lrml:Data>
+                                <lrml:Data>educational</lrml:Data>
+                                <lrml:Data>personalService</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>CA</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Or>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.1.0.5">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.1.0.5">
+                <lrml:if>
+                    <lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>business</lrml:Data>
+                                <lrml:Data>professionalService</lrml:Data>
+                                <lrml:Data>industrial</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>WB</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Or>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.1.0.6">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.1.0.6">
+                <lrml:if>
+                    <lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>storage</lrml:Data>
+                                <lrml:Data>tradeService</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>WS</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Or>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.1.1.0.7">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.1.1.0.7">
+                <lrml:if>
+                    <lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>vehicleParking</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>VP</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Or>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireProtection"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>thisDocument</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.2.2.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.2.2.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:activity"/>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:max"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:activity"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>building</lrml:Data>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:define"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:stringency"/>
+                                    <lrml:Var iri="buvo:riskGroup"/>
+                                </lrml:Atom>
+                                <lrml:Data>primaryRiskGroup</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>primaryRiskGroup</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.2.2.0.2">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.2.2.0.2">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:activity"/>
+                                    <lrml:Var iri="buvo:firecell"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:max"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:activity"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>firecell</lrml:Data>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:define"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:stringency"/>
+                                    <lrml:Var iri="buvo:riskGroup"/>
+                                </lrml:Atom>
+                                <lrml:Data>primaryRiskGroup</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:firecell"/>
+                            </lrml:Atom>
+                            <lrml:Data>primaryRiskGroup</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.2.2.0.3">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.2.2.0.3">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:activity"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:max"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:activity"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>space</lrml:Data>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:define"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:stringency"/>
+                                    <lrml:Var iri="buvo:riskGroup"/>
+                                </lrml:Atom>
+                                <lrml:Data>primaryRiskGroup</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>primaryRiskGroup</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.2.2.0.4">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.2.2.0.4">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:riskGroup"/>
+                            <lrml:Var iri="buvo:space"/>
+                        </lrml:Atom>
+                        <lrml:Data>ancillary</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:part of"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>primaryRiskGroup</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.2.3.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.2.3.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:has"/>
+                        <lrml:Atom>
+                            <lrml:Var iri="buvo:building"/>
+                        </lrml:Atom>
+                        <lrml:Data>primaryRiskGroup</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Permission>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:primaryRiskGroup"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Permission>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.3.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.3.1.0.1"/>
+        </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.1.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.1.0.1"/>
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.1.0.1">
+                <lrml:if>
+                    <lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:forEach"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:buildingStorey"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>firecell</lrml:Data>
+                            <lrml:And>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:define"/>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="fuvo:count"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:occupant"/>
+                                            <lrml:Var iri="buvo:space"/>
+                                        </lrml:Atom>
+                                    </lrml:Expr>
+                                    <lrml:Data>p1</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:define"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:riskGroup"/>
+                                        <lrml:Var iri="buvo:space"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>rg1</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:include"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:space"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>openFloorArea</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:greaterThan"/>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="fuvo:count"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:activities"/>
+                                            <lrml:Var iri="buvo:space"/>
+                                        </lrml:Atom>
+                                    </lrml:Expr>
+                                    <lrml:Data>1</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:forEach"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>firecell</lrml:Data>
+                            <lrml:And>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:define"/>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="fuvo:count"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:occupant"/>
+                                            <lrml:Var iri="buvo:space"/>
+                                        </lrml:Atom>
+                                    </lrml:Expr>
+                                    <lrml:Data>p2</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:define"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:riskGroup"/>
+                                        <lrml:Var iri="buvo:space"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>rg2</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:include"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:space"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>openFloorArea</lrml:Data>
+                                </lrml:Expr>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:greaterThan"/>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="fuvo:count"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:activities"/>
+                                            <lrml:Var iri="buvo:space"/>
+                                        </lrml:Atom>
+                                    </lrml:Expr>
+                                    <lrml:Data>1</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:And>
+                        </lrml:Expr>
+                    </lrml:Or>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:total"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:calculation"/>
+                                    <lrml:Var iri="buvo:occupantLoad"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:And>
+                                <lrml:Data>p1</lrml:Data>
+                                <lrml:Data>p2</lrml:Data>
+                                <lrml:Data>rg1</lrml:Data>
+                                <lrml:Data>rg2</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.2.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.2.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.2.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -125,10 +850,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.3.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.3.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.3.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -184,10 +909,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.4.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.4.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.4.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -276,10 +1001,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.5.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.5.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.5.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Or>
@@ -376,10 +1101,10 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.6.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.6.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.6.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Or>
@@ -445,10 +1170,10 @@
                         </lrml:Expr>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.7.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.7.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.7.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -518,10 +1243,10 @@
                         </lrml:Expr>
                     </lrml:Obligation>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
         </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.8.0.1">
-            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.8.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:1.4.8.0.1">
                 <lrml:if>
                     <lrml:And>
                         <lrml:Expr>
@@ -595,7 +1320,1500 @@
                         </lrml:Obligation>
                     </lrml:And>
                 </lrml:then>
-            </lrml:Rule>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.1.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.1.1.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Var iri="buvo:space"/>
+                        </lrml:Atom>
+                        <lrml:Data>firecell</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:floorArea"/>
+                                    <lrml:Var iri="buvo:firecell"/>
+                                </lrml:Atom>
+                                <lrml:Data>table</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:equal"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:key"/>
+                                    <lrml:Var iri="buvo:table"/>
+                                </lrml:Atom>
+                                <lrml:Data>t2.1</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.1.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:riskGroup"/>
+                            <lrml:Var iri="buvo:space"/>
+                        </lrml:Atom>
+                        <lrml:Or>
+                            <lrml:Data>SM</lrml:Data>
+                            <lrml:Data>SI</lrml:Data>
+                        </lrml:Or>
+                    </lrml:Expr>
+                </lrml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.1.0.2">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.1.0.2">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:riskGroup"/>
+                            <lrml:Var iri="buvo:space"/>
+                        </lrml:Atom>
+                        <lrml:Data>CA</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.1.0.3">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.1.0.3">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:riskGroup"/>
+                            <lrml:Var iri="buvo:space"/>
+                        </lrml:Atom>
+                        <lrml:Or>
+                            <lrml:Data>WB</lrml:Data>
+                            <lrml:Data>WS</lrml:Data>
+                        </lrml:Or>
+                    </lrml:Expr>
+                </lrml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.1.0.4">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.1.0.4">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:riskGroup"/>
+                            <lrml:Var iri="buvo:space"/>
+                        </lrml:Atom>
+                        <lrml:Data>VP</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.1.0.5">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.1.0.5">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireSafetySystem"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>supplementary</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:fireSafetySystem"/>
+                            </lrml:Atom>
+                            <lrml:Data>detection</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:method"/>
+                                <lrml:Var iri="buvo:detection"/>
+                            </lrml:Atom>
+                            <lrml:Data>automatic</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:detection"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>heat</lrml:Data>
+                                <lrml:Data>smoke</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:has"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:fireSafetySystem"/>
+                                </lrml:Atom>
+                                <lrml:Data>fireServiceDirectConnection</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.2.0.a.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.2.0.a.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>earlyChildhood</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:buildingStorey"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>sleeping</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Expr>
+                            <lrml:Fun iri="fuvo:forEach"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                        </lrml:Expr>
+                        <lrml:Data>sleeping</lrml:Data>
+                        <lrml:And>
+                            <lrml:Obligation>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:has"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:space"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>smokeDetector</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:is"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:smokeDetector"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>supplementary</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:complyWith"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:smokeDetector"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>nzs4512</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:Obligation>
+                        </lrml:And>
+                    </lrml:Expr>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.2.0.b.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.2.0.b.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>earlyChildhood</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:escapeHeight"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>2.0 m</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireSafetySystem"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>type7</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.2.0.c.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.2.0.c.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activity"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>earlyChildhood</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:elevation"/>
+                                <lrml:Var iri="buvo:groundLevel"/>
+                            </lrml:Atom>
+                            <lrml:Data>elev1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:elevation"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>elev1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:greaterThanEqual"/>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="fuvo:count"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:placeOfSafety"/>
+                                    </lrml:Atom>
+                                </lrml:Expr>
+                                <lrml:Data>2</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:has"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:placeOfSafety"/>
+                                </lrml:Atom>
+                                <lrml:Data>fireResistanceRating</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:frrType"/>
+                                    <lrml:Var iri="buvo:fireResistanceRating"/>
+                                </lrml:Atom>
+                                <lrml:Data>propertyRating</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:to"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:directAccess"/>
+                                    <lrml:Var iri="buvo:placeOfSafety"/>
+                                </lrml:Atom>
+                                <lrml:Or>
+                                    <lrml:Data>safePath</lrml:Data>
+                                    <lrml:Data>finalExit</lrml:Data>
+                                </lrml:Or>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.3.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.3.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>firecell</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:firecell"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireSafetySystem"/>
+                                <lrml:Var iri="buvo:firecell"/>
+                            </lrml:Atom>
+                            <lrml:Data>cap.cas2.r2.2.3</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.4.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.4.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:riskGroup"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>VP</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>firecell</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:has"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:firecell"/>
+                                </lrml:Atom>
+                                <lrml:Data>fireSprinklerSystem</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:fireSafetySystem"/>
+                                    <lrml:Var iri="buvo:firecell"/>
+                                </lrml:Atom>
+                                <lrml:Data>table</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:table"/>
+                            </lrml:Atom>
+                            <lrml:Data>t2.2a</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Permission>
+                            <lrml:Not>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:throughout"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:installation"/>
+                                        <lrml:Var iri="buvo:fireSprinklerSystem"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>building</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:Not>
+                        </lrml:Permission>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:type"/>
+                                    <lrml:Var iri="buvo:fireResistanceRating"/>
+                                </lrml:Atom>
+                                <lrml:Data>propertyRating</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.5.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.5.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.6.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.6.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:buildingStorey"/>
+                            </lrml:Atom>
+                            <lrml:Data>riskGroup</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:riskGroup"/>
+                                    <lrml:Var iri="buvo:buildingStorey"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Not>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:has"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:riskGroup"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>fireSeparation</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:Not>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:for"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:fireSafetySystem"/>
+                            </lrml:Atom>
+                            <lrml:Data>primaryRiskGroup</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.7.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.7.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.8.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.8.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:has"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                                <lrml:Data>fireAlarmSystem</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:activation"/>
+                                <lrml:Var iri="buvo:fireAlarmSystem"/>
+                            </lrml:Atom>
+                            <lrml:Data>TRUE</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:fireAlarmSystem"/>
+                            </lrml:Atom>
+                            <lrml:Data>alertingDevice</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:reach"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:output"/>
+                                    <lrml:Var iri="buvo:alertingDevice"/>
+                                </lrml:Atom>
+                                <lrml:Data>occupant</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:occupant"/>
+                            </lrml:Atom>
+                            <lrml:Data>all</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.2.9.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.2.9.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:riskGroup"/>
+                            </lrml:Atom>
+                            <lrml:Data>SI</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>fireAlarmSystem</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:fireAlarmSystem"/>
+                            </lrml:Atom>
+                            <lrml:Data>alertingDevice</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:reach"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:output"/>
+                                    <lrml:Var iri="buvo:alertingDevice"/>
+                                </lrml:Atom>
+                                <lrml:Data>occupant</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:type"/>
+                                    <lrml:Var iri="buvo:occupant"/>
+                                </lrml:Atom>
+                                <lrml:Data>staff</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Permission>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:reach"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:output"/>
+                                    <lrml:Var iri="buvo:alertingDevice"/>
+                                </lrml:Atom>
+                                <lrml:Data>occupant</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Permission>
+                        <lrml:Permission>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:type"/>
+                                    <lrml:Var iri="buvo:occupant"/>
+                                </lrml:Atom>
+                                <lrml:Data>all</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Permission>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.1.0.1">
+                <lrml:if>
+                    <lrml:Not>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireResistanceRating"/>
+                                <lrml:Var iri="buvo:riskGroup"/>
+                            </lrml:Atom>
+                            <lrml:Data>other</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Not>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:complyWith"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:fireResistanceRating"/>
+                                    <lrml:Var iri="buvo:riskGroup"/>
+                                </lrml:Atom>
+                                <lrml:Data>table</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:table"/>
+                            </lrml:Atom>
+                            <lrml:Data>t2.4</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.2.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.2.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:buildingStorey"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:fireResistanceRating"/>
+                                </lrml:Atom>
+                                <lrml:Data>required</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Permission>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:element"/>
+                                    <lrml:Var iri="buvo:structural"/>
+                                </lrml:Atom>
+                                <lrml:Data>fireRated</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                    </lrml:Permission>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.3.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.3.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:riskGroup"/>
+                                    <lrml:Var iri="buvo:buildingStorey"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:forEach"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:riskGroup"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>buildingStorey</lrml:Data>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:define"/>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="fuvo:max"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:fireResistanceRating"/>
+                                        <lrml:Var iri="buvo:riskGroup"/>
+                                    </lrml:Atom>
+                                </lrml:Expr>
+                                <lrml:Data>frr</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>common</lrml:Data>
+                                <lrml:Data>sharedEscapeRoute</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireResistanceRating"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>frr</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.4.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.4.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:sideOf"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:element"/>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>exposure</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:type"/>
+                                <lrml:Var iri="buvo:exposure"/>
+                            </lrml:Atom>
+                            <lrml:Data>fire</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:sideOf"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:element"/>
+                                    <lrml:Var iri="buvo:building"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>fireResistanceRating</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.5.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.5.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.6.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.6.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:element"/>
+                            <lrml:Var iri="buvo:building"/>
+                        </lrml:Atom>
+                        <lrml:Data>floor</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:undersideOf"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:floor"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>fireResistanceRating</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.7.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.7.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>primary</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:integralWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>fireSeparation</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireResistanceRating"/>
+                                <lrml:Var iri="buvo:fireSeparation"/>
+                            </lrml:Atom>
+                            <lrml:Data>frr</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThanEqual"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:fireResistanceRating"/>
+                            </lrml:Atom>
+                            <lrml:Data>frr</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.8.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.8.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.9.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.9.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.10.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.10.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.11.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.11.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>be1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:connectTo"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:be1"/>
+                            </lrml:Atom>
+                            <lrml:Data>structuralFramingMember</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireResistanceRating"/>
+                                <lrml:Var iri="buvo:be1"/>
+                            </lrml:Atom>
+                            <lrml:Data>frr</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThanEqual"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:fireResistanceRating"/>
+                                <lrml:Var iri="buvo:structuralFramingMember"/>
+                            </lrml:Atom>
+                            <lrml:Data>frr</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.12.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.12.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:2.3.13.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:2.3.13.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.1.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.1.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:in"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:fire"/>
+                            </lrml:Atom>
+                            <lrml:Data>building</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>occupant</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:has"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:occupant"/>
+                                </lrml:Atom>
+                                <lrml:Data>meansOfEscape</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:include"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:meansOfEscape"/>
+                                </lrml:Atom>
+                                <lrml:Data>escapeRoute</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:to"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:escapeRoute"/>
+                                </lrml:Atom>
+                                <lrml:Data>safePlace</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.1.2.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.1.2.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:component"/>
+                                <lrml:Var iri="buvo:escapeRoute"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>openPath</lrml:Data>
+                                <lrml:Data>exitway</lrml:Data>
+                                <lrml:Data>finalExit</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:degreeOfProtection"/>
+                                <lrml:Var iri="buvo:openPath"/>
+                            </lrml:Atom>
+                            <lrml:Data>p1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:degreeOfProtection"/>
+                                <lrml:Var iri="buvo:exitways"/>
+                            </lrml:Atom>
+                            <lrml:Data>p2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:degreeOfProtection"/>
+                                <lrml:Var iri="buvo:finalExit"/>
+                            </lrml:Atom>
+                            <lrml:Data>p3</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:lessThan"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:p1"/>
+                                </lrml:Atom>
+                                <lrml:Data>p2</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:lessThan"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:p2"/>
+                                </lrml:Atom>
+                                <lrml:Data>p3</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:component"/>
+                                    <lrml:Var iri="buvo:escapeRoute"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.1.2.0.2">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.1.2.0.2">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:component"/>
+                            <lrml:Var iri="buvo:escapeRoute"/>
+                        </lrml:Atom>
+                        <lrml:Data>exitway</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Or>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:exitway"/>
+                                </lrml:Atom>
+                                <lrml:Data>smokeLobby</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:exitway"/>
+                                </lrml:Atom>
+                                <lrml:Data>safePath</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:exitway"/>
+                                </lrml:Atom>
+                                <lrml:And>
+                                    <lrml:Data>smokeLobby</lrml:Data>
+                                    <lrml:Data>safePath</lrml:Data>
+                                </lrml:And>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:Or>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.1.2.0.3">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.1.2.0.3">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:origin"/>
+                                <lrml:Var iri="buvo:escapeRoute"/>
+                            </lrml:Atom>
+                            <lrml:Data>e1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:destination"/>
+                                <lrml:Var iri="buvo:escapeRoute"/>
+                            </lrml:Atom>
+                            <lrml:Data>e2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:degreeOfProtection"/>
+                                <lrml:Var iri="buvo:e1"/>
+                            </lrml:Atom>
+                            <lrml:Data>p1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:degreeOfProtection"/>
+                                <lrml:Var iri="buvo:e2"/>
+                            </lrml:Atom>
+                            <lrml:Data>p2</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:p2"/>
+                            </lrml:Atom>
+                            <lrml:Data>p1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.1.3.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.1.3.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:length"/>
+                                <lrml:Var iri="buvo:openPath"/>
+                            </lrml:Atom>
+                            <lrml:Data>e1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:length"/>
+                                <lrml:Var iri="buvo:openPath"/>
+                            </lrml:Atom>
+                            <lrml:Data>table</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:table"/>
+                            </lrml:Atom>
+                            <lrml:Data>t3.2</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Permission>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:component"/>
+                                <lrml:Var iri="buvo:escapeRoute"/>
+                            </lrml:Atom>
+                            <lrml:And>
+                                <lrml:Data>openPath</lrml:Data>
+                                <lrml:Data>finalExit</lrml:Data>
+                            </lrml:And>
+                        </lrml:Expr>
+                    </lrml:Permission>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.1.4.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.1.4.0.1">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:in"/>
+                        <lrml:Atom>
+                            <lrml:Var iri="buvo:escapeRoute"/>
+                        </lrml:Atom>
+                        <lrml:Data>building</lrml:Data>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:escapeRoute"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-d1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.1.4.0.2">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.1.4.0.2">
+                <lrml:if>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:is"/>
+                        <lrml:Atom>
+                            <lrml:Rel iri="buvo:element"/>
+                            <lrml:Var iri="buvo:building"/>
+                        </lrml:Atom>
+                        <lrml:Or>
+                            <lrml:Data>ramp</lrml:Data>
+                            <lrml:Data>stair</lrml:Data>
+                            <lrml:Data>ladder</lrml:Data>
+                            <lrml:Data>landing</lrml:Data>
+                            <lrml:Data>handrail</lrml:Data>
+                            <lrml:Data>door</lrml:Data>
+                            <lrml:Data>visionPanel</lrml:Data>
+                            <lrml:Data>opening</lrml:Data>
+                        </lrml:Or>
+                    </lrml:Expr>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:element"/>
+                                <lrml:Var iri="buvo:building"/>
+                            </lrml:Atom>
+                            <lrml:Data>nzbc-d1as1</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.2.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.2.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:escapeRoute"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>n1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:n1"/>
+                            </lrml:Atom>
+                            <lrml:Data>1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:complyWith"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:n1"/>
+                            </lrml:Atom>
+                            <lrml:Data>rule</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:rule"/>
+                            </lrml:Atom>
+                            <lrml:Data>3.13</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Expr>
+                        <lrml:Fun iri="lovo:greaterThanEqual"/>
+                        <lrml:Expr>
+                            <lrml:Fun iri="fuvo:forEach"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:occupantLoad"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                        </lrml:Expr>
+                        <lrml:Data>1</lrml:Data>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:greaterThanEqual"/>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="fuvo:count"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:escapeRoute"/>
+                                    </lrml:Atom>
+                                </lrml:Expr>
+                                <lrml:Data>2</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:Expr>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:3.2.2.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:3.2.2.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:4.1.1.0.1">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:4.1.1.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:adjoins"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:space1"/>
+                            </lrml:Atom>
+                            <lrml:Data>space2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:space1"/>
+                            </lrml:Atom>
+                            <lrml:Data>firecell</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:space2"/>
+                            </lrml:Atom>
+                            <lrml:Data>firecell</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:owner"/>
+                                <lrml:Var iri="buvo:space1"/>
+                            </lrml:Atom>
+                            <lrml:Data>owner1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:owner"/>
+                                <lrml:Var iri="buvo:space2"/>
+                            </lrml:Atom>
+                            <lrml:Data>owner2</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:fireSeparatedFrom"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:space1"/>
+                                </lrml:Atom>
+                                <lrml:Data>space2</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:max"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:rating"/>
+                                    <lrml:Var iri="buvo:fireSeparation"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Or>
+                                <lrml:And>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="lovo:is"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:rating"/>
+                                            <lrml:Var iri="buvo:fireSeparation"/>
+                                        </lrml:Atom>
+                                        <lrml:Data>lifeRating</lrml:Data>
+                                    </lrml:Expr>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="lovo:equal"/>
+                                        <lrml:Atom>
+                                            <lrml:Var iri="buvo:owner1"/>
+                                        </lrml:Atom>
+                                        <lrml:Data>owner2</lrml:Data>
+                                    </lrml:Expr>
+                                </lrml:And>
+                                <lrml:And>
+                                    <lrml:Expr>
+                                        <lrml:Fun iri="lovo:is"/>
+                                        <lrml:Atom>
+                                            <lrml:Rel iri="buvo:rating"/>
+                                            <lrml:Var iri="buvo:fireSeparation"/>
+                                        </lrml:Atom>
+                                        <lrml:Data>propertyRating</lrml:Data>
+                                    </lrml:Expr>
+                                    <lrml:Not>
+                                        <lrml:Expr>
+                                            <lrml:Fun iri="lovo:equal"/>
+                                            <lrml:Atom>
+                                                <lrml:Var iri="buvo:owner1"/>
+                                            </lrml:Atom>
+                                            <lrml:Data>owner2</lrml:Data>
+                                        </lrml:Expr>
+                                    </lrml:Not>
+                                </lrml:And>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:asPer"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:lifeRating"/>
+                            </lrml:Atom>
+                            <lrml:Data>rule</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:asPer"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:propertyRating"/>
+                            </lrml:Atom>
+                            <lrml:Data>rule</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:rule"/>
+                            </lrml:Atom>
+                            <lrml:Data>2.3.0</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:4.1.1.0.2">
+            <Ruleml:Rule key="NZBC-NZBC.CAS2:4.1.1.0.2"/>
         </lrml:PrescriptiveStatement>
     </lrml:Statements>
 </lrml:LegalRuleML>
