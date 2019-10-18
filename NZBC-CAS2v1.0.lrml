@@ -269,6 +269,48 @@
             <lrml:toTarget keyref="t9.1.1"/>
             <lrml:toTarget keyref="t9.1.2"/>
         </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t1.2"/>
+            <lrml:toTarget keyref="t1.2.1"/>
+            <lrml:toTarget keyref="t1.2.2"/>
+            <lrml:toTarget keyref="t1.2.3"/>
+            <lrml:toTarget keyref="t1.2.4"/>
+            <lrml:toTarget keyref="t1.2.5"/>
+            <lrml:toTarget keyref="t1.2.6"/>
+            <lrml:toTarget keyref="t1.2.7"/>
+            <lrml:toTarget keyref="t1.2.8"/>
+            <lrml:toTarget keyref="t1.2.9"/>
+            <lrml:toTarget keyref="t1.2.10"/>
+            <lrml:toTarget keyref="t1.2.11"/>
+            <lrml:toTarget keyref="t1.2.12"/>
+            <lrml:toTarget keyref="t1.2.13"/>
+            <lrml:toTarget keyref="t1.2.14"/>
+            <lrml:toTarget keyref="t1.2.15"/>
+            <lrml:toTarget keyref="t1.2.16"/>
+            <lrml:toTarget keyref="t1.2.17"/>
+            <lrml:toTarget keyref="t1.2.18"/>
+            <lrml:toTarget keyref="t1.2.19"/>
+            <lrml:toTarget keyref="t1.2.20"/>
+            <lrml:toTarget keyref="t1.2.21"/>
+            <lrml:toTarget keyref="t1.2.22"/>
+            <lrml:toTarget keyref="t1.2.23"/>
+            <lrml:toTarget keyref="t1.2.24"/>
+            <lrml:toTarget keyref="t1.2.25"/>
+            <lrml:toTarget keyref="t1.2.26"/>
+            <lrml:toTarget keyref="t1.2.27"/>
+            <lrml:toTarget keyref="t1.2.28"/>
+            <lrml:toTarget keyref="t1.2.29"/>
+            <lrml:toTarget keyref="t1.2.30"/>
+            <lrml:toTarget keyref="t1.2.31"/>
+            <lrml:toTarget keyref="t1.2.32"/>
+            <lrml:toTarget keyref="t1.2.33"/>
+            <lrml:toTarget keyref="t1.2.34"/>
+            <lrml:toTarget keyref="t1.2.35"/>
+            <lrml:toTarget keyref="t1.2.36"/>
+            <lrml:toTarget keyref="t1.2.37"/>
+            <lrml:toTarget keyref="t1.2.38"/>
+            <lrml:toTarget keyref="t1.2.39"/>
+        </lrml:Association>
     </lrml:Context>
     <lrml:Statements>
         <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.0.1">
@@ -5089,6 +5131,1079 @@
                             <ruleml:Data xsi:type="xs:string">w1 + 400mm</ruleml:Data>
                         </ruleml:Expr>
                     </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+                <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.1">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.1">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="airport"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="baggageArea"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="2 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.2">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.2">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="airport"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <or>
+                                <ruleml:Data iri="waitingArea"/>
+                                <ruleml:Data iri="checkIn"/>
+                            </or>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1.4 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.3">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.3">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="airport"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="terminalSpace"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="10 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.4">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.4">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="areaWithoutSeating"/>
+                            <ruleml:Data iri="areaWithoutAisles"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.5">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.5">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="artGallery"/>
+                            <ruleml:Data iri="museum"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="4 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.6">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.6">
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.7">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.7">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="bleacher"/>
+                            <ruleml:Data iri="pew"/>
+                            <ruleml:Data iri="benchTypeSeating"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="0.45 m/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.8">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.8">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="bulkRetail"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.9">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.9">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="classroom"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="2 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.10">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.10">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="consultingRoom"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.11">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.11">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="danceFloor"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="0.6 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.12">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.12">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="dayCareCentre"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="4 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.13">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.13">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="dining"/>
+                            <ruleml:Data iri="restaurant"/>
+                            <ruleml:Data iri="cafeteria"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1.25 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.14">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.14">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="exhibitionArea"/>
+                            <ruleml:Data iri="tradeFair"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1.4 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.15">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.15">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="fitnessCentre"/>
+                            <ruleml:Data iri="weightRoom"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.16">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.16">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="gaming"/>
+                            <ruleml:Data iri="casino"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.17">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.17">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="indoorGamingArea"/>
+                            <ruleml:Data iri="bowlingAlley"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="10 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.18">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.18">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="library"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="stackArea"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="10 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.19">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.19">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="library"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="stackArea"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="7 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.20">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.20">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="lobby"/>
+                            <ruleml:Data iri="foyer"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.21">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.21">
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.22">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.22">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="office"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="10 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.23">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.23">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="readingRoom"/>
+                            <ruleml:Data iri="writingRoom"/>
+                            <ruleml:Data iri="lounge"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="2 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.24">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.24">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activtiy"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="reception"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="10 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.25">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.25">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="retailSpace"/>
+                            <ruleml:Data iri="pedestrianCirculationArea"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="3.5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.26">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.26">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="retailSpace"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:retailItem"/>
+                                <ruleml:Var iri="buvo:retailSpace"/>
+                            </ruleml:Atom>
+                            <or>
+                                <ruleml:Data iri="furniture"/>
+                                <ruleml:Data iri="floorCovering"/>
+                                <ruleml:Data iri="largeAppliance"/>
+                                <ruleml:Data iri="buildingSuppy"/>
+                                <ruleml:Data iri="manchester"/>
+                            </or>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:retailSpace"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="10 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.27">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.27">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="showroom"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.28">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.28">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="fixedSeating"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:numberOfSeats"/>
+                                <ruleml:Var iri="buvo:fixedSeating"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="x"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="x m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.29">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.29">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="looseSeating"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="0.8 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.30">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.30">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <and>
+                            <ruleml:Data iri="looseSeating"/>
+                            <ruleml:Data iri="table"/>
+                        </and>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="1.1 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.31">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.31">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="sportHall"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="3 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.32">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.32">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="stadium"/>
+                            <ruleml:Data iri="grandstand"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="0.6 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.33">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.33">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <or>
+                            <ruleml:Data iri="staffroom"/>
+                            <ruleml:Data iri="lunchroom"/>
+                        </or>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.34">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.34">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="stage"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:stage"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="theatricalPerformance"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="0.8 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.35">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.35">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="standingSpace"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="0.4 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.36">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.36">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="swimmingPool"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="waterSurfaceArea"/>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.37">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.37">
+                <ruleml:if>
+                    <and>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data iri="swimmingPool"/>
+                        </Exp>
+                        <Exp>
+                            <fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <and>
+                                <ruleml:Data iri="surround"/>
+                                <ruleml:Data iri="seating"/>
+                            </and>
+                        </Exp>
+                    </and>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="3 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.38">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.38">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="teachingLaboratory"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="5 m^2/person"/>
+                    </Exp>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.39">
+            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.39">
+                <ruleml:if>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="technologyClassroom"/>
+                    </Exp>
+                </ruleml:if>
+                <ruleml:then>
+                    <Exp>
+                        <fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupantDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data iri="10 m^2/person"/>
+                    </Exp>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
