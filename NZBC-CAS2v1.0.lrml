@@ -313,8 +313,8 @@
         </lrml:Association>
     </lrml:Context>
     <lrml:Statements>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Or>
@@ -412,8 +412,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.0.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.0.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.0.2">
                 <ruleml:if>
                     <lrml:Obligation>
                         <ruleml:Expr>
@@ -440,8 +440,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.0.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.0.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.0.3">
                 <ruleml:if>
                     <lrml:Obligation>
                         <ruleml:Expr>
@@ -468,8 +468,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -514,8 +514,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.1.0.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.1.0.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.2">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
@@ -550,8 +550,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.1.0.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.1.0.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.3">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Or>
@@ -596,8 +596,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.1.0.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.1.0.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.4">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Or>
@@ -650,8 +650,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.1.0.5">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.1.0.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.5">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.5">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Or>
@@ -704,8 +704,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.1.0.6">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.1.0.6">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.6">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.6">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Or>
@@ -750,8 +750,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.1.1.0.7">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.1.1.0.7">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.7">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.7">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
@@ -786,8 +786,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.2.2.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.2.2.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -841,8 +841,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.2.2.0.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.2.2.0.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -896,8 +896,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.2.2.0.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.2.2.0.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -951,8 +951,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.2.2.0.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.2.2.0.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.4">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -994,8 +994,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.2.3.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.2.3.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.3.0.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:has"/>
@@ -1021,11 +1021,11 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.3.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.3.1.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.3.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.3.1.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.1.0.1">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr lkm:loop="true">
@@ -1186,8 +1186,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.2.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.2.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.2.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -1240,8 +1240,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.3.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.3.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.3.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -1296,8 +1296,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.4.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.4.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.4.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -1388,8 +1388,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.5.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.5.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.5.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.5.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Or>
@@ -1519,8 +1519,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.6.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.6.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.6.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.6.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Or>
@@ -1612,8 +1612,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.7.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.7.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.7.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.7.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -1691,8 +1691,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r1.4.8.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r1.4.8.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.8.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.8.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -1774,8 +1774,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.1.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.1.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.1.1.0.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -1811,8 +1811,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.1">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
@@ -1835,8 +1835,8 @@
                 </ruleml:if>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.1.0.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.1.0.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -1849,8 +1849,8 @@
                 </ruleml:if>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.1.0.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.1.0.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.3">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
@@ -1873,8 +1873,8 @@
                 </ruleml:if>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.1.0.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.1.0.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.4">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -1887,8 +1887,8 @@
                 </ruleml:if>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.1.0.5">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.1.0.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.5">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.5">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -1950,8 +1950,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.2.0.a.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.2.0.a.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.2.0.a.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.2.0.a.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2032,8 +2032,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.2.0.b.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.2.0.b.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.2.0.b.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.2.0.b.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2071,8 +2071,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.2.0.c.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.2.0.c.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.2.0.c.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.2.0.c.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2160,8 +2160,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.3.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.3.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.3.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2197,8 +2197,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.4.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.4.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.4.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2273,11 +2273,11 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.5.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.5.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.5.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.5.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.6.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.6.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.6.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.6.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2325,11 +2325,11 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.7.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.7.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.7.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.7.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.8.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.8.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.8.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.8.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <lrml:Obligation>
@@ -2382,8 +2382,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.2.9.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.2.9.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.9.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.9.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2456,8 +2456,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.1.0.1">
                 <ruleml:if>
                     <ruleml:Not>
                         <ruleml:Expr>
@@ -2494,8 +2494,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.2.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.2.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.2.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2535,8 +2535,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.3.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.3.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.3.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2611,8 +2611,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.4.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.4.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.4.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2653,11 +2653,11 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.5.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.5.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.5.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.5.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.6.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.6.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.6.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.6.0.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -2684,8 +2684,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.7.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.7.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.7.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.7.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2728,17 +2728,17 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.8.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.8.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.8.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.8.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.9.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.9.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.9.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.9.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.10.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.10.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.10.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.10.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.11.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.11.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.11.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.11.0.1">
                 <ruleml:then>
                     <lrml:Obligation>
                         <ruleml:Expr>
@@ -2753,14 +2753,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.12.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.12.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.12.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.12.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r2.3.13.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r2.3.13.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.13.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.13.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.1.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.1.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.1.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -2812,8 +2812,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.1.2.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.1.2.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.2.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:And>
@@ -2903,8 +2903,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.1.2.0.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.1.2.0.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.2.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.2.0.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -2959,8 +2959,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.1.2.0.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.1.2.0.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.2.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.2.0.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3010,8 +3010,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.1.3.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.1.3.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.3.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3066,8 +3066,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.1.4.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.1.4.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.4.0.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:in"/>
@@ -3090,8 +3090,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.1.4.0.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.1.4.0.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.4.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.4.0.2">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
@@ -3174,8 +3174,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.2.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.2.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.2.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.2.1.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3245,11 +3245,11 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r3.2.2.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r3.2.2.0.1"/>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.2.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.2.2.0.1"/>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r4.1.1.0.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r4.1.1.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r4.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r4.1.1.0.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3374,8 +3374,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_r4.1.1.0.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_r4.1.1.0.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r4.1.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r4.1.1.0.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3430,8 +3430,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t3.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t3.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t3.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t3.1.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3456,8 +3456,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t3.1.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t3.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t3.1.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t3.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3491,8 +3491,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t3.1.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t3.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t3.1.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t3.1.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3526,8 +3526,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t3.1.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t3.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t3.1.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t3.1.4">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3552,8 +3552,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3591,8 +3591,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3630,8 +3630,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3669,8 +3669,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.4">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -3708,8 +3708,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.5">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.5">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.5">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3737,8 +3737,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.6">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.6">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.6">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.6">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3766,8 +3766,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.7">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.7">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.7">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.7">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3795,8 +3795,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t4.1.8">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t4.1.8">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t4.1.8">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t4.1.8">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3824,8 +3824,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t5.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t5.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t5.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t5.1.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3868,8 +3868,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t6.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t6.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t6.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t6.1.1">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
@@ -3935,8 +3935,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t6.1.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t6.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t6.1.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t6.1.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -3992,8 +3992,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t6.1.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t6.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t6.1.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t6.1.3">
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
@@ -4059,8 +4059,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t6.1.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t6.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t6.1.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t6.1.4">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
@@ -4116,8 +4116,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t7.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t7.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t7.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t7.1.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -4145,8 +4145,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t7.1.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t7.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t7.1.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t7.1.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -4174,8 +4174,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t7.1.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t7.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t7.1.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t7.1.3">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -4203,8 +4203,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t7.1.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t7.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t7.1.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t7.1.4">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
@@ -4232,8 +4232,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4292,8 +4292,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4352,8 +4352,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.3">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4412,8 +4412,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.4">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.4">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4472,8 +4472,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.5">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.5">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.5">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4532,8 +4532,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.6">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.6">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.6">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.6">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4592,8 +4592,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.7">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.7">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.7">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.7">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4652,8 +4652,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.8">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.8">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.8">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.8">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4712,8 +4712,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.9">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.9">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.9">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.9">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Or>
@@ -4782,8 +4782,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t8.1.10">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t8.1.10">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t8.1.10">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t8.1.10">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Or>
@@ -4852,8 +4852,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t9.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t9.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t9.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t9.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4909,8 +4909,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_t9.1.2">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_t9.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t9.1.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t9.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -4979,8 +4979,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_f8.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_f8.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_f8.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_f8.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -5061,8 +5061,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_f14.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_f14.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_f14.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_f14.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -5099,8 +5099,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_nzbc-cas2#1.0_f15.1.1">
-            <ruleml:Rule key="NZ_nzbc-cas2#1.0_f15.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_f15.1.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_f15.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -5134,8 +5134,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-                <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.1">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.1">
+                <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.1">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -5168,8 +5168,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.2">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.2">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -5205,8 +5205,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.3">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.3">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -5239,8 +5239,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.4">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.4">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5266,8 +5266,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.5">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.5">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.5">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5293,8 +5293,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.6">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.6">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.6">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.6">
                 <ruleml:then>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5307,8 +5307,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.7">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.7">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.7">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.7">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5335,8 +5335,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.8">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.8">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.8">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.8">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5359,8 +5359,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.9">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.9">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.9">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.9">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5383,8 +5383,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.10">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.10">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.10">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.10">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5407,8 +5407,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.11">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.11">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.11">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.11">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5431,8 +5431,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.12">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.12">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.12">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.12">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5455,8 +5455,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.13">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.13">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.13">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.13">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5483,8 +5483,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.14">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.14">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.14">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.14">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5510,8 +5510,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.15">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.15">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.15">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.15">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5537,8 +5537,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.16">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.16">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.16">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.16">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5564,8 +5564,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.17">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.17">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.17">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.17">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5591,8 +5591,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.18">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.18">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.18">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.18">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -5625,8 +5625,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.19">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.19">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.19">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.19">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -5659,8 +5659,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.20">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.20">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.20">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.20">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5686,8 +5686,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.21">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.21">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.21">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.21">
                 <ruleml:then>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5700,8 +5700,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.22">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.22">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.22">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.22">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5724,8 +5724,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.23">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.23">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.23">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.23">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5752,8 +5752,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.24">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.24">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.24">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.24">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5776,8 +5776,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.25">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.25">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.25">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.25">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5803,8 +5803,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.26">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.26">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.26">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.26">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -5843,8 +5843,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.27">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.27">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.27">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.27">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5867,8 +5867,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.28">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.28">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.28">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.28">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -5901,8 +5901,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.29">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.29">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.29">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.29">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5925,8 +5925,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.30">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.30">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.30">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.30">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5952,8 +5952,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.31">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.31">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.31">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.31">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -5976,8 +5976,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.32">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.32">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.32">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.32">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -6003,8 +6003,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.33">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.33">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.33">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.33">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -6030,8 +6030,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.34">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.34">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.34">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.34">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -6064,8 +6064,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.35">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.35">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.35">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.35">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -6088,8 +6088,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.36">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.36">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.36">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.36">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -6122,8 +6122,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.37">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.37">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.37">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.37">
                 <ruleml:if>
                     <and>
                         <Exp>
@@ -6159,8 +6159,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.38">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.38">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.38">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.38">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
@@ -6183,8 +6183,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS4:t1.2.39">
-            <ruleml:Rule key="NZBC-NZBC.CAS4:t1.2.39">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0:t1.2.39">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0:t1.2.39">
                 <ruleml:if>
                     <Exp>
                         <fun iri="lovo:equal"/>
