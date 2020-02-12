@@ -1,826 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
-<lrml:LegalRuleML xmlns:ruleml="http://ruleml.org/spec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lkm="https://casnz.azurewebsites.net" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd">
-    <lrml:Prefix pre="buvo" refID="https://casnz.azurewebsites.net/buvo"/>
-    <lrml:Prefix refID="https://casnz.azurewebsites.net/lovo" pre="lovo"/>
-    <lrml:Prefix pre="fuvo" refID="https://casnz.azurewebsites.net/fuvo"/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:lkm="https://cas.net.nz/" xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lkm:version="2.0">
+    <lrml:Prefix refID="https://buvo.acabim.com" pre="buvo"/>
+    <lrml:Prefix pre="lovo" refID="https://lovo.acabim.com"/>
+    <lrml:Prefix refID="https://fuvo.acabim.com" pre="fuvo"/>
     <lrml:Jurisdictions>
-        <lrml:Jurisdiction key="NZ" sameAs="http://example.org/jurisdiction#newzealand"/>
+        <lrml:Jurisdiction key="nz" sameAs="http://example.org/jurisdiction#newzealand"/>
     </lrml:Jurisdictions>
     <lrml:LegalSources key="legal-source-1">
-        <lrml:LegalSource key="NZBC-CVM2"/>
+        <lrml:LegalSource key="nzbc-cvm2" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/c-protection-from-fire/asvm/cvm2-protection-from-fire-amendment-5.pdf"/>
     </lrml:LegalSources>
     <lrml:Context>
         <lrml:Association>
-            <lrml:appliesSource keyref="t2.2"/>
-            <lrml:toTarget keyref="t2.2.1"/>
-            <lrml:toTarget keyref="t2.2.2"/>
-            <lrml:toTarget keyref="t2.2.3"/>
-            <lrml:toTarget keyref="t2.2.4"/>
-            <lrml:toTarget keyref="t2.2.5"/>
-            <lrml:toTarget keyref="t2.2.6"/>
-            <lrml:toTarget keyref="t2.2.7"/>
-            <lrml:toTarget keyref="t2.2.8"/>
-            <lrml:toTarget keyref="t2.2.9"/>
-            <lrml:toTarget keyref="t2.2.10"/>
-            <lrml:toTarget keyref="t2.2.11"/>
-            <lrml:toTarget keyref="t2.2.12"/>
-            <lrml:toTarget keyref="t2.2.13"/>
-            <lrml:toTarget keyref="t2.2.14"/>
+            <lrml:appliesSource keyref="r2.3.3"/>
+            <lrml:toTarget keyref="r2.3.3.1.0.1"/>
         </lrml:Association>
-        <lrml:Association>
-            <lrml:appliesSource keyref="t2.3"/>
-            <lrml:toTarget keyref="t2.3.1"/>
-            <lrml:toTarget keyref="t2.3.2"/>
-            <lrml:toTarget keyref="t2.3.3"/>
-            <lrml:toTarget keyref="t2.3.4"/>
-        </lrml:Association>
-        <lrml:Association>
-            <lrml:appliesSource keyref="t2.4"/>
-            <lrml:toTarget keyref="t2.4.1"/>
-            <lrml:toTarget keyref="t2.4.2"/>
-            <lrml:toTarget keyref="t2.4.3"/>
-            <lrml:toTarget keyref="t2.4.4"/>
-            <lrml:toTarget keyref="t2.4.5"/>
-            <lrml:toTarget keyref="t2.4.6"/>
-        </lrml:Association>
-    </lrml:Context>
-    <lrml:Statements>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.1">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.1">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">gallery</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>400.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.2">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.2">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">classroom</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>400.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.3">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.3">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>400.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.4">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.4">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">working</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>400.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.5">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.5">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">toilet</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>400.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.6">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.6">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>800.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.7">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.7">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">theatre</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>800.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.8">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.8">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">exhibition</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>800.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.9">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.9">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">shop</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>800.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.10">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.10">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">manufacturing</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>1200.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.11">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.11">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">storage</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>1200.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.12">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.12">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">workshop moderate fire hazard</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>1200.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.13">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.13">
-                <ruleml:if>
-                    <ruleml:Or>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:activityExample"/>
-                                <ruleml:Var iri="buvo:space"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">bulk storage</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:define"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:height"/>
-                                <ruleml:Var iri="buvo:storage"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">h1</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:Or>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">h1 * 800 MJ/m^2</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.14">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.14">
-                <ruleml:if>
-                    <ruleml:Or>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:activityExample"/>
-                                <ruleml:Var iri="buvo:space"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">multi-level car storage</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:define"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:tier"/>
-                                <ruleml:Var iri="buvo:carpark"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">t1</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:Or>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">t1 * 400 MJ/m^2</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.1">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.1">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:application"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire duration for life safety</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:sprinklered"/>
-                                <ruleml:Var iri="buvo:firecell"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fm"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">0.5</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.2">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.2">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:application"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire duration for life safety</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:sprinklered"/>
-                                <ruleml:Var iri="buvo:firecell"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">false</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fm"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">1.0</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.3">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.3">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:application"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire resistance of structure</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:sprinklered"/>
-                                <ruleml:Var iri="buvo:firecell"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fm"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">1.0</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.4">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.4">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:application"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire resistance of structure</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:sprinklered"/>
-                                <ruleml:Var iri="buvo:firecell"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">false</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fm"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">1.25</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.1">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.1">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">400</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">very light highly insulating materials</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:kb"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">0.1</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.2">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.2">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">400</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">700</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">plasterboard</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:kb"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">0.09</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.3">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.3">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">700</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">1100</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">light weight concrete ceiling</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:kb"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">0.08</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.4">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.4">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">1100</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">1700</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">normal weight concrete ceiling</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:kb"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">0.065</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.5">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.5">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">2500</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">thin sheet steel roof</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:kb"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">0.04</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.6">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.6">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">2500</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">wall</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:kb"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">0.04</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-    </lrml:Statements>
-    <lrml:Context>
         <lrml:Association>
             <lrml:appliesSource keyref="t2.2"/>
             <lrml:toTarget keyref="t2.2.1"/>
@@ -856,17 +49,84 @@
         </lrml:Association>
     </lrml:Context>
     <lrml:Statements>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_r2.3.3.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_r2.3.3.1.0.1">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:resistance"/>
+                            <ruleml:Var iri="buvo:fire"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">required</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:ysoot"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">0.14 kg/(kg of fuel)</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:yco"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">0.4 kg/(kg of fuel)</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:fled"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">t2.2</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.1">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.1">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">gallery</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">gallery</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-37 13 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">display</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -876,7 +136,7 @@
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
+                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
                                 <lkm:operator lkm:name="division"/>
                                 <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
                             </lkm:derivedUnit>
@@ -889,14 +149,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.2">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.2">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">classroom</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">classroom</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-31 13 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">seating without upholstered furniture</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -908,7 +186,7 @@
                             <lkm:derivedUnit>
                                 <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
                                 <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
                             </lkm:derivedUnit>
                             <lkm:value>400.0</lkm:value>
                         </ruleml:Data>
@@ -919,14 +197,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.3">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.3">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-55 27 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -936,7 +232,7 @@
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
+                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
                                 <lkm:operator lkm:name="division"/>
                                 <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
                             </lkm:derivedUnit>
@@ -949,14 +245,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.4">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.4">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">working</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">working</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-59-15 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">working with low fire hazard materials</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -979,14 +293,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.5">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.5">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">toilet</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">toilet</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-65 13 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">low fire hazard</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -998,7 +330,7 @@
                             <lkm:derivedUnit>
                                 <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
                                 <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
                             </lkm:derivedUnit>
                             <lkm:value>400.0</lkm:value>
                         </ruleml:Data>
@@ -1009,14 +341,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.6">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.6">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-55 11 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">amenities</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -1039,14 +389,80 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.7">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.7">
                 <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">theatre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-37 00 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">upholstered seating areas</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
                     <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
+                        <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
+                            <ruleml:Var iri="buvo:fled"/>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">theatre</ruleml:Data>
+                        <ruleml:Data xsi:type="lkm:measurement">
+                            <lkm:derivedUnit>
+                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
+                                <lkm:operator lkm:name="division"/>
+                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                            </lkm:derivedUnit>
+                            <lkm:value>800.0</lkm:value>
+                        </ruleml:Data>
                     </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.8">
+            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.8">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">exhibition</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-37 13 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">non-bulk display of goods</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -1066,17 +482,35 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.8">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.8">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.9">
+            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.9">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">exhibition</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">shop</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-55 19 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail spaces</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -1087,36 +521,6 @@
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:derivedUnit>
                                 <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
-                                <lkm:operator lkm:name="division"/>
-                                <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
-                            </lkm:derivedUnit>
-                            <lkm:value>800.0</lkm:value>
-                        </ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.9">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.9">
-                <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">shop</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fled"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:measurement">
-                            <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
                                 <lkm:operator lkm:name="division"/>
                                 <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
                             </lkm:derivedUnit>
@@ -1129,14 +533,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.10">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.10">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">manufacturing</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">manufacturing</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-59 00 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">moderate fire hazard</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -1146,7 +568,7 @@
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
+                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
                                 <lkm:operator lkm:name="division"/>
                                 <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
                             </lkm:derivedUnit>
@@ -1159,14 +581,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.11">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.11">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">storage</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">storage</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-63 11 13</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">storage up to 3 m</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -1189,14 +629,32 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.2.12">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.2.12">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:is"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:activityExample"/>
-                            <ruleml:Var iri="buvo:space"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">workshop moderate fire hazard</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityExample"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">workshop moderate fire hazard</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-63 13 31</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">moderate fire hazard</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -1206,7 +664,7 @@
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:derivedUnit>
-                                <lkm:baseUnit lkm:kind="joule" lkm:prefix="mega"/>
+                                <lkm:baseUnit lkm:prefix="mega" lkm:kind="joule"/>
                                 <lkm:operator lkm:name="division"/>
                                 <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
                             </lkm:derivedUnit>
@@ -1221,7 +679,7 @@
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:activityExample"/>
                                 <ruleml:Var iri="buvo:space"/>
@@ -1236,6 +694,22 @@
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">h1</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-63 11 11</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">storage height over 3 m</ruleml:Data>
+                        </ruleml:Expr>
                     </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
@@ -1244,7 +718,10 @@
                         <ruleml:Atom>
                             <ruleml:Var iri="buvo:fled"/>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">h1 * 800 MJ/m^2</ruleml:Data>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                            <lkm:value>h1 * 800 {lkm:unit}/{lkm:unit}</lkm:value>
+                        </ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:then>
             </ruleml:Rule>
@@ -1254,7 +731,7 @@
                 <ruleml:if>
                     <ruleml:Or>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:activityExample"/>
                                 <ruleml:Var iri="buvo:space"/>
@@ -1269,6 +746,22 @@
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="lkm:ruleId">t1</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activityOmniClass"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">13-21 13 00</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">multi-level car-parking</ruleml:Data>
+                        </ruleml:Expr>
                     </ruleml:Or>
                 </ruleml:if>
                 <ruleml:then>
@@ -1277,7 +770,10 @@
                         <ruleml:Atom>
                             <ruleml:Var iri="buvo:fled"/>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:ruleId">t1 * 400 MJ/m^2</ruleml:Data>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                            <lkm:value>t1 * 400 {lkm:unit}/{lkm:unit}</lkm:value>
+                        </ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:then>
             </ruleml:Rule>
@@ -1287,14 +783,46 @@
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Var iri="buvo:application"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire duration for life safety</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">fire duration for life safety</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:sprinklered"/>
+                                <ruleml:Var iri="buvo:firecell"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:boolean">false</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Var iri="buvo:fm"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:decimal">1.0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.2">
+            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:application"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fire duration for life safety</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:sprinklered"/>
                                 <ruleml:Var iri="buvo:firecell"/>
@@ -1314,83 +842,19 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.2">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.2">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:application"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire duration for life safety</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:sprinklered"/>
-                                <ruleml:Var iri="buvo:firecell"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">false</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fm"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">1.0</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.3">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Var iri="buvo:application"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire resistance of structure</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">fire resistance of structure</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:sprinklered"/>
-                                <ruleml:Var iri="buvo:firecell"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:equal"/>
-                        <ruleml:Atom>
-                            <ruleml:Var iri="buvo:fm"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:decimal">1.0</ruleml:Data>
-                    </ruleml:Expr>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.4">
-            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.4">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:application"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">fire resistance of structure</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:sprinklered"/>
                                 <ruleml:Var iri="buvo:firecell"/>
@@ -1410,32 +874,66 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.3.4">
+            <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.3.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:application"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fire resistance of structure</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:sprinklered"/>
+                                <ruleml:Var iri="buvo:firecell"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Var iri="buvo:fm"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:decimal">1.0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.1">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">400</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
                                 <ruleml:Var iri="buvo:material"/>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">very light highly insulating materials</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">400</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -1454,27 +952,29 @@
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">400</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">700</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
                                 <ruleml:Var iri="buvo:material"/>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">plasterboard</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">400</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">700</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -1493,27 +993,29 @@
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">700</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">1100</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
                                 <ruleml:Var iri="buvo:material"/>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">light weight concrete ceiling</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">700</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">1100</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -1532,27 +1034,29 @@
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">1100</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:lessThanEqual"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">1700</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
                                 <ruleml:Var iri="buvo:material"/>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">normal weight concrete ceiling</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">1100</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:integer">1700</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -1569,23 +1073,14 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.5">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.5">
                 <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">2500</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:ruleId">thin sheet steel roof</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:type"/>
+                            <ruleml:Var iri="buvo:material"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">thin sheet steel roof</ruleml:Data>
+                    </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
@@ -1601,23 +1096,14 @@
         <lrml:PrescriptiveStatement key="NZ_NZBC-CVM2#0.5_t2.4.6">
             <ruleml:Rule key="NZ_NZBC-CVM2#0.5_t2.4.6">
                 <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:greaterThan"/>
-                            <ruleml:Atom>
-                                <ruleml:Var iri="buvo:sqrtOfkRhoC"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:integer">2500</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:is"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:material"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">wall</ruleml:Data>
-                        </ruleml:Expr>
-                    </ruleml:And>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:type"/>
+                            <ruleml:Var iri="buvo:material"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">wall</ruleml:Data>
+                    </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>

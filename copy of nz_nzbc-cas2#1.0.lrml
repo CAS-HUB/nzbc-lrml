@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd">
+    <lrml:Prefix pre="lrmlv" refID="http://lrml.acabim.com/#"/>
+    <lrml:Prefix pre="devo" refID="http://devo.acabim.com/#"/>
+    <lrml:Prefix pre="lovo" refID="http://lovo.acabim.com/#"/>
+    <lrml:Prefix pre="fuvo" refID="http://fuvo.acabim.com/#"/>
+    <lrml:Prefix pre="buvo" refID="http://buvo.acabim.com/#"/>
+    <lrml:Jurisdictions>
+        <lrml:Jurisdiction key="jur:nz" sameAs="http://example.org/jurisdiction#newzealand"/>
+    </lrml:Jurisdictions>
+    <lrml:LegalSources key="ls1">
+        <lrml:LegalSource key="NZBC.CAS2" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/c-protection-from-fire/asvm/cas2-protection-from-fire-1st-edition-2019.pdf"/>
+    </lrml:LegalSources>
+    
+    <lrml:TimesInfo>
+        <lrml:Times>
+            <ruleml:Time key="t1">
+                <ruleml:Data xsi:type="xs:dateTime">
+                    2012-04-10T00:00:00Z
+                </ruleml:Data>
+            </ruleml:Time>
+            <ruleml:Time key="t2">
+                <ruleml:Data xsi:type="xs:dateTime">
+                    2019-10-31T00:00:00Z
+                </ruleml:Data>
+            </ruleml:Time>
+        </lrml:Times>
+    </lrml:TimesInfo>
+    <lrml:TemporalCharacteristics key="tblock1">
+        <lrml:TemporalCharacteristic key="tc1">
+            <lrml:forStatus iri="lrmlv:InForce"/>
+            <lrml:hasStatusDevelopment iri="lrmlv:Starts"/>
+            <lrml:atTime keyref="#t1"/>
+        </lrml:TemporalCharacteristic>
+        <lrml:TemporalCharacteristic key="tc2">
+            <lrml:forStatus iri="lrmlv:InForce"/>
+            <lrml:hasStatusDevelopment iri="lrmlv:Ends"/>
+            <lrml:atTime keyref="#t1"/>
+        </lrml:TemporalCharacteristic>
+    </lrml:TemporalCharacteristics>
+
+    <lrml:Context>
+        <lrml:Association>
+            <lrml:appliesSource keyref="1.4.1"/>
+            <lrml:toTarget keyref="1.4.1.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="1.4.2"/>
+            <lrml:toTarget keyref="1.4.2.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="1.4.3"/>
+            <lrml:toTarget keyref="1.4.3.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="1.4.4"/>
+            <lrml:toTarget keyref="1.4.4.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="1.4.5"/>
+            <lrml:toTarget keyref="1.4.5.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="1.4.6"/>
+            <lrml:toTarget keyref="1.4.6.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="1.4.7"/>
+            <lrml:toTarget keyref="1.4.7.0.1"/>
+        </lrml:Association>
+    </lrml:Context>
+    <lrml:Statements>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.1.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.1.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.2.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.2.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:floorArea"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>A</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:occupantLoadDensity"/>
+                            </lrml:Atom>
+                            <lrml:Data>d</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:from"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:d"/>
+                                </lrml:Atom>
+                                <lrml:Data>table</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:equal"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:key"/>
+                                    <lrml:Var iri="buvo:table"/>
+                                </lrml:Atom>
+                                <lrml:Data>t1.2</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:occupantLoad"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>A/d</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.3.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.3.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>occupant</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:use"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                                <lrml:Data>intermittent</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:in"/>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="fuvo:countDistinct"/>
+                                    <lrml:Atom>
+                                        <lrml:Rel iri="buvo:occupant"/>
+                                        <lrml:Var iri="buvo:space"/>
+                                    </lrml:Atom>
+                                </lrml:Expr>
+                                <lrml:Data>building</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:occupantLoad"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>p1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:for"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:p1"/>
+                                </lrml:Atom>
+                                <lrml:Data>fireSafetyDesign</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.4.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.4.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:seat"/>
+                                    <lrml:Var iri="buvo:fixedSeating"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>s1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:adjoin"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>fixedSeating</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:has"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>occupant</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:occupantLoad"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>p2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Not>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:escapeRoute"/>
+                                </lrml:Atom>
+                                <lrml:Data>obstructed</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Not>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:activity"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                                <lrml:Data>standing</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:from"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:p2"/>
+                                </lrml:Atom>
+                                <lrml:Data>table</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:equal"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:key"/>
+                                    <lrml:Var iri="buvo:table"/>
+                                </lrml:Atom>
+                                <lrml:Data>t1.2</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:equal"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:occupantLoad"/>
+                                </lrml:Atom>
+                                <lrml:Data>s1+p2</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.5.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.5.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Or>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:activity"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                                <lrml:Data>sleeping</lrml:Data>
+                            </lrml:Expr>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:riskGroup"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                                <lrml:Or>
+                                    <lrml:Data>SM</lrml:Data>
+                                    <lrml:Data>SI</lrml:Data>
+                                </lrml:Or>
+                            </lrml:Expr>
+                        </lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:bed"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>b</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:bed"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>recliner</lrml:Data>
+                                <lrml:Data>loungeChair</lrml:Data>
+                                <lrml:Data>dentistChair</lrml:Data>
+                                <lrml:Data>treatmentTable</lrml:Data>
+                                <lrml:Data>treatmentFurniture</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:b"/>
+                            </lrml:Atom>
+                            <lrml:Data>occupantLoad</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:for"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:b"/>
+                            </lrml:Atom>
+                            <lrml:Data>fireSafetyDesign</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:occupant"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>p</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:occupantLoad"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>b</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Obligation>
+                            <lrml:Not>
+                                <lrml:Expr>
+                                    <lrml:Fun iri="lovo:is"/>
+                                    <lrml:Atom>
+                                        <lrml:Var iri="buvo:p"/>
+                                    </lrml:Atom>
+                                    <lrml:Data>calculated</lrml:Data>
+                                </lrml:Expr>
+                            </lrml:Not>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.6.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.6.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Or>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:activity"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                                <lrml:Data>sleeping</lrml:Data>
+                            </lrml:Expr>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Rel iri="buvo:riskGroup"/>
+                                    <lrml:Var iri="buvo:space"/>
+                                </lrml:Atom>
+                                <lrml:Data>SI</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Or>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Expr>
+                                <lrml:Fun iri="fuvo:count"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:bed"/>
+                                </lrml:Atom>
+                            </lrml:Expr>
+                            <lrml:Data>b</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:include"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:bed"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>recliner</lrml:Data>
+                                <lrml:Data>loungeChair</lrml:Data>
+                                <lrml:Data>dentistChair</lrml:Data>
+                                <lrml:Data>treatmentTable</lrml:Data>
+                                <lrml:Data>treatmentFurniture</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:b"/>
+                                </lrml:Atom>
+                                <lrml:Data>occupantLoad</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:for"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:b"/>
+                            </lrml:Atom>
+                            <lrml:Data>fireSafetyDesign</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.7.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.7.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:occupantLoadDensity"/>
+                            </lrml:Atom>
+                            <lrml:Data>d2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:from"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d2"/>
+                            </lrml:Atom>
+                            <lrml:Data>table</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:table"/>
+                            </lrml:Atom>
+                            <lrml:Data>t1.2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:occupantLoad"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>d1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d1"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>actual</lrml:Data>
+                                <lrml:Data>expected</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d2"/>
+                            </lrml:Atom>
+                            <lrml:Data>d1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:for"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d1"/>
+                            </lrml:Atom>
+                            <lrml:Data>fireSafetyDesign</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:Obligation>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d1"/>
+                            </lrml:Atom>
+                            <lrml:Data>justified</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:Obligation>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZBC-NZBC.CAS2:1.4.8.0.1">
+            <lrml:Rule key="NZBC-NZBC.CAS2:1.4.8.0.1">
+                <lrml:if>
+                    <lrml:And>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:occupantLoadDensity"/>
+                            </lrml:Atom>
+                            <lrml:Data>d2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:from"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d2"/>
+                            </lrml:Atom>
+                            <lrml:Data>table</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:equal"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:key"/>
+                                <lrml:Var iri="buvo:table"/>
+                            </lrml:Atom>
+                            <lrml:Data>t1.2</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:define"/>
+                            <lrml:Atom>
+                                <lrml:Rel iri="buvo:occupantLoad"/>
+                                <lrml:Var iri="buvo:space"/>
+                            </lrml:Atom>
+                            <lrml:Data>d1</lrml:Data>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:is"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d1"/>
+                            </lrml:Atom>
+                            <lrml:Or>
+                                <lrml:Data>actual</lrml:Data>
+                                <lrml:Data>expected</lrml:Data>
+                            </lrml:Or>
+                        </lrml:Expr>
+                        <lrml:Expr>
+                            <lrml:Fun iri="lovo:greaterThan"/>
+                            <lrml:Atom>
+                                <lrml:Var iri="buvo:d1"/>
+                            </lrml:Atom>
+                            <lrml:Data>d2</lrml:Data>
+                        </lrml:Expr>
+                    </lrml:And>
+                </lrml:if>
+                <lrml:then>
+                    <lrml:And>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:for"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:d1"/>
+                                </lrml:Atom>
+                                <lrml:Data>fireSafetyDesign</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <lrml:Expr>
+                                <lrml:Fun iri="lovo:is"/>
+                                <lrml:Atom>
+                                    <lrml:Var iri="buvo:d1"/>
+                                </lrml:Atom>
+                                <lrml:Data>justified</lrml:Data>
+                            </lrml:Expr>
+                        </lrml:Obligation>
+                    </lrml:And>
+                </lrml:then>
+            </lrml:Rule>
+        </lrml:PrescriptiveStatement>
+    </lrml:Statements>
+</lrml:LegalRuleML>

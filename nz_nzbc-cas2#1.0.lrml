@@ -1,0 +1,3404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lrml:LegalRuleML xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:lkm="https://cas.net.nz/" lkm:version="2.0">
+    <lrml:Prefix pre="buvo" refID="https://buvo.acabim.com"/>
+    <lrml:Prefix pre="lovo" refID="https://lovo.acabim.com"/>
+    <lrml:Prefix pre="fuvo" refID="https://fuvo.acabim.com"/>
+    <lrml:Jurisdictions>
+        <lrml:Jurisdiction sameAs="http://example.org/jurisdiction#newzealand" key="NZ"/>
+    </lrml:Jurisdictions>
+    <lrml:LegalSources key="legal-source-1">
+        <lrml:LegalSource key="NZBC-CAS2" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/c-protection-from-fire/asvm/cas2-protection-from-fire-1st-edition-2019.pdf"/>
+    </lrml:LegalSources>
+    <lrml:Context>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.1.0"/>
+            <lrml:toTarget keyref="r1.1.0.1"/>
+            <lrml:toTarget keyref="r1.1.0.2"/>
+            <lrml:toTarget keyref="r1.1.0.3"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.1.1"/>
+            <lrml:toTarget keyref="r1.1.1.0.1"/>
+            <lrml:toTarget keyref="r1.1.1.0.2"/>
+            <lrml:toTarget keyref="r1.1.1.0.3"/>
+            <lrml:toTarget keyref="r1.1.1.0.4"/>
+            <lrml:toTarget keyref="r1.1.1.0.5"/>
+            <lrml:toTarget keyref="r1.1.1.0.6"/>
+            <lrml:toTarget keyref="r1.1.1.0.7"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.2.2"/>
+            <lrml:toTarget keyref="r1.2.2.0.1"/>
+            <lrml:toTarget keyref="r1.2.2.0.2"/>
+            <lrml:toTarget keyref="r1.2.2.0.3"/>
+            <lrml:toTarget keyref="r1.2.2.0.4"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.2.3"/>
+            <lrml:toTarget keyref="r1.2.3.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.3.1"/>
+            <lrml:toTarget keyref="r1.3.1.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.1"/>
+            <lrml:toTarget keyref="r1.4.1.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.2"/>
+            <lrml:toTarget keyref="r1.4.2.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.3"/>
+            <lrml:toTarget keyref="r1.4.3.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.4"/>
+            <lrml:toTarget keyref="r1.4.4.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.5"/>
+            <lrml:toTarget keyref="r1.4.5.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.6"/>
+            <lrml:toTarget keyref="r1.4.6.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.7"/>
+            <lrml:toTarget keyref="r1.4.7.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r1.4.8"/>
+            <lrml:toTarget keyref="r1.4.8.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.1.1"/>
+            <lrml:toTarget keyref="r2.1.1.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.1"/>
+            <lrml:toTarget keyref="r2.2.1.0.1"/>
+            <lrml:toTarget keyref="r2.2.1.0.2"/>
+            <lrml:toTarget keyref="r2.2.1.0.3"/>
+            <lrml:toTarget keyref="r2.2.1.0.4"/>
+            <lrml:toTarget keyref="r2.2.1.0.5"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.2"/>
+            <lrml:toTarget keyref="r2.2.2.0.a.1"/>
+            <lrml:toTarget keyref="r2.2.2.0.b.1"/>
+            <lrml:toTarget keyref="r2.2.2.0.c.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.3"/>
+            <lrml:toTarget keyref="r2.2.3.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.4"/>
+            <lrml:toTarget keyref="r2.2.4.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.5"/>
+            <lrml:toTarget keyref="r2.2.5.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.6"/>
+            <lrml:toTarget keyref="r2.2.6.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.7"/>
+            <lrml:toTarget keyref="r2.2.7.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.8"/>
+            <lrml:toTarget keyref="r2.2.8.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.2.9"/>
+            <lrml:toTarget keyref="r2.2.9.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.1"/>
+            <lrml:toTarget keyref="r2.3.1.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.10"/>
+            <lrml:toTarget keyref="r2.3.10.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.11"/>
+            <lrml:toTarget keyref="r2.3.11.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.12"/>
+            <lrml:toTarget keyref="r2.3.12.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.13"/>
+            <lrml:toTarget keyref="r2.3.13.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.2"/>
+            <lrml:toTarget keyref="r2.3.2.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.3"/>
+            <lrml:toTarget keyref="r2.3.3.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.4"/>
+            <lrml:toTarget keyref="r2.3.4.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.5"/>
+            <lrml:toTarget keyref="r2.3.5.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.6"/>
+            <lrml:toTarget keyref="r2.3.6.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.7"/>
+            <lrml:toTarget keyref="r2.3.7.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.8"/>
+            <lrml:toTarget keyref="r2.3.8.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r2.3.9"/>
+            <lrml:toTarget keyref="r2.3.9.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r3.1.1"/>
+            <lrml:toTarget keyref="r3.1.1.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r3.1.2"/>
+            <lrml:toTarget keyref="r3.1.2.0.1"/>
+            <lrml:toTarget keyref="r3.1.2.0.2"/>
+            <lrml:toTarget keyref="r3.1.2.0.3"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r3.1.3"/>
+            <lrml:toTarget keyref="r3.1.3.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r3.1.4"/>
+            <lrml:toTarget keyref="r3.1.4.0.1"/>
+            <lrml:toTarget keyref="r3.1.4.0.2"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r3.2.1"/>
+            <lrml:toTarget keyref="r3.2.1.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r3.2.2"/>
+            <lrml:toTarget keyref="r3.2.2.0.1"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r4.1.1"/>
+            <lrml:toTarget keyref="r4.1.1.0.1"/>
+            <lrml:toTarget keyref="r4.1.1.0.2"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t1.2"/>
+            <lrml:toTarget keyref="t1.2.1"/>
+            <lrml:toTarget keyref="t1.2.2"/>
+            <lrml:toTarget keyref="t1.2.3"/>
+        </lrml:Association>
+    </lrml:Context>
+    <lrml:Statements>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Or>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:complyWith"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:building"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">nzbc.c1</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:complyWith"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:building"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">nzbc.c2</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:complyWith"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:building"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">nzbc.c3</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:complyWith"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:building"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">nzbc.c5</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:complyWith"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:building"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">nzbc.c6</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:asPer"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">t1.1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:asPer"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">rule</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:rule"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">1.1.1</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.0.2">
+                <ruleml:if>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">SH</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">nzbc-cas1</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.0.3">
+                <ruleml:if>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">backcountryHut</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">nzbc-bchas1</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:asPer"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">t1.1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Not>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:riskGroup"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">SH</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Not>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.2">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">SM</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.3">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">care</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">detention</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">SI</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.4">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">crowd</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">educational</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">personalService</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">CA</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.5">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.5">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">professionalService</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">industrial</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">WB</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.6">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.6">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">storage</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">tradeService</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">WS</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.1.1.0.7">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.1.1.0.7">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">vehicleParking</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">VP</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireProtection"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">thisDocument</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr lkm:loop="true">
+                            <lkm:ruleStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:in"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:max"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:activity"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:ruleStatement>
+                            <lkm:appliedStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:define"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:stringency"/>
+                                        <ruleml:Var iri="buvo:riskGroup"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:appliedStatement>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr lkm:loop="true">
+                            <lkm:ruleStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:in"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:max"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:activity"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:ruleStatement>
+                            <lkm:appliedStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:define"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:stringency"/>
+                                        <ruleml:Var iri="buvo:riskGroup"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:appliedStatement>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:firecell"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr lkm:loop="true">
+                            <lkm:ruleStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:in"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:max"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:activity"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:string">space</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:ruleStatement>
+                            <lkm:appliedStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:define"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:stringency"/>
+                                        <ruleml:Var iri="buvo:riskGroup"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:appliedStatement>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.2.0.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.2.0.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">ancillary</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:partOf"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:firecell"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.2.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.2.3.0.1">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:has"/>
+                        <ruleml:Atom>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Permission>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:primaryRiskGroup"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Permission>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.3.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.3.1.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.1.0.1">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr lkm:loop="true">
+                            <lkm:ruleStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:in"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:forEach"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:buildingStorey"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:ruleStatement>
+                            <lkm:appliedStatement>
+                                <ruleml:And>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:define"/>
+                                        <ruleml:Expr>
+                                            <ruleml:Fun iri="fuvo:count"/>
+                                            <ruleml:Atom>
+                                                <ruleml:Rel iri="buvo:occupant"/>
+                                                <ruleml:Var iri="buvo:space"/>
+                                            </ruleml:Atom>
+                                        </ruleml:Expr>
+                                        <ruleml:Data xsi:type="xs:string">p1</ruleml:Data>
+                                    </ruleml:Expr>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:define"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Rel iri="buvo:riskGroup"/>
+                                            <ruleml:Var iri="buvo:space"/>
+                                        </ruleml:Atom>
+                                        <ruleml:Data xsi:type="lkm:ruleId">rg1</ruleml:Data>
+                                    </ruleml:Expr>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:include"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:space"/>
+                                        </ruleml:Atom>
+                                        <ruleml:Data xsi:type="xs:string">openFloorArea</ruleml:Data>
+                                    </ruleml:Expr>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:greaterThan"/>
+                                        <ruleml:Expr>
+                                            <ruleml:Fun iri="fuvo:count"/>
+                                            <ruleml:Atom>
+                                                <ruleml:Rel iri="buvo:activities"/>
+                                                <ruleml:Var iri="buvo:space"/>
+                                            </ruleml:Atom>
+                                        </ruleml:Expr>
+                                        <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                                    </ruleml:Expr>
+                                </ruleml:And>
+                            </lkm:appliedStatement>
+                        </ruleml:Expr>
+                        <ruleml:Expr lkm:loop="true">
+                            <lkm:ruleStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:in"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:forEach"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:space"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:ruleStatement>
+                            <lkm:appliedStatement>
+                                <ruleml:And>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:define"/>
+                                        <ruleml:Expr>
+                                            <ruleml:Fun iri="fuvo:count"/>
+                                            <ruleml:Atom>
+                                                <ruleml:Rel iri="buvo:occupant"/>
+                                                <ruleml:Var iri="buvo:space"/>
+                                            </ruleml:Atom>
+                                        </ruleml:Expr>
+                                        <ruleml:Data xsi:type="xs:string">p2</ruleml:Data>
+                                    </ruleml:Expr>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:define"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Rel iri="buvo:riskGroup"/>
+                                            <ruleml:Var iri="buvo:space"/>
+                                        </ruleml:Atom>
+                                        <ruleml:Data xsi:type="lkm:ruleId">rg2</ruleml:Data>
+                                    </ruleml:Expr>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:include"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:space"/>
+                                        </ruleml:Atom>
+                                        <ruleml:Data xsi:type="xs:string">openFloorArea</ruleml:Data>
+                                    </ruleml:Expr>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:greaterThan"/>
+                                        <ruleml:Expr>
+                                            <ruleml:Fun iri="fuvo:count"/>
+                                            <ruleml:Atom>
+                                                <ruleml:Rel iri="buvo:activities"/>
+                                                <ruleml:Var iri="buvo:space"/>
+                                            </ruleml:Atom>
+                                        </ruleml:Expr>
+                                        <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                                    </ruleml:Expr>
+                                </ruleml:And>
+                            </lkm:appliedStatement>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:calculation"/>
+                                    <ruleml:Var iri="buvo:occupantLoad"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">p1</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:calculation"/>
+                                    <ruleml:Var iri="buvo:occupantLoad"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">p2</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:calculation"/>
+                                    <ruleml:Var iri="buvo:occupantLoad"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:ruleId">rg1</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:calculation"/>
+                                    <ruleml:Var iri="buvo:occupantLoad"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:ruleId">rg2</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.2.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:floorArea"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">A</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:occupantLoadDensity"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">d</ruleml:Data>
+                        </ruleml:Expr>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:from"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:d"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:key"/>
+                                    <ruleml:Var iri="buvo:table"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:ruleId">t1.2</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">A/d</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.3.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">occupant</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Not>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:use"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">intermittent</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Not>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:in"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:occupant"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p1</ruleml:Data>
+                        </ruleml:Expr>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:for"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:p1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">fireSafetyDesign</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.4.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:seat"/>
+                                    <ruleml:Var iri="buvo:fixedSeating"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">s1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:adjoin"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fixedSeating</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">occupant</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Not>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">obstructed</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Not>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">standing</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:from"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:p2"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:key"/>
+                                    <ruleml:Var iri="buvo:table"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:ruleId">t1.2</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:occupantLoad"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">s1+p2</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.5.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.5.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Or>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:is"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:riskGroup"/>
+                                        <ruleml:Var iri="buvo:space"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">SM</ruleml:Data>
+                                </ruleml:Expr>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:is"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:riskGroup"/>
+                                        <ruleml:Var iri="buvo:space"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">SI</ruleml:Data>
+                                </ruleml:Expr>
+                            </ruleml:Or>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">b</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">recliner</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">loungeChair</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">dentistChair</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">treatmentTable</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">treatmentFurniture</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:b"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">occupantLoad</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:for"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:b"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fireSafetyDesign</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:occupant"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">p</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">b</ruleml:Data>
+                        </ruleml:Expr>
+                        <lrml:Obligation>
+                            <ruleml:Not>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:is"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:p"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">calculated</ruleml:Data>
+                                </ruleml:Expr>
+                            </ruleml:Not>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.6.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.6.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:activity"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:riskGroup"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">SI</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">b</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">recliner</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">loungeChair</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">dentistChair</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">treatmentTable</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:bed"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">treatmentFurniture</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:b"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">occupantLoad</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:for"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:b"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fireSafetyDesign</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.7.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.7.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:occupantLoadDensity"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">d2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:from"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:d2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">t1.2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">d1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:d1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">actual</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:d1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">expected</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:d2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">d1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:for"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:d1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fireSafetyDesign</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:d1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">justified</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r1.4.8.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r1.4.8.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:occupantLoadDensity"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">d2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:from"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:d2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">t1.2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:occupantLoad"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">d1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:d1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">actual</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:d1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">expected</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:d1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">d2</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:for"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:d1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">fireSafetyDesign</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:d1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">justified</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.1.1.0.1">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:is"/>
+                        <ruleml:Atom>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:complyWith"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:floorArea"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:equal"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:key"/>
+                                    <ruleml:Var iri="buvo:table"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:ruleId">t2.1</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.1">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">SM</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">SI</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.2">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:is"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:riskGroup"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">CA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.3">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">WB</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">WS</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.4">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.4">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:is"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:riskGroup"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">VP</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.1.0.5">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.1.0.5">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireSafetySystem"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">supplementary</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:fireSafetySystem"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">detection</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:method"/>
+                                <ruleml:Var iri="buvo:detection"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">automatic</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:detection"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">heat</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:detection"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">smoke</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Not>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:has"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:fireSafetySystem"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">fireServiceDirectConnection</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Not>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.2.0.a.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.2.0.a.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">earlyChildhood</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:buildingStorey"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr lkm:loop="true">
+                        <lkm:ruleStatement>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="fuvo:forEach"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:activity"/>
+                                        <ruleml:Var iri="buvo:space"/>
+                                    </ruleml:Atom>
+                                </ruleml:Expr>
+                                <ruleml:Data xsi:type="xs:string">sleeping</ruleml:Data>
+                            </ruleml:Expr>
+                        </lkm:ruleStatement>
+                        <lkm:appliedStatement>
+                            <ruleml:And>
+                                <lrml:Obligation>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:has"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:space"/>
+                                        </ruleml:Atom>
+                                        <ruleml:Data xsi:type="xs:string">smokeDetector</ruleml:Data>
+                                    </ruleml:Expr>
+                                </lrml:Obligation>
+                                <lrml:Obligation>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:is"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:smokeDetector"/>
+                                        </ruleml:Atom>
+                                        <ruleml:Data xsi:type="xs:string">supplementary</ruleml:Data>
+                                    </ruleml:Expr>
+                                </lrml:Obligation>
+                                <lrml:Obligation>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="lovo:complyWith"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:smokeDetector"/>
+                                        </ruleml:Atom>
+                                        <ruleml:Data xsi:type="xs:string">nzs4512</ruleml:Data>
+                                    </ruleml:Expr>
+                                </lrml:Obligation>
+                            </ruleml:And>
+                        </lkm:appliedStatement>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.2.0.b.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.2.0.b.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">earlyChildhood</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:escapeHeight"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:measurement">
+                                <lkm:baseUnit lkm:kind="metre"/>
+                                <lkm:value>2.0</lkm:value>
+                            </ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireSafetySystem"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">type7</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.2.0.c.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.2.0.c.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">earlyChildhood</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:elevation"/>
+                                <ruleml:Var iri="buvo:groundLevel"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">elev1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:elevation"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">elev1</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="fuvo:count"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:placeOfSafety"/>
+                                    </ruleml:Atom>
+                                </ruleml:Expr>
+                                <ruleml:Data xsi:type="xs:integer">2</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:has"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:placeOfSafety"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">fireResistanceRating</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:frrType"/>
+                                    <ruleml:Var iri="buvo:fireResistanceRating"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">propertyRating</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Or>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:to"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:directAccess"/>
+                                        <ruleml:Var iri="buvo:placeOfSafety"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">safePath</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:to"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:directAccess"/>
+                                        <ruleml:Var iri="buvo:placeOfSafety"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">finalExit</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                        </ruleml:Or>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.3.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireSafetySystem"/>
+                                <ruleml:Var iri="buvo:firecell"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">cap.cas2.r2.2.3</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.4.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:riskGroup"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">VP</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                        </ruleml:Expr>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:has"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">fireSprinklerSystem</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:complyWith"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:fireSafetySystem"/>
+                                    <ruleml:Var iri="buvo:firecell"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">t2.2a</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Permission>
+                            <ruleml:Not>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:throughout"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:installation"/>
+                                        <ruleml:Var iri="buvo:fireSprinklerSystem"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
+                                </ruleml:Expr>
+                            </ruleml:Not>
+                        </lrml:Permission>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:fireResistanceRating"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">propertyRating</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.5.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.5.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.6.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.6.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:buildingStorey"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">riskGroup</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:riskGroup"/>
+                                    <ruleml:Var iri="buvo:buildingStorey"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <lrml:Obligation>
+                            <ruleml:Not>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:has"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:riskGroup"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">fireSeparation</ruleml:Data>
+                                </ruleml:Expr>
+                            </ruleml:Not>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:for"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:fireSafetySystem"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">primaryRiskGroup</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.7.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.7.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.8.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.8.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:has"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">fireAlarmSystem</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activation"/>
+                                <ruleml:Var iri="buvo:fireAlarmSystem"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:fireAlarmSystem"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">alertingDevice</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:reach"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:output"/>
+                                    <ruleml:Var iri="buvo:alertingDevice"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">occupant</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:occupant"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">all</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.2.9.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.2.9.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:riskGroup"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">SI</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fireAlarmSystem</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:fireAlarmSystem"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">alertingDevice</ruleml:Data>
+                        </ruleml:Expr>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:reach"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:output"/>
+                                    <ruleml:Var iri="buvo:alertingDevice"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">occupant</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:occupant"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">staff</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Permission>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:reach"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:output"/>
+                                    <ruleml:Var iri="buvo:alertingDevice"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">occupant</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Permission>
+                        <lrml:Permission>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:occupant"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">all</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Permission>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.1.0.1">
+                <ruleml:if>
+                    <ruleml:Not>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                <ruleml:Var iri="buvo:riskGroup"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Not>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:complyWith"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                    <ruleml:Var iri="buvo:riskGroup"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">t2.4</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.2.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:buildingStorey"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Not>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:fireResistanceRating"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">required</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Not>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Permission>
+                        <ruleml:Not>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:element"/>
+                                    <ruleml:Var iri="buvo:structural"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">fireRated</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Not>
+                    </lrml:Permission>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.3.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:riskGroup"/>
+                                    <ruleml:Var iri="buvo:buildingStorey"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr lkm:loop="true">
+                            <lkm:ruleStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:in"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:forEach"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:riskGroup"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:string">buildingStorey</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:ruleStatement>
+                            <lkm:appliedStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:define"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:max"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                            <ruleml:Var iri="buvo:riskGroup"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:string">frr</ruleml:Data>
+                                </ruleml:Expr>
+                            </lkm:appliedStatement>
+                        </ruleml:Expr>
+                        <ruleml:Or>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">common</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:type"/>
+                                    <ruleml:Var iri="buvo:space"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">sharedEscapeRoute</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:Or>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                <ruleml:Var iri="buvo:space"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">frr</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.4.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:sideOf"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:element"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">exposure</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:type"/>
+                                <ruleml:Var iri="buvo:exposure"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fire</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:sideOf"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:element"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">fireResistanceRating</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.5.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.5.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.6.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.6.0.1">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:is"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:element"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">floor</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:undersideOf"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:floor"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">fireResistanceRating</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.7.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.7.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">primary</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:integralWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fireSeparation</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                <ruleml:Var iri="buvo:fireSeparation"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">frr</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:fireResistanceRating"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">frr</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.8.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.8.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.9.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.9.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.10.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.10.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.11.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.11.0.1">
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                <ruleml:Var iri="buvo:structuralFramingMember"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">frr</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.12.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.12.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r2.3.13.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r2.3.13.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.1.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:in"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:fire"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:has"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">occupant</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:has"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:occupant"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">meansOfEscape</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:meansOfEscape"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">escapeRoute</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:to"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">safePlace</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.2.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:component"/>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">openPath</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:component"/>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">exitway</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:component"/>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">finalExit</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:degreeOfProtection"/>
+                                <ruleml:Var iri="buvo:openPath"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:degreeOfProtection"/>
+                                <ruleml:Var iri="buvo:exitways"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:degreeOfProtection"/>
+                                <ruleml:Var iri="buvo:finalExit"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p3</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:p1"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">p2</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:p2"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">p3</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:component"/>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.2.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.2.0.2">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:is"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:component"/>
+                            <ruleml:Var iri="buvo:escapeRoute"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">exitway</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Or>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:exitway"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">smokeLobby</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:is"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:exitway"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">safePath</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Obligation>
+                        <ruleml:And>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:is"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:exitway"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">smokeLobby</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:is"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Var iri="buvo:exitway"/>
+                                    </ruleml:Atom>
+                                    <ruleml:Data xsi:type="xs:string">safePath</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                        </ruleml:And>
+                    </ruleml:Or>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.2.0.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.2.0.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:origin"/>
+                                <ruleml:Var iri="buvo:escapeRoute"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">e1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:destination"/>
+                                <ruleml:Var iri="buvo:escapeRoute"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">e2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:degreeOfProtection"/>
+                                <ruleml:Var iri="buvo:e1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:degreeOfProtection"/>
+                                <ruleml:Var iri="buvo:e2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p2</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:p2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">p1</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.3.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.3.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:length"/>
+                                <ruleml:Var iri="buvo:openPath"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">e1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:length"/>
+                                <ruleml:Var iri="buvo:openPath"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">table</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:table"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">t3.2</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <lrml:Permission>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:component"/>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">openPath</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Permission>
+                        <lrml:Permission>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:include"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:component"/>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">finalExit</ruleml:Data>
+                            </ruleml:Expr>
+                        </lrml:Permission>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.4.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.4.0.1">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:in"/>
+                        <ruleml:Atom>
+                            <ruleml:Var iri="buvo:escapeRoute"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:escapeRoute"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">nzbc-d1</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.1.4.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.1.4.0.2">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">ramp</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">stair</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">ladder</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">landing</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">handrail</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">door</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">visionPanel</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">opening</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:element"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">nzbc-d1as1</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.2.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.2.1.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:escapeRoute"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:string">n1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:n1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:complyWith"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:n1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">rule</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:rule"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:decimal">3.13</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr lkm:loop="true">
+                        <lkm:ruleStatement>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="fuvo:forEach"/>
+                                    <ruleml:Atom>
+                                        <ruleml:Rel iri="buvo:occupantLoad"/>
+                                        <ruleml:Var iri="buvo:space"/>
+                                    </ruleml:Atom>
+                                </ruleml:Expr>
+                                <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                            </ruleml:Expr>
+                        </lkm:ruleStatement>
+                        <lkm:appliedStatement>
+                            <lrml:Obligation>
+                                <ruleml:Expr>
+                                    <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:count"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Var iri="buvo:escapeRoute"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                    <ruleml:Data xsi:type="xs:integer">2</ruleml:Data>
+                                </ruleml:Expr>
+                            </lrml:Obligation>
+                        </lkm:appliedStatement>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r3.2.2.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r3.2.2.0.1"/>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r4.1.1.0.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r4.1.1.0.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:adjoin"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">space2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:owner"/>
+                                <ruleml:Var iri="buvo:space1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">owner1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:owner"/>
+                                <ruleml:Var iri="buvo:space2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">owner2</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:And>
+                        <ruleml:Expr lkm:loop="true">
+                            <lkm:ruleStatement>
+                                <ruleml:Expr>
+                                    <ruleml:Expr>
+                                        <ruleml:Fun iri="fuvo:max"/>
+                                        <ruleml:Atom>
+                                            <ruleml:Rel iri="buvo:rating"/>
+                                            <ruleml:Var iri="buvo:fireSeparation"/>
+                                        </ruleml:Atom>
+                                    </ruleml:Expr>
+                                </ruleml:Expr>
+                            </lkm:ruleStatement>
+                            <lkm:appliedStatement>
+                                <ruleml:Or>
+                                    <ruleml:And>
+                                        <lrml:Obligation>
+                                            <ruleml:Expr>
+                                                <ruleml:Fun iri="lovo:is"/>
+                                                <ruleml:Atom>
+                                                    <ruleml:Rel iri="buvo:rating"/>
+                                                    <ruleml:Var iri="buvo:fireSeparation"/>
+                                                </ruleml:Atom>
+                                                <ruleml:Data xsi:type="xs:string">lifeRating</ruleml:Data>
+                                            </ruleml:Expr>
+                                        </lrml:Obligation>
+                                        <ruleml:Expr>
+                                            <ruleml:Fun iri="lovo:equal"/>
+                                            <ruleml:Atom>
+                                                <ruleml:Var iri="buvo:owner1"/>
+                                            </ruleml:Atom>
+                                            <ruleml:Data xsi:type="xs:string">owner2</ruleml:Data>
+                                        </ruleml:Expr>
+                                    </ruleml:And>
+                                    <ruleml:And>
+                                        <ruleml:Expr>
+                                            <ruleml:Fun iri="lovo:is"/>
+                                            <ruleml:Atom>
+                                                <ruleml:Rel iri="buvo:rating"/>
+                                                <ruleml:Var iri="buvo:fireSeparation"/>
+                                            </ruleml:Atom>
+                                            <ruleml:Data xsi:type="xs:string">propertyRating</ruleml:Data>
+                                        </ruleml:Expr>
+                                        <ruleml:Not>
+                                            <ruleml:Expr>
+                                                <ruleml:Fun iri="lovo:equal"/>
+                                                <ruleml:Atom>
+                                                    <ruleml:Var iri="buvo:owner1"/>
+                                                </ruleml:Atom>
+                                                <ruleml:Data xsi:type="xs:string">owner2</ruleml:Data>
+                                            </ruleml:Expr>
+                                        </ruleml:Not>
+                                    </ruleml:And>
+                                </ruleml:Or>
+                            </lkm:appliedStatement>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:asPer"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:lifeRating"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">rule</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:asPer"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:propertyRating"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:token">rule</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:key"/>
+                                <ruleml:Var iri="buvo:rule"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">2.3.0</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_r4.1.1.0.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_r4.1.1.0.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:adjoin"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">space2</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:space2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">firecell</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                <ruleml:Var iri="buvo:space1"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">frr1</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:fireResistanceRating"/>
+                                <ruleml:Var iri="buvo:space2"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="lkm:ruleId">frr2</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Var iri="buvo:answer"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">incomplete</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t1.2.1">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t1.2.1">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">Office spaces</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupancyDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">10</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t1.2.2">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t1.2.2">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">Bar sitting areas</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupancyDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_NZBC-CAS2#1.0_t1.2.3">
+            <ruleml:Rule key="NZ_NZBC-CAS2#1.0_t1.2.3">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:activity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">Bar standing areas</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:equal"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:occupancyDensity"/>
+                            <ruleml:Var iri="buvo:space"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:decimal">0.5</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+    </lrml:Statements>
+</lrml:LegalRuleML>
