@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:ruleml="http://ruleml.org/spec" xmlns:lkm="https://cas.net.nz/">
+<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:ruleml="http://ruleml.org/spec" xmlns:lkm="https://cas.net.nz/" lkm:version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <lrml:Prefix pre="buvo" refID="https://buvo.acabim.com"/>
     <lrml:Prefix pre="lovo" refID="https://lovo.acabim.com"/>
     <lrml:Prefix pre="fuvo" refID="https://fuvo.acabim.com"/>
     <lrml:Jurisdictions>
-        <lrml:Jurisdiction sameAs="http://example.org/jurisdiction#newzealand" key="NZ"/>
+        <lrml:Jurisdiction key="NZ" sameAs="http://example.org/jurisdiction#newzealand"/>
     </lrml:Jurisdictions>
     <lrml:LegalSources key="legal-source-1">
-        <lrml:LegalSource sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/e-moisture/e2-external-moisture/asvm/e2-external-moisture-3rd-edition-amendment-9.pdf" key="NZBC-E2AS1"/>
+        <lrml:LegalSource key="NZBC-E2AS1" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/e-moisture/e2-external-moisture/asvm/e2-external-moisture-3rd-edition-amendment-9.pdf"/>
     </lrml:LegalSources>
     <lrml:Context>
         <lrml:Association>
@@ -2758,7 +2758,7 @@
                                     <ruleml:Var iri="buvo:flashing"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
+                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
                                     <lkm:value>0.5</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -3686,7 +3686,7 @@
                                     <ruleml:Var iri="buvo:gap"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
+                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
                                     <lkm:value>5.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -3727,7 +3727,7 @@
                                     <ruleml:Var iri="buvo:gap"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                     <lkm:value>5.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -3780,7 +3780,7 @@
                                     <ruleml:Var iri="buvo:gap"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
+                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
                                     <lkm:value>5.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -5964,7 +5964,7 @@
                                 </ruleml:Atom>
                             </ruleml:Expr>
                             <ruleml:Data xsi:type="lkm:measurement">
-                                <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                 <lkm:value>20.0</lkm:value>
                             </ruleml:Data>
                         </ruleml:Expr>
@@ -6497,7 +6497,7 @@
                                 </ruleml:Atom>
                             </ruleml:Expr>
                             <ruleml:Data xsi:type="lkm:measurement">
-                                <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                 <lkm:value>25.0</lkm:value>
                             </ruleml:Data>
                         </ruleml:Expr>
@@ -6753,7 +6753,7 @@
                                     <ruleml:Var iri="buvo:nail"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                     <lkm:value>35.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -7603,7 +7603,7 @@
                                     </ruleml:Atom>
                                 </ruleml:Expr>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                     <lkm:value>0.7</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -8413,7 +8413,7 @@
                                         <ruleml:Var iri="buvo:crest"/>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="lkm:measurement">
-                                        <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
+                                        <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
                                         <lkm:value>16.5</lkm:value>
                                     </ruleml:Data>
                                 </ruleml:Expr>
@@ -8442,7 +8442,7 @@
                                         <ruleml:Var iri="buvo:crest"/>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="lkm:measurement">
-                                        <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                        <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                         <lkm:value>19.0</lkm:value>
                                     </ruleml:Data>
                                 </ruleml:Expr>
@@ -8601,7 +8601,7 @@
                                         </ruleml:Atom>
                                     </ruleml:Expr>
                                     <ruleml:Data xsi:type="lkm:measurement">
-                                        <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
+                                        <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
                                         <lkm:value>210.0</lkm:value>
                                     </ruleml:Data>
                                 </ruleml:Expr>
@@ -8727,7 +8727,7 @@
                                     <ruleml:Var iri="buvo:crest"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                     <lkm:value>27.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -9496,7 +9496,7 @@
                                     <ruleml:Var iri="buvo:fixing"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
+                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
                                     <lkm:value>4.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -10298,7 +10298,7 @@
                                     <ruleml:Var iri="buvo:penetration"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                     <lkm:value>85.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -10390,7 +10390,7 @@
                                     <ruleml:Var iri="buvo:penetration"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
+                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
                                     <lkm:value>1200.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
@@ -11496,7 +11496,7 @@
                                     <ruleml:Var iri="buvo:cladding"/>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="lkm:measurement">
-                                    <lkm:baseUnit lkm:prefix="milli" lkm:kind="metre"/>
+                                    <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli"/>
                                     <lkm:value>35.0</lkm:value>
                                 </ruleml:Data>
                             </ruleml:Expr>
