@@ -9,6 +9,20 @@
     <lrml:LegalSources key="legal-source">
         <lrml:LegalSource key="NZBC.D1AS1" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/d-access/d1-access-routes/asvm/d1-access-routes-2nd-edition-amendment6.pdf"/>
     </lrml:LegalSources>
+    <lrml:Associations key="sourceBlock1">
+        <lrml:Association>
+           <lrml:appliesTemporalCharacteristics keyref="#tblock1"/>
+              <lrml:toTarget keyref="#ps1"/>
+              <lrml:toTarget keyref="#ps2"/>
+        </lrml:Association>
+
+        <lrml:Association>
+              <lrml:appliesAuthority keyref="#mbie"/>
+              <lrml:appliesJurisdiction keyref="#nz"/>
+              <lrml:toTarget keyref="#ps1"/>
+              <lrml:toTarget keyref="#ps3"/>
+        </lrml:Association>
+    </lrml:Associations>
     <lrml:Context>
         <lrml:Association>
             <lrml:appliesSource keyref="f14.1"/>
