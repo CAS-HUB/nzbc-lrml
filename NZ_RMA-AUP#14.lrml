@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:lkm="https://cas.net.nz/" xmlns:ruleml="http://ruleml.org/spec" lkm:Version="2.0">
+    <lrml:Prefix refID="https://buvo.acabim.com" pre="buvo"/>
+    <lrml:Prefix pre="lovo" refID="https://lovo.acabim.com"/>
+    <lrml:Prefix pre="fuvo" refID="https://fuvo.acabim.com"/>
+    <lrml:Jurisdictions>
+        <lrml:Jurisdiction key="NZ" sameAs="http://example.org/jurisdiction#newzealand"/>
+    </lrml:Jurisdictions>
+    <lrml:LegalSources key="legal-source-1">
+        <lrml:LegalSource key="RMA-AUP" sameAs="https://unitaryplan.aucklandcouncil.govt.nz/Images/Auckland%20Unitary%20Plan%20Operative/Chapter%20E%20Auckland-wide/4.%20Infrastructure/E27%20Transport.pdf"/>
+    </lrml:LegalSources>
+    <lrml:Context>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r27.6.3"/>
+            <lrml:toTarget keyref="r27.6.3.7"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t6.2.1"/>
+            <lrml:toTarget keyref="t6.2.1.1"/>
+            <lrml:toTarget keyref="t6.2.1.2"/>
+            <lrml:toTarget keyref="t6.2.1.3"/>
+            <lrml:toTarget keyref="t6.2.1.4"/>
+            <lrml:toTarget keyref="t6.2.1.5"/>
+        </lrml:Association>
+    </lrml:Context>
+    <lrml:Statements>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_r27.6.3.7">
+            <ruleml:Rule key="NZ_RMA-AUP#14_r27.6.3.7">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:space"/>
+                                    <ruleml:Var iri="buvo:parking"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">10</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:usage"/>
+                                <ruleml:Var iri="buvo:parking"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">evening</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:lighting"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:location"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>0.7 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:location"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>1.4 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:location"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>1.7 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:location"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">others</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:numberOfVisitorSpaces"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>0.2 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.5">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.5">
+                <ruleml:if>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:define"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:size"/>
+                            <ruleml:Var iri="buvo:building"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>fa/200.0</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+    </lrml:Statements>
+</lrml:LegalRuleML>
