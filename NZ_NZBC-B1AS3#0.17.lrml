@@ -1130,7 +1130,7 @@
                                     <lrml:Rel iri="buvo:thickness"/>
                                     <lrml:Var iri="buvo:wall"/>
                                 </lrml:Atom>
-                                <lrml:Data>150 mmm</lrml:Data>
+                                <lrml:Data>150 mm</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
                         <lrml:Expr>
@@ -1190,7 +1190,7 @@
                                     <lrml:Rel iri="buvo:thickness"/>
                                     <lrml:Var iri="buvo:wall"/>
                                 </lrml:Atom>
-                                <lrml:Data>150 mmm</lrml:Data>
+                                <lrml:Data>150 mm</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
                         <lrml:Expr>
@@ -1250,7 +1250,7 @@
                                     <lrml:Rel iri="buvo:thickness"/>
                                     <lrml:Var iri="buvo:wall"/>
                                 </lrml:Atom>
-                                <lrml:Data>150 mmm</lrml:Data>
+                                <lrml:Data>150 mm</lrml:Data>
                             </lrml:Expr>
                         </lrml:Obligation>
                         <lrml:Expr>

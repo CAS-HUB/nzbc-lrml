@@ -1,14 +1,1723 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:lkm="https://cas.net.nz/" xmlns:ruleml="http://ruleml.org/spec" lkm:Version="2.0">
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" lkm:version="2.0" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:lkm="https://cas.net.nz/">
     <lrml:Prefix refID="https://buvo.acabim.com" pre="buvo"/>
     <lrml:Prefix pre="lovo" refID="https://lovo.acabim.com"/>
     <lrml:Prefix pre="fuvo" refID="https://fuvo.acabim.com"/>
     <lrml:Jurisdictions>
         <lrml:Jurisdiction key="NZ" sameAs="http://example.org/jurisdiction#newzealand"/>
     </lrml:Jurisdictions>
-    <lrml:LegalSources key="legal-source-1">
-        <lrml:LegalSource key="RMA-AUP" sameAs="https://unitaryplan.aucklandcouncil.govt.nz/Images/Auckland%20Unitary%20Plan%20Operative/Chapter%20E%20Auckland-wide/4.%20Infrastructure/E27%20Transport.pdf"/>
+    <lrml:LegalSources key="legal-source">
+        <lrml:LegalSource sameAs="https://unitaryplan.aucklandcouncil.govt.nz/Images/Auckland%20Unitary%20Plan%20Operative/Chapter%20E%20Auckland-wide/4.%20Infrastructure/E27%20Transport.pdf" key="RMA.AUP"/>
     </lrml:LegalSources>
+    <lrml:Context>
+        <lrml:Association>
+            <lrml:appliesSource keyref="r27.6.3"/>
+            <lrml:toTarget keyref="r27.6.3.7"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t6.2.1"/>
+            <lrml:toTarget keyref="t6.2.1.2"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t6.2.2"/>
+            <lrml:toTarget keyref="t6.2.2.1"/>
+            <lrml:toTarget keyref="t6.2.2.2"/>
+            <lrml:toTarget keyref="t6.2.2.3"/>
+            <lrml:toTarget keyref="t6.2.2.4"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t6.2.3"/>
+            <lrml:toTarget keyref="t6.2.3.1"/>
+            <lrml:toTarget keyref="t6.2.3.2"/>
+            <lrml:toTarget keyref="t6.2.3.3"/>
+            <lrml:toTarget keyref="t6.2.3.4"/>
+            <lrml:toTarget keyref="t6.2.3.5"/>
+            <lrml:toTarget keyref="t6.2.3.6"/>
+            <lrml:toTarget keyref="t6.2.3.7"/>
+            <lrml:toTarget keyref="t6.2.3.8"/>
+        </lrml:Association>
+    </lrml:Context>
+    <lrml:Statements>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_r27.6.3.7">
+            <ruleml:Rule key="NZ_RMA-AUP#14_r27.6.3.7">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:space"/>
+                                    <ruleml:Var iri="buvo:parking"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">10</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:is"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:usage"/>
+                                <ruleml:Var iri="buvo:parking"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">evening</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:greaterThan"/>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="fuvo:count"/>
+                                <ruleml:Atom>
+                                    <ruleml:Var iri="buvo:lighting"/>
+                                </ruleml:Atom>
+                            </ruleml:Expr>
+                            <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                        </ruleml:Expr>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:decimal">75.0</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:decimal">90.0</ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>1.4 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.1">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.2">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="string">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.3">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.4">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.5">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.5">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">fa/45m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.6">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.6">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.7">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.7">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.8">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.8">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                                    <lkm:value>90.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>1.7 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                                    <lkm:value>75.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                                    <lkm:value>90.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>1.4 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                                    <lkm:value>75.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>0.7 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:numberOfVisitorSpaces"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>0.2 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.1">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.2">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.3">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.4">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.5">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.5">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">fa/45m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.6">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.6">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.7">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.7">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.8">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.8">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+    </lrml:Statements>
     <lrml:Context>
         <lrml:Association>
             <lrml:appliesSource keyref="r27.6.3"/>
@@ -20,7 +1729,24 @@
             <lrml:toTarget keyref="t6.2.1.2"/>
             <lrml:toTarget keyref="t6.2.1.3"/>
             <lrml:toTarget keyref="t6.2.1.4"/>
-            <lrml:toTarget keyref="t6.2.1.5"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t6.2.2"/>
+            <lrml:toTarget keyref="t6.2.2.1"/>
+            <lrml:toTarget keyref="t6.2.2.2"/>
+            <lrml:toTarget keyref="t6.2.2.3"/>
+            <lrml:toTarget keyref="t6.2.2.4"/>
+        </lrml:Association>
+        <lrml:Association>
+            <lrml:appliesSource keyref="t6.2.3"/>
+            <lrml:toTarget keyref="t6.2.3.1"/>
+            <lrml:toTarget keyref="t6.2.3.2"/>
+            <lrml:toTarget keyref="t6.2.3.3"/>
+            <lrml:toTarget keyref="t6.2.3.4"/>
+            <lrml:toTarget keyref="t6.2.3.5"/>
+            <lrml:toTarget keyref="t6.2.3.6"/>
+            <lrml:toTarget keyref="t6.2.3.7"/>
+            <lrml:toTarget keyref="t6.2.3.8"/>
         </lrml:Association>
     </lrml:Context>
     <lrml:Statements>
@@ -75,15 +1801,7 @@
                                 <ruleml:Rel iri="buvo:zone"/>
                                 <ruleml:Var iri="buvo:site"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:equal"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:site"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
@@ -93,14 +1811,27 @@
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
                         </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:define"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:numberOfDwellings"/>
-                                <ruleml:Var iri="buvo:site"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
-                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                                    <lkm:value>90.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -111,7 +1842,7 @@
                             <ruleml:Var iri="buvo:site"/>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:expression">
-                            <lkm:value>0.7 * n</lkm:value>
+                            <lkm:value>1.7 * n</lkm:value>
                         </ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:then>
@@ -127,15 +1858,7 @@
                                 <ruleml:Rel iri="buvo:zone"/>
                                 <ruleml:Var iri="buvo:site"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:equal"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:site"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
@@ -145,14 +1868,38 @@
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
                         </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:define"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:numberOfDwellings"/>
-                                <ruleml:Var iri="buvo:site"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
-                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                                    <lkm:value>75.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                                    <lkm:value>90.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -179,15 +1926,7 @@
                                 <ruleml:Rel iri="buvo:zone"/>
                                 <ruleml:Var iri="buvo:site"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:equal"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:site"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
@@ -197,14 +1936,796 @@
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                                    <lkm:value>75.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>0.7 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.4">
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>0.2 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:define"/>
                             <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
                                 <ruleml:Var iri="buvo:site"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
                         </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.1">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.2">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.3">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.4">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.5">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.5">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/45m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.6">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.6">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.7">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.7">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.8">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.8">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.1">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                                    <lkm:value>90.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -221,8 +2742,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.4">
-            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.4">
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -231,15 +2752,7 @@
                                 <ruleml:Rel iri="buvo:zone"/>
                                 <ruleml:Var iri="buvo:site"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">business</ruleml:Data>
-                        </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:equal"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:site"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">city centre</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
@@ -247,18 +2760,115 @@
                                 <ruleml:Rel iri="buvo:activity"/>
                                 <ruleml:Var iri="buvo:site"/>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">others</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
                         </ruleml:Expr>
-                        <ruleml:Expr>
-                            <ruleml:Fun iri="lovo:define"/>
-                            <ruleml:Atom>
-                                <ruleml:Rel iri="buvo:numberOfVisitorSpaces"/>
-                                <ruleml:Var iri="buvo:site"/>
-                            </ruleml:Atom>
-                            <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
-                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0"/>
+                                    <lkm:value>75.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                                    <lkm:value>90.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
                     </ruleml:And>
                 </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>1.4 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">business - city centre</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">dwelling</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:And>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:lessThan"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:gfa"/>
+                                    <ruleml:Var iri="buvo:building"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="lkm:measurement">
+                                    <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre"/>
+                                    <lkm:value>75.0</lkm:value>
+                                </ruleml:Data>
+                            </ruleml:Expr>
+                            <ruleml:Expr>
+                                <ruleml:Fun iri="lovo:define"/>
+                                <ruleml:Atom>
+                                    <ruleml:Rel iri="buvo:numberOfDwellings"/>
+                                    <ruleml:Var iri="buvo:site"/>
+                                </ruleml:Atom>
+                                <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
+                            </ruleml:Expr>
+                        </ruleml:And>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:expression">
+                            <lkm:value>0.7 * n</lkm:value>
+                        </ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.4">
                 <ruleml:then>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:lessThanEqual"/>
@@ -273,28 +2883,698 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.1.5">
-            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.1.5">
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.1">
                 <ruleml:if>
-                    <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:define"/>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="buvo:size"/>
-                            <ruleml:Var iri="buvo:building"/>
-                        </ruleml:Atom>
-                        <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
-                    </ruleml:Expr>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
                     <ruleml:Expr>
-                        <ruleml:Fun iri="lovo:lessThanEqual"/>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:parkingRate"/>
                             <ruleml:Var iri="buvo:site"/>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:expression">
-                            <lkm:value>fa/200.0</lkm:value>
-                        </ruleml:Data>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.2">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.3">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.2.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.2.4">
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Centre Fringe Office Control</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.1">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.1">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.2">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.2">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">office</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/60m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.3">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.3">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.4">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.4">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - food and beverages</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.5">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.5">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/45m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.6">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.6">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - excluding supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.7">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.7">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="lkm:ruleId">fa/30m^2</ruleml:Data>
+                    </ruleml:Expr>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="NZ_RMA-AUP#14_t6.2.3.8">
+            <ruleml:Rule key="NZ_RMA-AUP#14_t6.2.3.8">
+                <ruleml:if>
+                    <ruleml:Or>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Metropolitan Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Town Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Local Centre Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:zone"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">Business - Mixed Use Zone</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:equal"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:activity"/>
+                                <ruleml:Var iri="buvo:site"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">retail - including supermarkets</ruleml:Data>
+                        </ruleml:Expr>
+                        <ruleml:Expr>
+                            <ruleml:Fun iri="lovo:define"/>
+                            <ruleml:Atom>
+                                <ruleml:Rel iri="buvo:gfa"/>
+                                <ruleml:Var iri="buvo:building"/>
+                            </ruleml:Atom>
+                            <ruleml:Data xsi:type="xs:string">fa</ruleml:Data>
+                        </ruleml:Expr>
+                    </ruleml:Or>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Expr>
+                        <ruleml:Fun iri="lovo:greaterThanEqual"/>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="buvo:parkingRate"/>
+                            <ruleml:Var iri="buvo:site"/>
+                        </ruleml:Atom>
+                        <ruleml:Data xsi:type="xs:string">NA</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:then>
             </ruleml:Rule>
