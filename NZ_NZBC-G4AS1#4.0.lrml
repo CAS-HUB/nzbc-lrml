@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" lkm:version="2.0" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ruleml="http://ruleml.org/spec" xmlns:lkm="https://cas.net.nz/">
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ruleml="http://ruleml.org/spec" xmlns:lkm="https://cas.net.nz/" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/os/xsd-schema/compact/lrml-compact.xsd">
+    <lrml:Comment><lkm:documentMetadata lkm:version="2.0"/></lrml:Comment>
     <lrml:Prefix pre="buvo" refID="https://buvo.acabim.com"/>
     <lrml:Prefix refID="https://lovo.acabim.com" pre="lovo"/>
     <lrml:Prefix pre="fuvo" refID="https://fuvo.acabim.com"/>
@@ -9,33 +10,33 @@
     <lrml:LegalSources key="legal-source">
         <lrml:LegalSource key="NZBC.G4AS1" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/g-services-and-facilities/g4-ventilation/asvm/g4-ventilation-4th-edition.pdf"/>
     </lrml:LegalSources>
-    <lrml:Context>
+    <lrml:Associations>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.2.2"/>
-            <lrml:toTarget keyref="r1.2.2.1"/>
+            <lrml:appliesSource keyref="#r1.2.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_r1.2.2.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="t1"/>
-            <lrml:toTarget keyref="t1.1"/>
-            <lrml:toTarget keyref="t1.2"/>
+            <lrml:appliesSource keyref="#t1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t1.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t1.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="t2"/>
-            <lrml:toTarget keyref="t2.1"/>
-            <lrml:toTarget keyref="t2.2"/>
-            <lrml:toTarget keyref="t2.3"/>
-            <lrml:toTarget keyref="t2.4"/>
-            <lrml:toTarget keyref="t2.5"/>
-            <lrml:toTarget keyref="t2.6"/>
-            <lrml:toTarget keyref="t2.7"/>
-            <lrml:toTarget keyref="t2.8"/>
-            <lrml:toTarget keyref="t2.9"/>
-            <lrml:toTarget keyref="t2.10"/>
+            <lrml:appliesSource keyref="#t2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.4"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.5"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.6"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.7"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.8"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.9"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G4AS1_x0023_4.0_t2.10"/>
         </lrml:Association>
-    </lrml:Context>
+    </lrml:Associations>
     <lrml:Statements>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_r1.2.2.1">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_r1.2.2.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_r1.2.2.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_r1.2.2.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
@@ -44,7 +45,7 @@
                                 <ruleml:Fun iri="fuvo:count"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:occupantLoad"/>
-                                    <ruleml:Var iri="buvo:space"/>
+                                    <ruleml:Var>buvo:space</ruleml:Var>
                                 </ruleml:Atom>
                             </ruleml:Expr>
                             <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
@@ -55,7 +56,7 @@
                                 <ruleml:Fun iri="fuvo:count"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:opening"/>
-                                    <ruleml:Var iri="buvo:wall"/>
+                                    <ruleml:Var>buvo:wall</ruleml:Var>
                                 </ruleml:Atom>
                             </ruleml:Expr>
                             <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
@@ -64,9 +65,9 @@
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:isExternal"/>
-                                <ruleml:Var iri="buvo:wall"/>
+                                <ruleml:Var>buvo:wall</ruleml:Var>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                         </ruleml:Expr>
                     </ruleml:And>
                 </ruleml:if>
@@ -76,7 +77,7 @@
                             <ruleml:Fun iri="lovo:greaterThanEqual"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:ratio"/>
-                                <ruleml:Var iri="buvo:ventAreaToFloorArea"/>
+                                <ruleml:Var>buvo:ventAreaToFloorArea</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:decimal">0.05</ruleml:Data>
                         </ruleml:Expr>
@@ -84,14 +85,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t1.1">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t1.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t1.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:accommodationUnitType"/>
-                            <ruleml:Var iri="buvo:householdUnit"/>
+                            <ruleml:Var>buvo:householdUnit</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">studio</ruleml:Data>
                     </ruleml:Expr>
@@ -101,22 +102,22 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:count"/>
-                            <ruleml:Var iri="buvo:occupant"/>
+                            <ruleml:Var>buvo:occupant</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:integer">2</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t1.2">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t1.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:accommodationUnitType"/>
-                                <ruleml:Var iri="buvo:householdUnit"/>
+                                <ruleml:Var>buvo:householdUnit</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">bedroom</ruleml:Data>
                         </ruleml:Expr>
@@ -124,7 +125,7 @@
                             <ruleml:Fun iri="lovo:define"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:bedroom"/>
+                                <ruleml:Var>buvo:bedroom</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">n</ruleml:Data>
                         </ruleml:Expr>
@@ -135,7 +136,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:count"/>
-                            <ruleml:Var iri="buvo:occupant"/>
+                            <ruleml:Var>buvo:occupant</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:expression">
                             <lkm:value>n+1</lkm:value>
@@ -144,15 +145,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.1">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High and low level</ruleml:Data>
                         </ruleml:Expr>
@@ -160,7 +161,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
                         </ruleml:Expr>
@@ -171,7 +172,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli" lkm:exponent="2.0"/>
@@ -181,15 +182,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.2">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High and low level</ruleml:Data>
                         </ruleml:Expr>
@@ -197,7 +198,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">2</ruleml:Data>
                         </ruleml:Expr>
@@ -208,7 +209,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0" lkm:prefix="milli"/>
@@ -218,15 +219,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.3">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High and low level</ruleml:Data>
                         </ruleml:Expr>
@@ -234,7 +235,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">5</ruleml:Data>
                         </ruleml:Expr>
@@ -245,7 +246,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli" lkm:exponent="2.0"/>
@@ -255,15 +256,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.4">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.4">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.4">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High and low level</ruleml:Data>
                         </ruleml:Expr>
@@ -271,7 +272,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">4</ruleml:Data>
                         </ruleml:Expr>
@@ -282,7 +283,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:exponent="2.0" lkm:prefix="milli" lkm:kind="metre"/>
@@ -292,15 +293,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.5">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.5">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.5">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High and low level</ruleml:Data>
                         </ruleml:Expr>
@@ -308,7 +309,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">3</ruleml:Data>
                         </ruleml:Expr>
@@ -319,7 +320,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0" lkm:prefix="milli"/>
@@ -329,15 +330,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.6">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.6">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.6">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.6">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High level only</ruleml:Data>
                         </ruleml:Expr>
@@ -345,7 +346,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
                         </ruleml:Expr>
@@ -356,7 +357,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:kind="metre" lkm:exponent="2.0" lkm:prefix="milli"/>
@@ -366,15 +367,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.7">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.7">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.7">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.7">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High level only</ruleml:Data>
                         </ruleml:Expr>
@@ -382,7 +383,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">2</ruleml:Data>
                         </ruleml:Expr>
@@ -393,7 +394,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre" lkm:prefix="milli"/>
@@ -403,15 +404,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.8">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.8">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.8">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.8">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High level only</ruleml:Data>
                         </ruleml:Expr>
@@ -419,7 +420,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">5</ruleml:Data>
                         </ruleml:Expr>
@@ -430,7 +431,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:kind="metre" lkm:prefix="milli" lkm:exponent="2.0"/>
@@ -440,15 +441,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.9">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.9">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.9">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.9">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High level only</ruleml:Data>
                         </ruleml:Expr>
@@ -456,7 +457,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">4</ruleml:Data>
                         </ruleml:Expr>
@@ -467,7 +468,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:exponent="2.0" lkm:prefix="milli" lkm:kind="metre"/>
@@ -477,15 +478,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1#4.0_t2.10">
-            <ruleml:Rule key="NZ_NZBC-G4AS1#4.0_t2.10">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G4AS1_x0023_4.0_t2.10">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G4AS1%234.0:rule:NZ_NZBC-G4AS1%234.0_t2.10">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:location"/>
-                                <ruleml:Var iri="buvo:trickleVentilator"/>
+                                <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">High level only</ruleml:Data>
                         </ruleml:Expr>
@@ -493,7 +494,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:count"/>
-                                <ruleml:Var iri="buvo:occupant"/>
+                                <ruleml:Var>buvo:occupant</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:integer">3</ruleml:Data>
                         </ruleml:Expr>
@@ -504,7 +505,7 @@
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:equivalentAerodynamicArea"/>
-                            <ruleml:Var iri="buvo:trickleVentilator"/>
+                            <ruleml:Var>buvo:trickleVentilator</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="lkm:measurement">
                             <lkm:baseUnit lkm:exponent="2.0" lkm:kind="metre" lkm:prefix="milli"/>

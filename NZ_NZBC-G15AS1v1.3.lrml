@@ -1,317 +1,317 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd">
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:ruleml="http://ruleml.org/spec" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/os/xsd-schema/compact/lrml-compact.xsd">
 	<lrml:Prefix pre="devo" refID="http://devo.acabim.com/"/>
 	<lrml:Prefix pre="lovo" refID="http://lovo.acabim.com/"/>
 	<lrml:Prefix pre="buvo" refID="http://buvo.acabim.com/"/>
 	<lrml:Jurisdictions>
-		<lrml:Jurisdiction key="jur:nz" sameAs="http://juris.acabim.com/nz/"/>
+		<lrml:Jurisdiction key="jur_x003A_nz" sameAs="http://juris.acabim.com/nz/"/>
 	</lrml:Jurisdictions>
 	<lrml:LegalSources key="ls1">
 		<lrml:LegalSource key="NZBC.G15AS1" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/g-services-and-facilities/g15-solid-waste/asvm/g15-solid-waste-amendment-3.pdf"/>
 	</lrml:LegalSources>
 
-	<lrml:Context>
+	<lrml:Associations>
 		<lrml:Association>
-			<lrml:appliesSource keyref="1.0.1" />
-			<lrml:toTarget keyref="1.0.1 " />
+			<lrml:appliesSource keyref="#id_1.0.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_1.0.1_x0020_"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="1.0.2" />
-			<lrml:toTarget keyref="1.0.2" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_1.0.2"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_1.0.2"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="1.0.3" />
-			<lrml:toTarget keyref="1.0.3" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_1.0.3"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_1.0.3"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="2.0.1" />
-			<lrml:toTarget keyref="2.0.1" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_2.0.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_2.0.1"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.1" />
-			<lrml:toTarget keyref="3.0.1.1" />
-			<lrml:toTarget keyref="3.0.1.2" />
-			<lrml:toTarget keyref="3.0.1.3" />
-			<lrml:toTarget keyref="3.0.1.4" />
+			<lrml:appliesSource keyref="#id_3.0.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.1.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.1.2"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.1.3"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.1.4"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.2" />
-			<lrml:toTarget keyref="3.0.2" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.0.2"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.2"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.3" />
-			<lrml:toTarget keyref="3.0.3" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.0.3"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.3"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.4" />
-			<lrml:toTarget keyref="3.0.4" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.0.4"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.4"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.5" />
-			<lrml:toTarget keyref="3.0.5" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.0.5"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.5"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.6" />
-			<lrml:toTarget keyref="3.0.6 " />
+			<lrml:appliesSource keyref="#id_3.0.6"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.6_x0020_"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.7" />
-			<lrml:toTarget keyref="3.0.7" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.0.7"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.7"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.8" />
-			<lrml:toTarget keyref="3.0.8" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.0.8"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.8"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.9" />
-			<lrml:toTarget keyref="3.0.9" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.0.9"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.9"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.0.1" />
-			<lrml:toTarget keyref="3.0.10" />
+			<lrml:appliesSource keyref="#id_3.0.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.0.10"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="3.1.1" />
-			<lrml:toTarget keyref="3.1.1" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_3.1.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_3.1.1"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="4.0.1" />
-			<lrml:toTarget keyref="4.0.1" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_4.0.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_4.0.1"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="4.0.2" />
-			<lrml:toTarget keyref="4.0.2.1" />
-			<lrml:toTarget keyref="4.0.2.2" />
-			<lrml:toTarget keyref="4.0.2.3" />
+			<lrml:appliesSource keyref="#id_4.0.2"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_4.0.2.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_4.0.2.2"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_4.0.2.3"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="4.0.3" />
-			<lrml:toTarget keyref="4.0.3" />
+			<lrml:appliesSource keyref="#NZBC-G15AS1_x003A_4.0.3"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_4.0.3"/>
 		</lrml:Association>
 		<lrml:Association>
-			<lrml:appliesSource keyref="Figure2" />
-			<lrml:toTarget keyref="Figure2.1" />
-			<lrml:toTarget keyref="Figure2.2" />
-			<lrml:toTarget keyref="Figure2.3" />
-			<lrml:toTarget keyref="Figure2.4" />
+			<lrml:appliesSource keyref="#Figure2"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_Figure2.1"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_Figure2.2"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_Figure2.3"/>
+			<lrml:toTarget keyref="#NZBC-G15AS1_x003A_Figure2.4"/>
 		</lrml:Association>
-	</lrml:Context>
+	</lrml:Associations>
 
 	<lrml:Statements>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:1.0.1 ">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_1.0.1_x0020_">
 			<ruleml:Rule key="NZBC-G15AS1:1.0.1 ">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:multiUnitDwelling" />
+						<ruleml:Var>buvo:multiUnitDwelling</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:Or>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:groupDwelling" />
+							<ruleml:Var>buvo:groupDwelling</ruleml:Var>
 						</ruleml:Atom>
 					</ruleml:Or>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:disposalMethod" />
-							<ruleml:Data iri="moveableContainer" />
+							<ruleml:Var>buvo:disposalMethod</ruleml:Var>
+							<ruleml:Data iri="moveableContainer"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:volume()" />
-							<ruleml:Var iri="buvo:moveableContainer" />
-							<ruleml:Data iri="80 l per dwellingUnit" />
-							<ruleml:Operator iri="lovo:greaterThanEqual" />
+							<ruleml:Rel iri="fuvo:volume()"/>
+							<ruleml:Var>buvo:moveableContainer</ruleml:Var>
+							<ruleml:Data iri="80 l per dwellingUnit"/>
+							<ruleml:Operator iri="lovo:greaterThanEqual"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:1.0.2">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_1.0.2">
 			<ruleml:Rule key="NZBC-G15AS1:1.0.2">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
-						<ruleml:Data iri="common" />
-						<ruleml:Operator iri="lovo:equal" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
+						<ruleml:Data iri="common"/>
+						<ruleml:Operator iri="lovo:equal"/>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:located" />
-							<ruleml:Var iri="buvo:wasteStorageArea" />
-							<ruleml:Data iri="withinBuilding" />
+							<ruleml:Rel iri="fuvo:located"/>
+							<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
+							<ruleml:Data iri="withinBuilding"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:length" />
-							<ruleml:Var iri="buvo:wasteStorageArea" />
-							<ruleml:Data iri="0.5 m per householdUnit" />
-							<ruleml:Operator iri="lovo:greaterThanEqual" />
+							<ruleml:Rel iri="fuvo:length"/>
+							<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
+							<ruleml:Data iri="0.5 m per householdUnit"/>
+							<ruleml:Operator iri="lovo:greaterThanEqual"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:width" />
-							<ruleml:Var iri="buvo:wasteStorageArea" />
-							<ruleml:Data iri="0.5 m per householdUnit" />
-							<ruleml:Operator iri="lovo:greaterThanEqual" />
+							<ruleml:Rel iri="fuvo:width"/>
+							<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
+							<ruleml:Data iri="0.5 m per householdUnit"/>
+							<ruleml:Operator iri="lovo:greaterThanEqual"/>
 						</ruleml:Atom>
 					</ruleml:And>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:height" />
-							<ruleml:Var iri="buvo:wasteStorageArea" />
-							<ruleml:Data iri="1 m per householdUnit" />
-							<ruleml:Operator iri="lovo:greaterThanEqual" />
+							<ruleml:Rel iri="fuvo:height"/>
+							<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
+							<ruleml:Data iri="1 m per householdUnit"/>
+							<ruleml:Operator iri="lovo:greaterThanEqual"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:1.0.3">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_1.0.3">
 			<ruleml:Rule key="NZBC-G15AS1:1.0.3">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:type" />
-							<ruleml:Data iri="common" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:type</ruleml:Var>
+							<ruleml:Data iri="common"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</ruleml:And>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:location" />
-							<ruleml:Data iri="withinBuilding" />
+							<ruleml:Var>buvo:location</ruleml:Var>
+							<ruleml:Data iri="withinBuilding"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:complyWith" />
-							<ruleml:Var iri="buvo:ventilation" />
-							<ruleml:Data iri="nzbc-g4" />
+							<ruleml:Rel iri="fuvo:complyWith"/>
+							<ruleml:Var>buvo:ventilation</ruleml:Var>
+							<ruleml:Data iri="nzbc-g4"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:2.0.1">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_2.0.1">
 			<ruleml:Rule key="NZBC-G15AS1:2.0.1">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:multiUnitDwelling" />
+						<ruleml:Var>buvo:multiUnitDwelling</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:Or>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:groupDwelling" />
+							<ruleml:Var>buvo:groupDwelling</ruleml:Var>
 						</ruleml:Atom>
 					</ruleml:Or>
 				</ruleml:if>
 				<ruleml:then>
-					<Prohibiton>
+					<lrml:Prohibition>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:carryDistance" />
-							<ruleml:Data iri="30 m" />
-							<ruleml:Operator iri="lovo:greaterThan" />
+							<ruleml:Var>buvo:carryDistance</ruleml:Var>
+							<ruleml:Data iri="30 m"/>
+							<ruleml:Operator iri="lovo:greaterThan"/>
 						</ruleml:Atom>
-					</Prohibiton>
+					</lrml:Prohibition>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.1.1">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.1.1">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.1.1">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:type" />
-							<ruleml:Data iri="common" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:type</ruleml:Var>
+							<ruleml:Data iri="common"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:interiorSurface" />
-							<ruleml:Data iri="easilyCleaned" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:interiorSurface</ruleml:Var>
+							<ruleml:Data iri="easilyCleaned"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.1.2">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.1.2">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.1.2">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:type" />
-							<ruleml:Data iri="common" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:type</ruleml:Var>
+							<ruleml:Data iri="common"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:enclosure" />
-							<ruleml:Data iri="fullyEnclosed" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:enclosure</ruleml:Var>
+							<ruleml:Data iri="fullyEnclosed"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<ruleml:And>
 						<ruleml:Not>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:adjacent" />
-								<ruleml:Var iri="buvo:location" />
-								<ruleml:Data iri="habitableSpace" />
+								<ruleml:Rel iri="fuvo:adjacent"/>
+								<ruleml:Var>buvo:location</ruleml:Var>
+								<ruleml:Data iri="habitableSpace"/>
 							</ruleml:Atom>
 						</ruleml:Not>
 					</ruleml:And>
 					<ruleml:And>
 						<ruleml:Not>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:adjacent" />
-								<ruleml:Var iri="buvo:location" />
-								<ruleml:Data iri="foodPreparationArea" />
+								<ruleml:Rel iri="fuvo:adjacent"/>
+								<ruleml:Var>buvo:location</ruleml:Var>
+								<ruleml:Data iri="foodPreparationArea"/>
 							</ruleml:Atom>
 						</ruleml:Not>
 					</ruleml:And>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.1.3">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.1.3">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.1.3">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:type" />
-							<ruleml:Data iri="common" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:type</ruleml:Var>
+							<ruleml:Data iri="common"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -319,638 +319,638 @@
 					<lrml:Obligation>
 						<ruleml:Not>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:exposure" />
-								<ruleml:Data iri="highTemperature" />
+								<ruleml:Var>buvo:exposure</ruleml:Var>
+								<ruleml:Data iri="highTemperature"/>
 							</ruleml:Atom>
 						</ruleml:Not>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.1.4">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.1.4">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.1.4">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:type" />
-						<ruleml:Data iri="common" />
-						<ruleml:Operator iri="lovo:equal" />
+						<ruleml:Var>buvo:type</ruleml:Var>
+						<ruleml:Data iri="common"/>
+						<ruleml:Operator iri="lovo:equal"/>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:visualImpact" />
-							<ruleml:Data iri="low" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:visualImpact</ruleml:Var>
+							<ruleml:Data iri="low"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:screenedFrom" />
-								<ruleml:Var iri="buvo:visualExposure" />
-								<ruleml:Data iri="habitableSpace" />
+								<ruleml:Rel iri="fuvo:screenedFrom"/>
+								<ruleml:Var>buvo:visualExposure</ruleml:Var>
+								<ruleml:Data iri="habitableSpace"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
-					<ruleml:Atom />
-					<ruleml:Atom />
+					<ruleml:Atom/>
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.2">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.2">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.2">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:floor" />
+						<ruleml:Var>buvo:floor</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:material" />
-							<ruleml:Data iri="concrete" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:material</ruleml:Var>
+							<ruleml:Data iri="concrete"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</ruleml:And>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:location" />
-							<ruleml:Data iri="wasteStorageArea" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:location</ruleml:Var>
+							<ruleml:Data iri="wasteStorageArea"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:surfaceFinish" />
-							<ruleml:Data iri="U5" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:surfaceFinish</ruleml:Var>
+							<ruleml:Data iri="U5"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:slope" />
-								<ruleml:Data iri="1 in 50" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:slope</ruleml:Var>
+								<ruleml:Data iri="1 in 50"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:towards" />
-								<ruleml:Var iri="buvo:slope" />
-								<ruleml:Data iri="floorWaste" />
+								<ruleml:Rel iri="fuvo:towards"/>
+								<ruleml:Var>buvo:slope</ruleml:Var>
+								<ruleml:Data iri="floorWaste"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:floorWaste" />
-								<ruleml:Data iri="nzbc-g13" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:floorWaste</ruleml:Var>
+								<ruleml:Data iri="nzbc-g13"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.3">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.3">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.3">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wall" />
+						<ruleml:Var>buvo:wall</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:location" />
-							<ruleml:Data iri="wasteStorageArea" />
+							<ruleml:Var>buvo:location</ruleml:Var>
+							<ruleml:Data iri="wasteStorageArea"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:material" />
-							<ruleml:Data iri="concrete" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:material</ruleml:Var>
+							<ruleml:Data iri="concrete"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:material" />
-								<ruleml:Data iri="galvanisedSteelSheet" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:material</ruleml:Var>
+								<ruleml:Data iri="galvanisedSteelSheet"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:Or>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:material" />
-								<ruleml:Data iri="vinyl" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:material</ruleml:Var>
+								<ruleml:Data iri="vinyl"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:Or>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:material" />
-								<ruleml:Data iri="concrete" />
-								<ruleml:Operator iri="lovo:similarTo" />
+								<ruleml:Var>buvo:material</ruleml:Var>
+								<ruleml:Data iri="concrete"/>
+								<ruleml:Operator iri="lovo:similarTo"/>
 							</ruleml:Atom>
 						</ruleml:Or>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:material" />
-								<ruleml:Data iri="galvanisedSteelSheet" />
-								<ruleml:Operator iri="lovo:similarTo" />
+								<ruleml:Var>buvo:material</ruleml:Var>
+								<ruleml:Data iri="galvanisedSteelSheet"/>
+								<ruleml:Operator iri="lovo:similarTo"/>
 							</ruleml:Atom>
 						</ruleml:Or>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:Or>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:material" />
-								<ruleml:Data iri="vinyl" />
-								<ruleml:Operator iri="lovo:similarTo" />
+								<ruleml:Var>buvo:material</ruleml:Var>
+								<ruleml:Data iri="vinyl"/>
+								<ruleml:Operator iri="lovo:similarTo"/>
 							</ruleml:Atom>
 						</ruleml:Or>
 					</lrml:Obligation>
-					<ruleml:Atom />
-					<ruleml:Atom />
+					<ruleml:Atom/>
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.4">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.4">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.4">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:window" />
+						<ruleml:Var>buvo:window</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:orientation" />
-							<ruleml:Data iri="north" />
+							<ruleml:Var>buvo:orientation</ruleml:Var>
+							<ruleml:Data iri="north"/>
 						</ruleml:Atom>
 					</ruleml:And>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:location" />
-							<ruleml:Data iri="wasteStorageArea" />
+							<ruleml:Var>buvo:location</ruleml:Var>
+							<ruleml:Data iri="wasteStorageArea"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:screenedFrom" />
-							<ruleml:Var iri="buvo:thermalExposure" />
-							<ruleml:Data iri="directSunlight" />
+							<ruleml:Rel iri="fuvo:screenedFrom"/>
+							<ruleml:Var>buvo:thermalExposure</ruleml:Var>
+							<ruleml:Data iri="directSunlight"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.5">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.5">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.5">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:solidWaste" />
+						<ruleml:Var>buvo:solidWaste</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:type" />
-						<ruleml:Data iri="perishable" />
+						<ruleml:Var>buvo:type</ruleml:Var>
+						<ruleml:Data iri="perishable"/>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Permission>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:wasteStorageArea" />
-							<ruleml:Data iri="refrigerated" />
+							<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
+							<ruleml:Data iri="refrigerated"/>
 						</ruleml:Atom>
 					</lrml:Permission>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.6 ">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.6_x0020_">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.6 ">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:window" />
+						<ruleml:Var>buvo:window</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:operation" />
-							<ruleml:Data iri="openable" />
+							<ruleml:Var>buvo:operation</ruleml:Var>
+							<ruleml:Data iri="openable"/>
 						</ruleml:Atom>
 					</ruleml:And>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:location" />
-							<ruleml:Data iri="wasteStorageArea" />
+							<ruleml:Var>buvo:location</ruleml:Var>
+							<ruleml:Data iri="wasteStorageArea"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:screenedFrom" />
-							<ruleml:Var iri="buvo:access" />
-							<ruleml:Data iri="vermin" />
+							<ruleml:Rel iri="fuvo:screenedFrom"/>
+							<ruleml:Var>buvo:access</ruleml:Var>
+							<ruleml:Data iri="vermin"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.7">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.7">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.7">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:type" />
-						<ruleml:Data iri="common" />
-						<ruleml:Operator iri="lovo:equal" />
+						<ruleml:Var>buvo:type</ruleml:Var>
+						<ruleml:Data iri="common"/>
+						<ruleml:Operator iri="lovo:equal"/>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Expr>
-							<ruleml:Fun />
+							<ruleml:Fun/>
 						</ruleml:Expr>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:waterSupplyTap" />
-							<ruleml:Data iri="1" />
-							<ruleml:Operator iri="lovo:greaterThan" />
+							<ruleml:Var>buvo:waterSupplyTap</ruleml:Var>
+							<ruleml:Data iri="1"/>
+							<ruleml:Operator iri="lovo:greaterThan"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:waterSupplyTap" />
-								<ruleml:Data iri="nzbc-g12" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:waterSupplyTap</ruleml:Var>
+								<ruleml:Data iri="nzbc-g12"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.8">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.8">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.8">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:location" />
-							<ruleml:Data iri="withinBuilding" />
-							<ruleml:Operator iri="lovo:equal" />
+							<ruleml:Var>buvo:location</ruleml:Var>
+							<ruleml:Data iri="withinBuilding"/>
+							<ruleml:Operator iri="lovo:equal"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:complyWith" />
-							<ruleml:Var iri="buvo:ventilation" />
-							<ruleml:Data iri="nzbc-g4" />
+							<ruleml:Rel iri="fuvo:complyWith"/>
+							<ruleml:Var>buvo:ventilation</ruleml:Var>
+							<ruleml:Data iri="nzbc-g4"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.9">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.9">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.9">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:ventilation" />
+						<ruleml:Var>buvo:ventilation</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:type" />
-							<ruleml:Data iri="mechanicalVentilation" />
+							<ruleml:Var>buvo:type</ruleml:Var>
+							<ruleml:Data iri="mechanicalVentilation"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:ventilationRate" />
-							<ruleml:Data iri="6 air changes per hour" />
-							<ruleml:Operator iri="lovo:greaterThanEqual" />
+							<ruleml:Var>buvo:ventilationRate</ruleml:Var>
+							<ruleml:Data iri="6 air changes per hour"/>
+							<ruleml:Operator iri="lovo:greaterThanEqual"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:airPressure" />
-								<ruleml:Data iri="ambientAirPressure" />
-								<ruleml:Operator iri="lovo:lessThan" />
+								<ruleml:Var>buvo:airPressure</ruleml:Var>
+								<ruleml:Data iri="ambientAirPressure"/>
+								<ruleml:Operator iri="lovo:lessThan"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:towards" />
-								<ruleml:Var iri="buvo:discharge" />
-								<ruleml:Data iri="safePlace" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Rel iri="fuvo:towards"/>
+								<ruleml:Var>buvo:discharge</ruleml:Var>
+								<ruleml:Data iri="safePlace"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.0.10">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.0.10">
 			<ruleml:Rule key="NZBC-G15AS1:3.0.10">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:access" />
+						<ruleml:Var>buvo:access</ruleml:Var>
 					</ruleml:Atom>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:from" />
-							<ruleml:Data iri="wasteStorageArea" />
+							<ruleml:Var>buvo:from</ruleml:Var>
+							<ruleml:Data iri="wasteStorageArea"/>
 						</ruleml:Atom>
 					</ruleml:And>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:to" />
-							<ruleml:Data iri="collectionVehicle" />
+							<ruleml:Var>buvo:to</ruleml:Var>
+							<ruleml:Data iri="collectionVehicle"/>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:complyWith" />
-							<ruleml:Var iri="buvo:accessRoute" />
-							<ruleml:Data iri="nzbc-d1" />
+							<ruleml:Rel iri="fuvo:complyWith"/>
+							<ruleml:Var>buvo:accessRoute</ruleml:Var>
+							<ruleml:Data iri="nzbc-d1"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:3.1.1">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_3.1.1">
 			<ruleml:Rule key="NZBC-G15AS1:3.1.1">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:wasteStorageArea" />
+						<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Permission>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:complyWith" />
-							<ruleml:Var iri="buvo:wasteStorageArea" />
-							<ruleml:Data iri="lrml:PrescriptiveStatement nzs4304.6.2" />
+							<ruleml:Rel iri="fuvo:complyWith"/>
+							<ruleml:Var>buvo:wasteStorageArea</ruleml:Var>
+							<ruleml:Data iri="lrml:PrescriptiveStatement nzs4304.6.2"/>
 						</ruleml:Atom>
 					</lrml:Permission>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:4.0.1">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_4.0.1">
 			<ruleml:Rule key="NZBC-G15AS1:4.0.1">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:solidWasteChute" />
+						<ruleml:Var>buvo:solidWasteChute</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:internalDiameter" />
-							<ruleml:Data iri="450 mm" />
-							<ruleml:Operator iri="lovo:greaterThanEqual" />
+							<ruleml:Var>buvo:internalDiameter</ruleml:Var>
+							<ruleml:Data iri="450 mm"/>
+							<ruleml:Operator iri="lovo:greaterThanEqual"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:cleaningMode" />
-								<ruleml:Data iri="selfCleaning" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:cleaningMode</ruleml:Var>
+								<ruleml:Data iri="selfCleaning"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:orientation" />
-								<ruleml:Data iri="vertical" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:orientation</ruleml:Var>
+								<ruleml:Data iri="vertical"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:interiorSurface" />
-								<ruleml:Data iri="smooth" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:interiorSurface</ruleml:Var>
+								<ruleml:Data iri="smooth"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:hasVent" />
-								<ruleml:Data iri="aboveRoofLine" />
+								<ruleml:Var>buvo:hasVent</ruleml:Var>
+								<ruleml:Data iri="aboveRoofLine"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:hasVent" />
-								<ruleml:Data iri="bottomOfChute" />
+								<ruleml:Var>buvo:hasVent</ruleml:Var>
+								<ruleml:Data iri="bottomOfChute"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:disposalMethod" />
-								<ruleml:Data iri="moveableContainer" />
+								<ruleml:Var>buvo:disposalMethod</ruleml:Var>
+								<ruleml:Data iri="moveableContainer"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:located" />
-								<ruleml:Var iri="buvo:moveableContainer" />
-								<ruleml:Data iri="room" />
+								<ruleml:Rel iri="fuvo:located"/>
+								<ruleml:Var>buvo:moveableContainer</ruleml:Var>
+								<ruleml:Data iri="room"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.1" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.1"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.2" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.2"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.3" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.3"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.4" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.4"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.5" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.5"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.6" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.6"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.7" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.7"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.8" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.8"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:room" />
-								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.9" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:room</ruleml:Var>
+								<ruleml:Data iri="lrml:PrescriptiveStatements nzbcg15.3.0.9"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:4.0.2.1">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_4.0.2.1">
 			<ruleml:Rule key="NZBC-G15AS1:4.0.2.1">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:sideEntryHopper" />
+						<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:openingDiameter" />
-							<ruleml:Data iri="250 mm" />
-							<ruleml:Operator iri="lovo:lessThanEqual" />
+							<ruleml:Var>buvo:openingDiameter</ruleml:Var>
+							<ruleml:Data iri="250 mm"/>
+							<ruleml:Operator iri="lovo:lessThanEqual"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:hasDoor" />
+								<ruleml:Var>buvo:hasDoor</ruleml:Var>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:door" />
-								<ruleml:Data iri="selfClosing" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:door</ruleml:Var>
+								<ruleml:Data iri="selfClosing"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:door" />
-								<ruleml:Data iri="tightFitting" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:door</ruleml:Var>
+								<ruleml:Data iri="tightFitting"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surfaceFinish" />
-								<ruleml:Data iri="easilyCleaned" />
+								<ruleml:Var>buvo:surfaceFinish</ruleml:Var>
+								<ruleml:Data iri="easilyCleaned"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surface" />
-								<ruleml:Data iri="galvanisedSteelSheet" />
+								<ruleml:Var>buvo:surface</ruleml:Var>
+								<ruleml:Data iri="galvanisedSteelSheet"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
@@ -958,9 +958,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:located" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="dwelling" />
+									<ruleml:Rel iri="fuvo:located"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="dwelling"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -969,9 +969,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:located" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="enclosedStairAccess" />
+									<ruleml:Rel iri="fuvo:located"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="enclosedStairAccess"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -980,9 +980,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:adjacent" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="habitableSpace" />
+									<ruleml:Rel iri="fuvo:adjacent"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="habitableSpace"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -991,9 +991,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:adjacent" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="foodPreparationArea" />
+									<ruleml:Rel iri="fuvo:adjacent"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="foodPreparationArea"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1001,78 +1001,78 @@
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:ventilation" />
-								<ruleml:Data iri="adequate" />
+								<ruleml:Var>buvo:ventilation</ruleml:Var>
+								<ruleml:Data iri="adequate"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:located" />
-								<ruleml:Var iri="buvo:sideEntryHopper" />
-								<ruleml:Data iri="openAir" />
+								<ruleml:Rel iri="fuvo:located"/>
+								<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+								<ruleml:Data iri="openAir"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:4.0.2.2">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_4.0.2.2">
 			<ruleml:Rule key="NZBC-G15AS1:4.0.2.2">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:sideEntryHopper" />
+						<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:openingDiameter" />
-							<ruleml:Data iri="250 mm" />
-							<ruleml:Operator iri="lovo:lessThanEqual" />
+							<ruleml:Var>buvo:openingDiameter</ruleml:Var>
+							<ruleml:Data iri="250 mm"/>
+							<ruleml:Operator iri="lovo:lessThanEqual"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:hasDoor" />
+								<ruleml:Var>buvo:hasDoor</ruleml:Var>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:door" />
-								<ruleml:Data iri="selfClosing" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:door</ruleml:Var>
+								<ruleml:Data iri="selfClosing"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:door" />
-								<ruleml:Data iri="tightFitting" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:door</ruleml:Var>
+								<ruleml:Data iri="tightFitting"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surfaceFinish" />
-								<ruleml:Data iri="easilyCleaned" />
+								<ruleml:Var>buvo:surfaceFinish</ruleml:Var>
+								<ruleml:Data iri="easilyCleaned"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surface" />
-								<ruleml:Data iri="ceramicTiles" />
+								<ruleml:Var>buvo:surface</ruleml:Var>
+								<ruleml:Data iri="ceramicTiles"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
@@ -1080,9 +1080,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:located" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="dwelling" />
+									<ruleml:Rel iri="fuvo:located"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="dwelling"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1091,9 +1091,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:located" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="enclosedStairAccess" />
+									<ruleml:Rel iri="fuvo:located"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="enclosedStairAccess"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1102,9 +1102,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:adjacent" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="habitableSpace" />
+									<ruleml:Rel iri="fuvo:adjacent"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="habitableSpace"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1113,9 +1113,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:adjacent" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="foodPreparationArea" />
+									<ruleml:Rel iri="fuvo:adjacent"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="foodPreparationArea"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1123,96 +1123,96 @@
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:ventilation" />
-								<ruleml:Data iri="adequate" />
+								<ruleml:Var>buvo:ventilation</ruleml:Var>
+								<ruleml:Data iri="adequate"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:located" />
-								<ruleml:Var iri="buvo:sideEntryHopper" />
-								<ruleml:Data iri="openAir" />
+								<ruleml:Rel iri="fuvo:located"/>
+								<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+								<ruleml:Data iri="openAir"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:4.0.2.3">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_4.0.2.3">
 			<ruleml:Rule key="NZBC-G15AS1:4.0.2.3">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:sideEntryHopper" />
+						<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:openingDiameter" />
-							<ruleml:Data iri="250 mm" />
-							<ruleml:Operator iri="lovo:lessThanEqual" />
+							<ruleml:Var>buvo:openingDiameter</ruleml:Var>
+							<ruleml:Data iri="250 mm"/>
+							<ruleml:Operator iri="lovo:lessThanEqual"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:hasDoor" />
+								<ruleml:Var>buvo:hasDoor</ruleml:Var>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:door" />
-								<ruleml:Data iri="selfClosing" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:door</ruleml:Var>
+								<ruleml:Data iri="selfClosing"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:door" />
-								<ruleml:Data iri="tightFitting" />
-								<ruleml:Operator iri="lovo:equal" />
+								<ruleml:Var>buvo:door</ruleml:Var>
+								<ruleml:Data iri="tightFitting"/>
+								<ruleml:Operator iri="lovo:equal"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surfaceFinish" />
-								<ruleml:Data iri="easilyCleaned" />
+								<ruleml:Var>buvo:surfaceFinish</ruleml:Var>
+								<ruleml:Data iri="easilyCleaned"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surface" />
-								<ruleml:Data iri="materials" />
+								<ruleml:Var>buvo:surface</ruleml:Var>
+								<ruleml:Data iri="materials"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surface" />
-								<ruleml:Data iri="galvanisedSteelSheet" />
-								<ruleml:Operator iri="lovo:similarTo" />
+								<ruleml:Var>buvo:surface</ruleml:Var>
+								<ruleml:Data iri="galvanisedSteelSheet"/>
+								<ruleml:Operator iri="lovo:similarTo"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:surface" />
-								<ruleml:Data iri="ceramicTiles" />
-								<ruleml:Operator iri="lovo:similarTo" />
+								<ruleml:Var>buvo:surface</ruleml:Var>
+								<ruleml:Data iri="ceramicTiles"/>
+								<ruleml:Operator iri="lovo:similarTo"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
@@ -1220,9 +1220,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:located" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="dwelling" />
+									<ruleml:Rel iri="fuvo:located"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="dwelling"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1231,9 +1231,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:located" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="enclosedStairAccess" />
+									<ruleml:Rel iri="fuvo:located"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="enclosedStairAccess"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1242,9 +1242,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:adjacent" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="habitableSpace" />
+									<ruleml:Rel iri="fuvo:adjacent"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="habitableSpace"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1253,9 +1253,9 @@
 						<ruleml:And>
 							<ruleml:Not>
 								<ruleml:Atom>
-									<ruleml:Rel iri="fuvo:adjacent" />
-									<ruleml:Var iri="buvo:sideEntryHopper" />
-									<ruleml:Data iri="foodPreparationArea" />
+									<ruleml:Rel iri="fuvo:adjacent"/>
+									<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+									<ruleml:Data iri="foodPreparationArea"/>
 								</ruleml:Atom>
 							</ruleml:Not>
 						</ruleml:And>
@@ -1263,142 +1263,141 @@
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Var iri="buvo:ventilation" />
-								<ruleml:Data iri="adequate" />
+								<ruleml:Var>buvo:ventilation</ruleml:Var>
+								<ruleml:Data iri="adequate"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
 					<lrml:Permission>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:located" />
-								<ruleml:Var iri="buvo:sideEntryHopper" />
-								<ruleml:Data iri="openAir" />
+								<ruleml:Rel iri="fuvo:located"/>
+								<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
+								<ruleml:Data iri="openAir"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Permission>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:complyWith" />
-								<ruleml:Var iri="buvo:ventilation" />
-								<ruleml:Data iri="nzbc-g4" />
+								<ruleml:Rel iri="fuvo:complyWith"/>
+								<ruleml:Var>buvo:ventilation</ruleml:Var>
+								<ruleml:Data iri="nzbc-g4"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:4.0.3">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_4.0.3">
 			<ruleml:Rule key="NZBC-G15AS1:4.0.3">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:solidWasteChute" />
+						<ruleml:Var>buvo:solidWasteChute</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:waterSupplyTap" />
-							<ruleml:Data iri="1 per every second floor" />
+							<ruleml:Var>buvo:waterSupplyTap</ruleml:Var>
+							<ruleml:Data iri="1 per every second floor"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
 					<lrml:Obligation>
 						<ruleml:And>
 							<ruleml:Atom>
-								<ruleml:Rel iri="fuvo:adjacent" />
-								<ruleml:Var iri="buvo:waterSupplyTap" />
-								<ruleml:Data iri="solidWasteChute" />
+								<ruleml:Rel iri="fuvo:adjacent"/>
+								<ruleml:Var>buvo:waterSupplyTap</ruleml:Var>
+								<ruleml:Data iri="solidWasteChute"/>
 							</ruleml:Atom>
 						</ruleml:And>
 					</lrml:Obligation>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:Figure2.1">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_Figure2.1">
 			<ruleml:Rule key="NZBC-G15AS1:Figure2.1">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:solidWasteChute" />
+						<ruleml:Var>buvo:solidWasteChute</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri="fuvo:height" />
-							<ruleml:Var iri="buvo:room" />
-							<ruleml:Data iri="2000mm" />
-							<ruleml:Operator iri="lovo:greaterThanEqual" />
+							<ruleml:Rel iri="fuvo:height"/>
+							<ruleml:Var>buvo:room</ruleml:Var>
+							<ruleml:Data iri="2000mm"/>
+							<ruleml:Operator iri="lovo:greaterThanEqual"/>
 						</ruleml:Atom>
 					</lrml:Obligation>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:Figure2.2">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_Figure2.2">
 			<ruleml:Rule key="NZBC-G15AS1:Figure2.2">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:sideEntryHopper" />
+						<ruleml:Var>buvo:sideEntryHopper</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:opening" />
+							<ruleml:Var>buvo:opening</ruleml:Var>
 						</ruleml:Atom>
 					</lrml:Obligation>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:Figure2.3">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_Figure2.3">
 			<ruleml:Rule key="NZBC-G15AS1:Figure2.3">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:solidWasteChute" />
+						<ruleml:Var>buvo:solidWasteChute</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:bottomOfChute" />
+							<ruleml:Var>buvo:bottomOfChute</ruleml:Var>
 						</ruleml:Atom>
 					</lrml:Obligation>
-					<ruleml:Atom />
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="NZBC-G15AS1:Figure2.4">
+		<lrml:PrescriptiveStatement key="NZBC-G15AS1_x003A_Figure2.4">
 			<ruleml:Rule key="NZBC-G15AS1:Figure2.4">
 				<!-- comment -->
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Var iri="buvo:solidWasteChute" />
+						<ruleml:Var>buvo:solidWasteChute</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Var iri="buvo:bottomOfChute" />
+							<ruleml:Var>buvo:bottomOfChute</ruleml:Var>
 						</ruleml:Atom>
 					</lrml:Obligation>
-					<ruleml:Atom />
-					<ruleml:Atom />
-					<ruleml:Atom />
-					<ruleml:Atom />
-					<ruleml:Atom />
-					<ruleml:Atom />
+					<ruleml:Atom/>
+					<ruleml:Atom/>
+					<ruleml:Atom/>
+					<ruleml:Atom/>
+					<ruleml:Atom/>
+					<ruleml:Atom/>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 	</lrml:Statements>
 
 </lrml:LegalRuleML>
-

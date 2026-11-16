@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" lkm:version="2.0" xmlns:ruleml="http://ruleml.org/spec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/lrml-compact.xsd" xmlns:lkm="https://cas.net.nz/">
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<lrml:LegalRuleML xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ruleml="http://ruleml.org/spec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:lkm="https://cas.net.nz/" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/os/xsd-schema/compact/lrml-compact.xsd">
+    <lrml:Comment><lkm:documentMetadata lkm:version="2.0"/></lrml:Comment>
     <lrml:Prefix pre="buvo" refID="https://buvo.acabim.com"/>
     <lrml:Prefix refID="https://lovo.acabim.com" pre="lovo"/>
     <lrml:Prefix pre="fuvo" refID="https://fuvo.acabim.com"/>
@@ -9,126 +10,126 @@
     <lrml:LegalSources key="legal-source">
         <lrml:LegalSource key="NZBC.G14AS1" sameAs="https://www.building.govt.nz/assets/Uploads/building-code-compliance/g-services-and-facilities/g14-industrial-liquid-waste/asvm/g14-industrial-liquid-waste-2nd-edition-amendment6.pdf"/>
     </lrml:LegalSources>
-    <lrml:Context>
+    <lrml:Associations>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.1.1"/>
-            <lrml:toTarget keyref="r1.1.1"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.1.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.1.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.1.2"/>
-            <lrml:toTarget keyref="r1.1.2"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.1.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.1.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.4.1"/>
-            <lrml:toTarget keyref="r1.4.1.1"/>
-            <lrml:toTarget keyref="r1.4.1.2"/>
-            <lrml:toTarget keyref="r1.4.1.3"/>
-            <lrml:toTarget keyref="r1.4.1.4"/>
-            <lrml:toTarget keyref="r1.4.1.5"/>
-            <lrml:toTarget keyref="r1.4.1.6"/>
-            <lrml:toTarget keyref="r1.4.1.7"/>
-            <lrml:toTarget keyref="r1.4.1.8"/>
-            <lrml:toTarget keyref="r1.4.1.9"/>
-            <lrml:toTarget keyref="r1.4.1.10"/>
-            <lrml:toTarget keyref="r1.4.1.11"/>
-            <lrml:toTarget keyref="r1.4.1.12"/>
+            <lrml:appliesSource keyref="#r1.4.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.4"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.5"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.6"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.7"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.8"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.9"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.10"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.11"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.12"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.4.2"/>
-            <lrml:toTarget keyref="r1.4.2"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.4.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.5.1"/>
-            <lrml:toTarget keyref="r1.5.1"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.5.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.5.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.5.2"/>
-            <lrml:toTarget keyref="r1.5.2"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.5.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.5.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.6.1"/>
-            <lrml:toTarget keyref="r1.6.1"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.6.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.6.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.6.2"/>
-            <lrml:toTarget keyref="r1.6.2"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.6.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.6.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.6.3"/>
-            <lrml:toTarget keyref="r1.6.3"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.6.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.6.3"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.7.1"/>
-            <lrml:toTarget keyref="r1.7.1"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.7.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.7.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.7.2"/>
-            <lrml:toTarget keyref="r1.7.2"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.7.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.7.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.8.1"/>
-            <lrml:toTarget keyref="r1.8.1.1"/>
-            <lrml:toTarget keyref="r1.8.1.2"/>
-            <lrml:toTarget keyref="r1.8.1.3"/>
-            <lrml:toTarget keyref="r1.8.1.4"/>
-            <lrml:toTarget keyref="r1.8.1.5"/>
+            <lrml:appliesSource keyref="#r1.8.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.4"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.5"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r1.9.1"/>
-            <lrml:toTarget keyref="r1.9.1.1"/>
-            <lrml:toTarget keyref="r1.9.1.2"/>
-            <lrml:toTarget keyref="r1.9.1.3"/>
-            <lrml:toTarget keyref="r1.9.1.4"/>
+            <lrml:appliesSource keyref="#r1.9.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.4"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r2.0.1"/>
-            <lrml:toTarget keyref="r2.0.1"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.0.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.0.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r2.1.1"/>
-            <lrml:toTarget keyref="r2.1.1"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.1.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.1.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r2.1.2"/>
-            <lrml:toTarget keyref="r2.1.2"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.1.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.1.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r2.1.3"/>
-            <lrml:toTarget keyref="r2.1.3"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.1.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.1.3"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r2.3.2"/>
-            <lrml:toTarget keyref="r2.3.2"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.3.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.3.2"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r2.3.3"/>
-            <lrml:toTarget keyref="r2.3.3"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.3.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r2.3.3"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="r3.2.1"/>
-            <lrml:toTarget keyref="r3.2.1"/>
+            <lrml:appliesSource keyref="#NZ_NZBC-G14AS1_x0023_2.6_r3.2.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_r3.2.1"/>
         </lrml:Association>
         <lrml:Association>
-            <lrml:appliesSource keyref="t1.3"/>
-            <lrml:toTarget keyref="t1.3.1.1"/>
-            <lrml:toTarget keyref="t1.3.1.2"/>
-            <lrml:toTarget keyref="t1.3.1.3"/>
-            <lrml:toTarget keyref="t1.3.1.4"/>
-            <lrml:toTarget keyref="t1.3.1.5"/>
-            <lrml:toTarget keyref="t1.3.1.6"/>
-            <lrml:toTarget keyref="t1.3.1.7"/>
+            <lrml:appliesSource keyref="#t1.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.1"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.2"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.3"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.4"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.5"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.6"/>
+            <lrml:toTarget keyref="#NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.7"/>
         </lrml:Association>
-    </lrml:Context>
+    </lrml:Associations>
     <lrml:Statements>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.1.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.1.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:waste"/>
+                                <ruleml:Var>buvo:waste</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">industrialLiquid</ruleml:Data>
                         </ruleml:Expr>
@@ -137,7 +138,7 @@
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:type"/>
-                                    <ruleml:Var iri="buvo:system"/>
+                                    <ruleml:Var>buvo:system</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">collection</ruleml:Data>
                             </ruleml:Expr>
@@ -145,7 +146,7 @@
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:type"/>
-                                    <ruleml:Var iri="buvo:system"/>
+                                    <ruleml:Var>buvo:system</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">storage</ruleml:Data>
                             </ruleml:Expr>
@@ -153,7 +154,7 @@
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:type"/>
-                                    <ruleml:Var iri="buvo:system"/>
+                                    <ruleml:Var>buvo:system</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">treatment</ruleml:Data>
                             </ruleml:Expr>
@@ -161,7 +162,7 @@
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:type"/>
-                                    <ruleml:Var iri="buvo:system"/>
+                                    <ruleml:Var>buvo:system</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">dispiosal</ruleml:Data>
                             </ruleml:Expr>
@@ -175,7 +176,7 @@
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:design"/>
-                                    <ruleml:Var iri="buvo:system"/>
+                                    <ruleml:Var>buvo:system</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">specificDesign</ruleml:Data>
                             </ruleml:Expr>
@@ -185,7 +186,7 @@
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:design"/>
-                                    <ruleml:Var iri="buvo:system"/>
+                                    <ruleml:Var>buvo:system</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-g14vm1</ruleml:Data>
                             </ruleml:Expr>
@@ -194,15 +195,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.1.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.1.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:waste"/>
+                                <ruleml:Var>buvo:waste</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">industrialLiquid</ruleml:Data>
                         </ruleml:Expr>
@@ -210,9 +211,9 @@
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:hazardous"/>
-                                <ruleml:Var iri="buvo:waste"/>
+                                <ruleml:Var>buvo:waste</ruleml:Var>
                             </ruleml:Atom>
-                            <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                            <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                         </ruleml:Expr>
                     </ruleml:And>
                 </ruleml:if>
@@ -224,7 +225,7 @@
                                     <ruleml:Fun iri="lovo:complyWith"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:collection"/>
-                                        <ruleml:Var iri="buvo:system"/>
+                                        <ruleml:Var>buvo:system</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">nzbc-g14vm1</ruleml:Data>
                                 </ruleml:Expr>
@@ -234,7 +235,7 @@
                                     <ruleml:Fun iri="lovo:complyWith"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:collection"/>
-                                        <ruleml:Var iri="buvo:system"/>
+                                        <ruleml:Var>buvo:system</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">nzbc-f3</ruleml:Data>
                                 </ruleml:Expr>
@@ -246,7 +247,7 @@
                                     <ruleml:Fun iri="lovo:complyWith"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:storage"/>
-                                        <ruleml:Var iri="buvo:system"/>
+                                        <ruleml:Var>buvo:system</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">nzbc-g14vm1</ruleml:Data>
                                 </ruleml:Expr>
@@ -256,7 +257,7 @@
                                     <ruleml:Fun iri="lovo:complyWith"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:storage"/>
-                                        <ruleml:Var iri="buvo:system"/>
+                                        <ruleml:Var>buvo:system</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">nzbc-f3</ruleml:Data>
                                 </ruleml:Expr>
@@ -268,7 +269,7 @@
                                     <ruleml:Fun iri="lovo:complyWith"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:treatment"/>
-                                        <ruleml:Var iri="buvo:system"/>
+                                        <ruleml:Var>buvo:system</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">nzbc-g14vm1</ruleml:Data>
                                 </ruleml:Expr>
@@ -278,7 +279,7 @@
                                     <ruleml:Fun iri="lovo:complyWith"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:treatment"/>
-                                        <ruleml:Var iri="buvo:system"/>
+                                        <ruleml:Var>buvo:system</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">nzbc-f3</ruleml:Data>
                                 </ruleml:Expr>
@@ -288,13 +289,13 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_t1.3.1.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_t1.3.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_t1.3.1.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:has"/>
                         <ruleml:Atom>
-                            <ruleml:Var iri="buvo:tank"/>
+                            <ruleml:Var>buvo:tank</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">seismicRestraint</ruleml:Data>
                     </ruleml:Expr>
@@ -305,7 +306,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:tank"/>
+                                    <ruleml:Var>buvo:tank</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-b1</ruleml:Data>
                             </ruleml:Expr>
@@ -314,7 +315,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:tank"/>
+                                    <ruleml:Var>buvo:tank</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-b1vm1</ruleml:Data>
                             </ruleml:Expr>
@@ -323,14 +324,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_t1.3.1.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_t1.3.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_t1.3.1.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:type"/>
-                            <ruleml:Var iri="buvo:access"/>
+                            <ruleml:Var>buvo:access</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">vehicle</ruleml:Data>
                     </ruleml:Expr>
@@ -340,7 +341,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:complyWith"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:access"/>
+                                <ruleml:Var>buvo:access</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">nzbc-d1</ruleml:Data>
                         </ruleml:Expr>
@@ -348,14 +349,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_t1.3.1.3">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_t1.3.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_t1.3.1.3">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:type"/>
-                            <ruleml:Var iri="buvo:Ind.LiquidWaste"/>
+                            <ruleml:Var>buvo:Ind.LiquidWaste</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">hazardous</ruleml:Data>
                     </ruleml:Expr>
@@ -366,7 +367,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:collectionMethod"/>
+                                    <ruleml:Var>buvo:collectionMethod</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-f3</ruleml:Data>
                             </ruleml:Expr>
@@ -374,7 +375,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:complyWith"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageMethod"/>
+                                <ruleml:Var>buvo:storageMethod</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">nzbc-f3</ruleml:Data>
                         </ruleml:Expr>
@@ -382,14 +383,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_t1.3.1.4">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_t1.3.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.4">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_t1.3.1.4">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:risk"/>
-                            <ruleml:Var iri="buvo:waterSupply"/>
+                            <ruleml:Var>buvo:waterSupply</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">contamination</ruleml:Data>
                     </ruleml:Expr>
@@ -399,7 +400,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:complyWith"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:waterSupply"/>
+                                <ruleml:Var>buvo:waterSupply</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">nzbc-g12</ruleml:Data>
                         </ruleml:Expr>
@@ -407,14 +408,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_t1.3.1.5">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_t1.3.1.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.5">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_t1.3.1.5">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:has"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageTank"/>
+                                <ruleml:Var>buvo:storageTank</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">waterhose</ruleml:Data>
                         </ruleml:Expr>
@@ -422,7 +423,7 @@
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:usageType"/>
-                                <ruleml:Var iri="buvo:waterHose"/>
+                                <ruleml:Var>buvo:waterHose</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">emergency</ruleml:Data>
                         </ruleml:Expr>
@@ -433,7 +434,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:complyWith"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:waterHose"/>
+                                <ruleml:Var>buvo:waterHose</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">nzbc-g12</ruleml:Data>
                         </ruleml:Expr>
@@ -441,14 +442,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_t1.3.1.6">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_t1.3.1.6">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.6">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_t1.3.1.6">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:has"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                                <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">treatment</ruleml:Data>
                         </ruleml:Expr>
@@ -456,7 +457,7 @@
                             <ruleml:Fun iri="lovo:to"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:disposal"/>
-                                <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                                <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">sewer</ruleml:Data>
                         </ruleml:Expr>
@@ -467,7 +468,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:complyWith"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:disposalSystem"/>
+                                <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">nzbc-g13</ruleml:Data>
                         </ruleml:Expr>
@@ -475,22 +476,22 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_t1.3.1.7">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_t1.3.1.7">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_t1.3.1.7">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_t1.3.1.7">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:usageType"/>
-                                <ruleml:Var iri="buvo:drainage"/>
+                                <ruleml:Var>buvo:drainage</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">emergency</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:has"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageTank"/>
+                                <ruleml:Var>buvo:storageTank</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">drainage</ruleml:Data>
                         </ruleml:Expr>
@@ -501,7 +502,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:complyWith"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:drainage"/>
+                                <ruleml:Var>buvo:drainage</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">nzbc-g13</ruleml:Data>
                         </ruleml:Expr>
@@ -509,16 +510,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:collectionFacility"/>
+                            <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -528,7 +529,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:collectionFacility"/>
+                                    <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">healthHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -538,7 +539,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:collectionFacility"/>
+                                    <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">safetyHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -547,16 +548,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:storageFacility"/>
+                            <ruleml:Var>buvo:storageFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -566,7 +567,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">healthHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -576,7 +577,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">safetyHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -585,16 +586,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.3">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.3">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:treatmentFacility"/>
+                            <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -604,7 +605,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:treatmentFacility"/>
+                                    <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">healthHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -614,7 +615,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:treatmentFacility"/>
+                                    <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">safetyHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -623,16 +624,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.4">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.4">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.4">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:disposalSystem"/>
+                            <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -642,7 +643,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:disposalSystem"/>
+                                    <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">healthHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -652,7 +653,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:disposalSystem"/>
+                                    <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">safetyHazard</ruleml:Data>
                             </ruleml:Expr>
@@ -661,16 +662,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.5">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.5">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.5">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:collectionFacility"/>
+                            <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -680,7 +681,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:collectionFacility"/>
+                                    <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">bunding</ruleml:Data>
                             </ruleml:Expr>
@@ -690,7 +691,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:collectionFacility"/>
+                                    <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">spillageContainment</ruleml:Data>
                             </ruleml:Expr>
@@ -699,16 +700,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.6">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.6">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.6">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.6">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:storageFacility"/>
+                            <ruleml:Var>buvo:storageFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -718,7 +719,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:location"/>
+                                    <ruleml:Var>buvo:location</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">bunding</ruleml:Data>
                             </ruleml:Expr>
@@ -728,7 +729,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:location"/>
+                                    <ruleml:Var>buvo:location</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">spillageContainment</ruleml:Data>
                             </ruleml:Expr>
@@ -737,16 +738,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.7">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.7">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.7">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.7">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:treatmentFacility"/>
+                            <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -756,7 +757,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:treatmentFacility"/>
+                                    <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">bunding</ruleml:Data>
                             </ruleml:Expr>
@@ -766,7 +767,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:treatmentFacility"/>
+                                    <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">spillageContainment</ruleml:Data>
                             </ruleml:Expr>
@@ -775,16 +776,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.8">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.8">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.8">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.8">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:disposalSystem"/>
+                            <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -794,7 +795,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:disposalSystem"/>
+                                    <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">bunding</ruleml:Data>
                             </ruleml:Expr>
@@ -804,7 +805,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:disposalSystem"/>
+                                    <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">spillageContainment</ruleml:Data>
                             </ruleml:Expr>
@@ -813,16 +814,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.9">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.9">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.9">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.9">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:collectionFacility"/>
+                            <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -832,7 +833,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:collectionFacility"/>
+                                    <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">serviceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -842,7 +843,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:collectionFacility"/>
+                                    <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">maintenanceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -851,16 +852,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.10">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.10">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.10">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.10">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:storageFacility"/>
+                            <ruleml:Var>buvo:storageFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -870,7 +871,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">serviceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -880,7 +881,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">maintenanceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -889,16 +890,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.11">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.11">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.11">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.11">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:treatmentFacility"/>
+                            <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -908,7 +909,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:treatmentFacility"/>
+                                    <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">serviceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -918,7 +919,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:treatmentFacility"/>
+                                    <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">maintenanceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -927,16 +928,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.1.12">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.1.12">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.1.12">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.1.12">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:isExist"/>
-                            <ruleml:Var iri="buvo:disposalSystem"/>
+                            <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -946,7 +947,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:disposalSystem"/>
+                                    <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">serviceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -956,7 +957,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:location"/>
-                                    <ruleml:Var iri="buvo:disposalSystem"/>
+                                    <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">maintenanceAccess</ruleml:Data>
                             </ruleml:Expr>
@@ -965,14 +966,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.4.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.4.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.4.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.4.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:below"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:location"/>
-                            <ruleml:Var iri="buvo:storageTank"/>
+                            <ruleml:Var>buvo:storageTank</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">groundLevel</ruleml:Data>
                     </ruleml:Expr>
@@ -984,7 +985,7 @@
                                 <ruleml:Fun iri="lovo:greaterThan"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:designLoad"/>
-                                    <ruleml:Var iri="buvo:storageTank"/>
+                                    <ruleml:Var>buvo:storageTank</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">appliedLoad</ruleml:Data>
                             </ruleml:Expr>
@@ -996,7 +997,7 @@
                                         <ruleml:Fun iri="lovo:has"/>
                                         <ruleml:Atom>
                                             <ruleml:Rel iri="buvo:design"/>
-                                            <ruleml:Var iri="buvo:storageTank"/>
+                                            <ruleml:Var>buvo:storageTank</ruleml:Var>
                                         </ruleml:Atom>
                                         <ruleml:Data xsi:type="xs:string">healthHazard</ruleml:Data>
                                     </ruleml:Expr>
@@ -1008,7 +1009,7 @@
                                         <ruleml:Fun iri="lovo:has"/>
                                         <ruleml:Atom>
                                             <ruleml:Rel iri="buvo:design"/>
-                                            <ruleml:Var iri="buvo:storageTank"/>
+                                            <ruleml:Var>buvo:storageTank</ruleml:Var>
                                         </ruleml:Atom>
                                         <ruleml:Data xsi:type="xs:string">safetyHazard</ruleml:Data>
                                     </ruleml:Expr>
@@ -1020,7 +1021,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:design"/>
-                                    <ruleml:Var iri="buvo:storageTank"/>
+                                    <ruleml:Var>buvo:storageTank</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">corrosionProtection</ruleml:Data>
                             </ruleml:Expr>
@@ -1029,14 +1030,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.5.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.5.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.5.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.5.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:to"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:exposure"/>
-                            <ruleml:Var iri="buvo:constructionMaterial"/>
+                            <ruleml:Var>buvo:constructionMaterial</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">industrialLiquid</ruleml:Data>
                     </ruleml:Expr>
@@ -1047,7 +1048,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:constructionMaterial"/>
+                                    <ruleml:Var>buvo:constructionMaterial</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">anti-corrosion</ruleml:Data>
                             </ruleml:Expr>
@@ -1056,7 +1057,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:constructionMaterial"/>
+                                    <ruleml:Var>buvo:constructionMaterial</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">anti-chemicalAttack</ruleml:Data>
                             </ruleml:Expr>
@@ -1065,7 +1066,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:constructionMaterial"/>
+                                    <ruleml:Var>buvo:constructionMaterial</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">anti-abrasion</ruleml:Data>
                             </ruleml:Expr>
@@ -1074,7 +1075,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:constructionMaterial"/>
+                                    <ruleml:Var>buvo:constructionMaterial</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">anti-physicalAbuse</ruleml:Data>
                             </ruleml:Expr>
@@ -1083,13 +1084,13 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.5.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.5.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.5.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.5.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:has"/>
                         <ruleml:Atom>
-                            <ruleml:Var iri="buvo:handlingEquipment"/>
+                            <ruleml:Var>buvo:handlingEquipment</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">anti-corrosion</ruleml:Data>
                     </ruleml:Expr>
@@ -1100,7 +1101,7 @@
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:durability"/>
-                                <ruleml:Var iri="buvo:handlingEquipment"/>
+                                <ruleml:Var>buvo:handlingEquipment</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">lifetime</ruleml:Data>
                         </ruleml:Expr>
@@ -1108,36 +1109,36 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.6.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.6.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.6.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.6.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:And>
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:installation"/>
+                                    <ruleml:Var>buvo:installation</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">ind.LiquidWasteSystem</ruleml:Data>
                             </ruleml:Expr>
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:installation"/>
+                                    <ruleml:Var>buvo:installation</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">storageTank</ruleml:Data>
                             </ruleml:Expr>
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:installation"/>
+                                    <ruleml:Var>buvo:installation</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">treatmentTank</ruleml:Data>
                             </ruleml:Expr>
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:installation"/>
+                                    <ruleml:Var>buvo:installation</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">piping</ruleml:Data>
                             </ruleml:Expr>
@@ -1146,7 +1147,7 @@
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:status"/>
-                                <ruleml:Var iri="buvo:installation"/>
+                                <ruleml:Var>buvo:installation</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">completed</ruleml:Data>
                         </ruleml:Expr>
@@ -1158,7 +1159,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:installation"/>
+                                    <ruleml:Var>buvo:installation</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">tested</ruleml:Data>
                             </ruleml:Expr>
@@ -1168,7 +1169,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:is"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:naturalWaterway"/>
+                                        <ruleml:Var>buvo:naturalWaterway</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">contaminated</ruleml:Data>
                                 </ruleml:Expr>
@@ -1179,7 +1180,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:is"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:groundWater"/>
+                                        <ruleml:Var>buvo:groundWater</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">contaminated</ruleml:Data>
                                 </ruleml:Expr>
@@ -1189,16 +1190,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.6.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.6.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.6.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.6.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:storageFacility"/>
-                            <ruleml:Var iri="buvo:Ind.LiquidWaste"/>
+                            <ruleml:Var>buvo:Ind.LiquidWaste</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -1207,7 +1208,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:facilityArea"/>
+                                    <ruleml:Var>buvo:facilityArea</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">impervious</ruleml:Data>
                             </ruleml:Expr>
@@ -1215,7 +1216,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:facilityArea"/>
+                                <ruleml:Var>buvo:facilityArea</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">bunded</ruleml:Data>
                         </ruleml:Expr>
@@ -1223,14 +1224,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.6.3">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.6.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.6.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.6.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:waterSupply"/>
+                                <ruleml:Var>buvo:waterSupply</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">potable</ruleml:Data>
                         </ruleml:Expr>
@@ -1239,7 +1240,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:is"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:waterSupply"/>
+                                        <ruleml:Var>buvo:waterSupply</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">contaminated</ruleml:Data>
                                 </ruleml:Expr>
@@ -1254,7 +1255,7 @@
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:installation"/>
-                                    <ruleml:Var iri="buvo:collectionFacility"/>
+                                    <ruleml:Var>buvo:collectionFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-g12</ruleml:Data>
                             </ruleml:Expr>
@@ -1264,7 +1265,7 @@
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:installation"/>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-g12</ruleml:Data>
                             </ruleml:Expr>
@@ -1274,7 +1275,7 @@
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:installation"/>
-                                    <ruleml:Var iri="buvo:treatmentFacility"/>
+                                    <ruleml:Var>buvo:treatmentFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-g12</ruleml:Data>
                             </ruleml:Expr>
@@ -1283,8 +1284,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.7.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.7.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.7.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.7.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:greaterThan"/>
@@ -1292,7 +1293,7 @@
                             <ruleml:Fun iri="fuvo:count"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:disposalMethod"/>
-                                <ruleml:Var iri="buvo:Ind.LiquidWaste"/>
+                                <ruleml:Var>buvo:Ind.LiquidWaste</ruleml:Var>
                             </ruleml:Atom>
                         </ruleml:Expr>
                         <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
@@ -1305,7 +1306,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="fuvo:forEach"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:disposalMethod"/>
+                                        <ruleml:Var>buvo:disposalMethod</ruleml:Var>
                                     </ruleml:Atom>
                                 </ruleml:Expr>
                             </ruleml:Expr>
@@ -1315,7 +1316,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:is"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:disposalSystem"/>
+                                        <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">unique</ruleml:Data>
                                 </ruleml:Expr>
@@ -1325,8 +1326,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.7.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.7.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.7.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.7.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:greaterThan"/>
@@ -1334,7 +1335,7 @@
                             <ruleml:Fun iri="fuvo:count"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:treatmentMethod"/>
-                                <ruleml:Var iri="buvo:Ind.LiquidWaste"/>
+                                <ruleml:Var>buvo:Ind.LiquidWaste</ruleml:Var>
                             </ruleml:Atom>
                         </ruleml:Expr>
                         <ruleml:Data xsi:type="xs:integer">1</ruleml:Data>
@@ -1347,7 +1348,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="fuvo:forEach"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:treatmentMethod"/>
+                                        <ruleml:Var>buvo:treatmentMethod</ruleml:Var>
                                     </ruleml:Atom>
                                 </ruleml:Expr>
                             </ruleml:Expr>
@@ -1357,7 +1358,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:is"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:treatmentSystem"/>
+                                        <ruleml:Var>buvo:treatmentSystem</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">unique</ruleml:Data>
                                 </ruleml:Expr>
@@ -1367,15 +1368,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.8.1.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.8.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.8.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:purpose"/>
-                                <ruleml:Var iri="buvo:vehicleAccess"/>
+                                <ruleml:Var>buvo:vehicleAccess</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">collection</ruleml:Data>
                         </ruleml:Expr>
@@ -1383,7 +1384,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:collection"/>
+                                <ruleml:Var>buvo:collection</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">Ind.LiquidWaste</ruleml:Data>
                         </ruleml:Expr>
@@ -1395,7 +1396,7 @@
                             <ruleml:Fun iri="lovo:complyWith"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:area"/>
-                                <ruleml:Var iri="buvo:vehicleAccess"/>
+                                <ruleml:Var>buvo:vehicleAccess</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">nzbc-d1</ruleml:Data>
                         </ruleml:Expr>
@@ -1403,15 +1404,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.8.1.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.8.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.8.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:purpose"/>
-                                <ruleml:Var iri="buvo:vehicleAccess"/>
+                                <ruleml:Var>buvo:vehicleAccess</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">collection</ruleml:Data>
                         </ruleml:Expr>
@@ -1419,7 +1420,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:collection"/>
+                                <ruleml:Var>buvo:collection</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">Ind.LiquidWaste</ruleml:Data>
                         </ruleml:Expr>
@@ -1431,7 +1432,7 @@
                             <ruleml:Fun iri="lovo:has"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:area"/>
-                                <ruleml:Var iri="buvo:vehicleAccess"/>
+                                <ruleml:Var>buvo:vehicleAccess</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">turningSpace</ruleml:Data>
                         </ruleml:Expr>
@@ -1439,15 +1440,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.8.1.3">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.8.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.8.1.3">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:purpose"/>
-                                <ruleml:Var iri="buvo:vehicleAccess"/>
+                                <ruleml:Var>buvo:vehicleAccess</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">collection</ruleml:Data>
                         </ruleml:Expr>
@@ -1455,7 +1456,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:collection"/>
+                                <ruleml:Var>buvo:collection</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">Ind.LiquidWaste</ruleml:Data>
                         </ruleml:Expr>
@@ -1468,7 +1469,7 @@
                                 <ruleml:Fun iri="lovo:to"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:drain"/>
-                                    <ruleml:Var iri="buvo:spillage"/>
+                                    <ruleml:Var>buvo:spillage</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">kerb</ruleml:Data>
                             </ruleml:Expr>
@@ -1479,7 +1480,7 @@
                                     <ruleml:Fun iri="lovo:to"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:flow"/>
-                                        <ruleml:Var iri="buvo:spillage"/>
+                                        <ruleml:Var>buvo:spillage</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">underVehicleArea</ruleml:Data>
                                 </ruleml:Expr>
@@ -1489,7 +1490,7 @@
                                     <ruleml:Fun iri="lovo:to"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:flow"/>
-                                        <ruleml:Var iri="buvo:spillage"/>
+                                        <ruleml:Var>buvo:spillage</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">plantArea</ruleml:Data>
                                 </ruleml:Expr>
@@ -1499,15 +1500,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.8.1.4">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.8.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.4">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.8.1.4">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:purpose"/>
-                                <ruleml:Var iri="buvo:vehicleAccess"/>
+                                <ruleml:Var>buvo:vehicleAccess</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">collection</ruleml:Data>
                         </ruleml:Expr>
@@ -1515,7 +1516,7 @@
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:content"/>
-                                <ruleml:Var iri="buvo:collection"/>
+                                <ruleml:Var>buvo:collection</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">Ind.LiquidWaste</ruleml:Data>
                         </ruleml:Expr>
@@ -1525,7 +1526,7 @@
                                     <ruleml:Fun iri="lovo:to"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:discharge"/>
-                                        <ruleml:Var iri="buvo:spillage"/>
+                                        <ruleml:Var>buvo:spillage</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">sewer</ruleml:Data>
                                 </ruleml:Expr>
@@ -1539,7 +1540,7 @@
                             <ruleml:Fun iri="lovo:to"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:flow"/>
-                                <ruleml:Var iri="buvo:spillage"/>
+                                <ruleml:Var>buvo:spillage</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">sewer</ruleml:Data>
                         </ruleml:Expr>
@@ -1547,15 +1548,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.8.1.5">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.8.1.5">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.8.1.5">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.8.1.5">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:purpose"/>
-                                <ruleml:Var iri="buvo:vehicleAccess"/>
+                                <ruleml:Var>buvo:vehicleAccess</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">collection</ruleml:Data>
                         </ruleml:Expr>
@@ -1563,7 +1564,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:type"/>
-                                <ruleml:Var iri="buvo:collection"/>
+                                <ruleml:Var>buvo:collection</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">Ind.LiquidWaste</ruleml:Data>
                         </ruleml:Expr>
@@ -1577,7 +1578,7 @@
                                     <ruleml:Fun iri="lovo:has"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:disposalMethod"/>
-                                        <ruleml:Var iri="buvo:spillage"/>
+                                        <ruleml:Var>buvo:spillage</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">containment</ruleml:Data>
                                 </ruleml:Expr>
@@ -1587,7 +1588,7 @@
                                     <ruleml:Fun iri="lovo:has"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:disposalMethod"/>
-                                        <ruleml:Var iri="buvo:spillage"/>
+                                        <ruleml:Var>buvo:spillage</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">bunding</ruleml:Data>
                                 </ruleml:Expr>
@@ -1598,7 +1599,7 @@
                                 <ruleml:Fun iri="lovo:to"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:flow"/>
-                                    <ruleml:Var iri="buvo:spillage"/>
+                                    <ruleml:Var>buvo:spillage</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">surfaceWaterSystem</ruleml:Data>
                             </ruleml:Expr>
@@ -1607,8 +1608,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.9.1.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.9.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.9.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <lrml:Permission>
@@ -1616,7 +1617,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:to"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:access"/>
+                                        <ruleml:Var>buvo:access</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">storageFacility</ruleml:Data>
                                 </ruleml:Expr>
@@ -1625,14 +1626,14 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:condition"/>
+                                <ruleml:Var>buvo:condition</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">hazardous</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:in"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageFacility"/>
+                                <ruleml:Var>buvo:storageFacility</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
                         </ruleml:Expr>
@@ -1643,7 +1644,7 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageFacility"/>
+                                <ruleml:Var>buvo:storageFacility</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">lockable</ruleml:Data>
                         </ruleml:Expr>
@@ -1651,8 +1652,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.9.1.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.9.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.9.1.2">
                 <ruleml:if>
                     <ruleml:And>
                         <lrml:Permission>
@@ -1660,7 +1661,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:to"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:access"/>
+                                        <ruleml:Var>buvo:access</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">storageFacility</ruleml:Data>
                                 </ruleml:Expr>
@@ -1669,14 +1670,14 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:condition"/>
+                                <ruleml:Var>buvo:condition</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">hazardous</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:outside"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageFacility"/>
+                                <ruleml:Var>buvo:storageFacility</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
                         </ruleml:Expr>
@@ -1688,7 +1689,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">lockable</ruleml:Data>
                             </ruleml:Expr>
@@ -1697,7 +1698,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:securityFence"/>
+                                    <ruleml:Var>buvo:securityFence</ruleml:Var>
                                 </ruleml:Atom>
                             </ruleml:Expr>
                         </lrml:Obligation>
@@ -1705,7 +1706,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:securityGate"/>
+                                    <ruleml:Var>buvo:securityGate</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">lockable</ruleml:Data>
                             </ruleml:Expr>
@@ -1714,8 +1715,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.9.1.3">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.9.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.9.1.3">
                 <ruleml:if>
                     <ruleml:And>
                         <lrml:Permission>
@@ -1723,7 +1724,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:to"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:access"/>
+                                        <ruleml:Var>buvo:access</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">treatmentFacility</ruleml:Data>
                                 </ruleml:Expr>
@@ -1732,14 +1733,14 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:condition"/>
+                                <ruleml:Var>buvo:condition</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">hazardous</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:outside"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageFacility"/>
+                                <ruleml:Var>buvo:storageFacility</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
                         </ruleml:Expr>
@@ -1751,7 +1752,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">lockable</ruleml:Data>
                             </ruleml:Expr>
@@ -1760,7 +1761,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:securityFence"/>
+                                    <ruleml:Var>buvo:securityFence</ruleml:Var>
                                 </ruleml:Atom>
                             </ruleml:Expr>
                         </lrml:Obligation>
@@ -1768,7 +1769,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:securityGate"/>
+                                    <ruleml:Var>buvo:securityGate</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">lockable</ruleml:Data>
                             </ruleml:Expr>
@@ -1777,8 +1778,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r1.9.1.4">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r1.9.1.4">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r1.9.1.4">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r1.9.1.4">
                 <ruleml:if>
                     <ruleml:And>
                         <lrml:Permission>
@@ -1786,7 +1787,7 @@
                                 <ruleml:Expr>
                                     <ruleml:Fun iri="lovo:to"/>
                                     <ruleml:Atom>
-                                        <ruleml:Var iri="buvo:access"/>
+                                        <ruleml:Var>buvo:access</ruleml:Var>
                                     </ruleml:Atom>
                                     <ruleml:Data xsi:type="xs:string">treatmentFacility</ruleml:Data>
                                 </ruleml:Expr>
@@ -1795,14 +1796,14 @@
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:condition"/>
+                                <ruleml:Var>buvo:condition</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">hazardous</ruleml:Data>
                         </ruleml:Expr>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:outside"/>
                             <ruleml:Atom>
-                                <ruleml:Var iri="buvo:storageFacility"/>
+                                <ruleml:Var>buvo:storageFacility</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">building</ruleml:Data>
                         </ruleml:Expr>
@@ -1814,7 +1815,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:storageFacility"/>
+                                    <ruleml:Var>buvo:storageFacility</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">lockable</ruleml:Data>
                             </ruleml:Expr>
@@ -1823,7 +1824,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:securityFence"/>
+                                    <ruleml:Var>buvo:securityFence</ruleml:Var>
                                 </ruleml:Atom>
                             </ruleml:Expr>
                         </lrml:Obligation>
@@ -1831,7 +1832,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:securityGate"/>
+                                    <ruleml:Var>buvo:securityGate</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">lockable</ruleml:Data>
                             </ruleml:Expr>
@@ -1840,15 +1841,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r2.0.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r2.0.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r2.0.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r2.0.1">
                 <ruleml:if>
                     <lrml:Permission>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:to"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:discharge"/>
-                                <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                                <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">sewer</ruleml:Data>
                         </ruleml:Expr>
@@ -1861,7 +1862,7 @@
                                 <ruleml:Fun iri="lovo:to"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:conveyance"/>
-                                    <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                                    <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">disposalSystem</ruleml:Data>
                             </ruleml:Expr>
@@ -1870,7 +1871,7 @@
                             <ruleml:Expr>
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
-                                    <ruleml:Var iri="buvo:disposalSystem"/>
+                                    <ruleml:Var>buvo:disposalSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzbc-g13</ruleml:Data>
                             </ruleml:Expr>
@@ -1879,15 +1880,15 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r2.1.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r2.1.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r2.1.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r2.1.1">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Expr>
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:blockage"/>
-                                <ruleml:Var iri="buvo:pipingSystem"/>
+                                <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">possible</ruleml:Data>
                         </ruleml:Expr>
@@ -1895,7 +1896,7 @@
                             <ruleml:Fun iri="lovo:is"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:cause"/>
-                                <ruleml:Var iri="buvo:blockage"/>
+                                <ruleml:Var>buvo:blockage</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">suspendedSolid</ruleml:Data>
                         </ruleml:Expr>
@@ -1908,7 +1909,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:atTheHeadOf"/>
-                                    <ruleml:Var iri="buvo:pipingSystem"/>
+                                    <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">screens</ruleml:Data>
                             </ruleml:Expr>
@@ -1918,7 +1919,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:atTheHeadOf"/>
-                                    <ruleml:Var iri="buvo:pipingSystem"/>
+                                    <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">gritChamber</ruleml:Data>
                             </ruleml:Expr>
@@ -1928,7 +1929,7 @@
                                 <ruleml:Fun iri="lovo:has"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:atTheHeadOf"/>
-                                    <ruleml:Var iri="buvo:pipingSystem"/>
+                                    <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">greaseTrap</ruleml:Data>
                             </ruleml:Expr>
@@ -1937,14 +1938,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r2.1.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r2.1.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r2.1.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r2.1.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:to"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:conveyance"/>
-                            <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                            <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">pipingSystem</ruleml:Data>
                     </ruleml:Expr>
@@ -1955,7 +1956,7 @@
                             <ruleml:Fun iri="lovo:equal"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:disposalMethod"/>
-                                <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                                <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">gravityFlow</ruleml:Data>
                         </ruleml:Expr>
@@ -1963,14 +1964,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r2.1.3">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r2.1.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r2.1.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r2.1.3">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:equal"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:disposalMethod"/>
-                            <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                            <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">gravityFlow</ruleml:Data>
                     </ruleml:Expr>
@@ -1982,7 +1983,7 @@
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:slope"/>
-                                    <ruleml:Var iri="buvo:pipeline"/>
+                                    <ruleml:Var>buvo:pipeline</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">sufficient</ruleml:Data>
                             </ruleml:Expr>
@@ -1991,7 +1992,7 @@
                             <ruleml:Fun iri="lovo:greaterThan"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:velocity"/>
-                                <ruleml:Var iri="buvo:flow"/>
+                                <ruleml:Var>buvo:flow</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">velocityCausingSediment</ruleml:Data>
                         </ruleml:Expr>
@@ -1999,13 +2000,13 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r2.3.2">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r2.3.2">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r2.3.2">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r2.3.2">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:in"/>
                         <ruleml:Atom>
-                            <ruleml:Var iri="buvo:ind.LiquidWaste"/>
+                            <ruleml:Var>buvo:ind.LiquidWaste</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">pipingSystem</ruleml:Data>
                     </ruleml:Expr>
@@ -2019,7 +2020,7 @@
                                     <ruleml:Fun iri="fuvo:count"/>
                                     <ruleml:Atom>
                                         <ruleml:Rel iri="buvo:joint"/>
-                                        <ruleml:Var iri="buvo:pipingSystem"/>
+                                        <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                                     </ruleml:Atom>
                                 </ruleml:Expr>
                                 <ruleml:Data xsi:type="xs:string">minimum</ruleml:Data>
@@ -2031,7 +2032,7 @@
                                 <ruleml:Fun iri="fuvo:count"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:fitting"/>
-                                    <ruleml:Var iri="buvo:pipingSystem"/>
+                                    <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                                 </ruleml:Atom>
                             </ruleml:Expr>
                             <ruleml:Data xsi:type="xs:string">minimum</ruleml:Data>
@@ -2042,7 +2043,7 @@
                                 <ruleml:Fun iri="fuvo:count"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:valve"/>
-                                    <ruleml:Var iri="buvo:pipingSystem"/>
+                                    <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                                 </ruleml:Atom>
                             </ruleml:Expr>
                             <ruleml:Data xsi:type="xs:string">minimum</ruleml:Data>
@@ -2051,16 +2052,16 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r2.3.3">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r2.3.3">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r2.3.3">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r2.3.3">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:bend"/>
-                            <ruleml:Var iri="buvo:pipingSystem"/>
+                            <ruleml:Var>buvo:pipingSystem</ruleml:Var>
                         </ruleml:Atom>
-                        <ruleml:Data xsi:type="lkm:boolean">true</ruleml:Data>
+                        <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
                     </ruleml:Expr>
                 </ruleml:if>
                 <ruleml:then>
@@ -2069,7 +2070,7 @@
                             <ruleml:Fun iri="lovo:greaterThanEqual"/>
                             <ruleml:Atom>
                                 <ruleml:Rel iri="buvo:centrelineRadius"/>
-                                <ruleml:Var iri="buvo:bend"/>
+                                <ruleml:Var>buvo:bend</ruleml:Var>
                             </ruleml:Atom>
                             <ruleml:Data xsi:type="xs:string">1.5 * nominalPipeDiameter</ruleml:Data>
                         </ruleml:Expr>
@@ -2077,14 +2078,14 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1#2.6_r3.2.1">
-            <ruleml:Rule key="NZ_NZBC-G14AS1#2.6_r3.2.1">
+        <lrml:PrescriptiveStatement key="NZ_NZBC-G14AS1_x0023_2.6_r3.2.1">
+            <ruleml:Rule key="urn:cas:nzbc-lrml:NZ_NZBC-G14AS1%232.6:rule:NZ_NZBC-G14AS1%232.6_r3.2.1">
                 <ruleml:if>
                     <ruleml:Expr>
                         <ruleml:Fun iri="lovo:is"/>
                         <ruleml:Atom>
                             <ruleml:Rel iri="buvo:type"/>
-                            <ruleml:Var iri="buvo:tank"/>
+                            <ruleml:Var>buvo:tank</ruleml:Var>
                         </ruleml:Atom>
                         <ruleml:Data xsi:type="xs:string">freeStanding</ruleml:Data>
                     </ruleml:Expr>
@@ -2096,7 +2097,7 @@
                                 <ruleml:Fun iri="lovo:is"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:protection"/>
-                                    <ruleml:Var iri="buvo:tank"/>
+                                    <ruleml:Var>buvo:tank</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">seismic</ruleml:Data>
                             </ruleml:Expr>
@@ -2106,7 +2107,7 @@
                                 <ruleml:Fun iri="lovo:complyWith"/>
                                 <ruleml:Atom>
                                     <ruleml:Rel iri="buvo:seismicRestraint"/>
-                                    <ruleml:Var iri="buvo:tank"/>
+                                    <ruleml:Var>buvo:tank</ruleml:Var>
                                 </ruleml:Atom>
                                 <ruleml:Data xsi:type="xs:string">nzs4219</ruleml:Data>
                             </ruleml:Expr>
